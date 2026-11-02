@@ -110,6 +110,108 @@
       </section>
 
       <!-- =================================================================
+           場景三：DLC 小雪英咒寶典修煉試煉場 (Scene: DLC Spellbook)
+           ================================================================= -->
+      <section id="scene-dlc-spellbook" class="scene hidden">
+        <!-- DLC 頂部仙俠導航列 -->
+        <header class="dlc-header">
+          <button class="back-btn" id="btn-back-cave-from-dlc" title="返回仙府洞府">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M19 12H5M12 19l-7-7 7-7"/>
+            </svg>
+            返回仙府
+          </button>
+          
+          <div class="dlc-title-group">
+            <span class="dlc-badge">小雪英咒寶典</span>
+            <span class="dlc-spell-id" id="dlc-spell-id">第 1 / 800 卷</span>
+          </div>
+
+          <div class="dlc-user-reward-pill">
+            <span class="reward-spirit-icon">💎</span>
+            <span id="dlc-spirit-stone-count">88</span>
+          </div>
+        </header>
+
+        <!-- DLC 核心內容可滑動區 -->
+        <div class="dlc-scroll-content">
+
+          <!-- 法咒核心資訊卡 -->
+          <article class="spell-master-card">
+            <div class="spell-card-header">
+              <div class="spell-name-wrap">
+                <span class="spell-icon">📜</span>
+                <h2 class="spell-name" id="spell-name">法咒：原子之心</h2>
+              </div>
+              <span class="spell-pattern-tag" id="spell-pattern">核心靈韻：ear</span>
+            </div>
+
+            <!-- 咒文經文挖空填空區 -->
+            <div class="spell-sentence-box" id="spell-sentence-box">
+              <!-- 動態產生的經文與空白靈槽 -->
+            </div>
+
+            <!-- 中文神諭翻譯與語音試聽 -->
+            <div class="spell-oracle-box">
+              <div class="oracle-top-bar">
+                <span class="oracle-label">神諭譯文：</span>
+                <div class="oracle-action-btns">
+                  <button class="oracle-action-btn" id="btn-spell-speak" title="聆聽法咒真言音韻">
+                    <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                      <polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"></polygon>
+                      <path d="M19.07 4.93a10 10 0 0 1 0 14.14M15.54 8.46a5 5 0 0 1 0 7.07"></path>
+                    </svg>
+                    法咒朗讀
+                  </button>
+                  <button class="oracle-action-btn" id="btn-toggle-translation" title="切換神諭顯隱">隱藏神諭</button>
+                </div>
+              </div>
+              <p class="oracle-translation-text" id="spell-chinese">我親耳清晰地聽到了原子彈的心臟跳動。</p>
+            </div>
+
+            <!-- 修煉要訣 -->
+            <div class="spell-note-box" id="spell-note-box">
+              <span class="note-icon">💡</span>
+              <p class="note-text" id="spell-learning-note">本題訓練 ear 字母模式的快速辨識能力。學習者透過填空 hear / clear / ear 等單字，進行拼寫結構掃描訓練。</p>
+            </div>
+
+            <!-- 答題反饋提示 -->
+            <div class="spell-feedback-banner" id="spell-feedback-banner" style="display: none;">
+              <span class="feedback-icon" id="feedback-icon">✨</span>
+              <span class="feedback-text" id="feedback-text">法咒圓滿！道心突破，靈氣 +10，靈石 +2！</span>
+            </div>
+          </article>
+
+          <!-- 散落的真言靈字池（供點選填空） -->
+          <section class="word-chips-section">
+            <div class="chips-section-header">
+              <span class="chips-title">注入真言碎片（點擊填入或自靈槽收回）</span>
+              <button class="btn-reset-slots" id="btn-reset-slots" title="重置本卷靈槽">清空重填</button>
+            </div>
+            <div class="word-chips-pool" id="word-chips-pool">
+              <!-- 動態產生的單字碎片 -->
+            </div>
+          </section>
+
+          <!-- 底部法卷切換控制器 -->
+          <footer class="spell-control-bar">
+            <button class="spell-nav-btn" id="btn-prev-spell" title="修煉上一卷">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M15 18l-6-6 6-6"/></svg>
+              上一卷
+            </button>
+            <button class="spell-nav-btn random-btn" id="btn-random-spell" title="隨機悟道">
+              <span>🎲 隨機法卷</span>
+            </button>
+            <button class="spell-nav-btn primary-btn" id="btn-next-spell" title="修煉下一卷">
+              下一卷
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 18l6-6-6-6"/></svg>
+            </button>
+          </footer>
+
+        </div>
+      </section>
+
+      <!-- =================================================================
            全域彈窗：修為狀態面板 (Modal: Cultivation Stats)
            ================================================================= -->
       <div class="modal-backdrop" id="modal-stats" role="dialog" aria-modal="true">
