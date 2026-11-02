@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="theme-color" content="#0a0f1c">
+    <link rel="manifest" href="/manifest.json">
+    <link rel="apple-touch-icon" href="https://raw.githubusercontent.com/xung7777-glitch/my-images/refs/heads/main/logo.png">
+    <link rel="icon" type="image/png" href="https://raw.githubusercontent.com/xung7777-glitch/my-images/refs/heads/main/logo.png">
+    <meta name="google" content="notranslate">
+    <title>小雪的英咒寶典 - 沉浸式英語修煉 App</title>
+    <meta name="description" content="小雪的英咒寶典是一款專為靈魂記憶設計的英語修煉 App。透過仙俠境界晉升、神獸守護與高強度咒語試煉，讓您在修煉中不教語法，唯手熟爾。">
+    <meta name="keywords" content="英語學習, 英文練習, 修仙, 填空, 肌肉記憶, 英語咒語, 小雪">
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3288923209451313" crossorigin="anonymous"></script>
+  </head>
+  <body>
+    <div id="root">
+      <div style="padding: 20px; font-family: sans-serif; display: none;">
+        <h1>小雪的英咒寶典 - 沉浸式英語修煉系統</h1>
+        <p>這是一款結合修仙世界觀與語言學習方法的英語修煉法典。我們透過「咒語 (句子)」為核心單位，提供 800 卷精選英文咒語，讓學習者透過結構拆解與填空重構建立語感。</p>
+        <h2>核心功能：</h2>
+        <ul>
+          <li>咒語系譜 (Genealogy Spells)：深入學習字母模式與詞族規律。</li>
+          <li>咒語全解 (Universal Spells)：隨機練習 800 句高頻生活與考點句型。</li>
+          <li>情境試煉 (Scenario Trials)：50 場真實對話情境模擬，從報到到日常溝通。</li>
+        </ul>
+        <p>修煉境界從「凡人」起步，一步步突破至「化神」，成就您的英語大道。</p>
+      </div>
+    </div>
+    <script type="module" src="/src/main.tsx"></script>
+    <script>
+      // 註冊 Service Worker 讓 App 可以被正式安裝
+      if ('serviceWorker' in navigator) {
+        window.addEventListener('load', () => {
+          navigator.serviceWorker.register('/sw.js').then(reg => {
+            console.log('SW registered:', reg);
+          }).catch(err => {
+            console.log('SW registration failed:', err);
+          });
+        });
+      }
+
+      (function() {
+        const bgm = new Audio("https://actions.google.com/sounds/v1/ambiences/forest_ambience.ogg");
+        bgm.loop = true;
+        bgm.volume = 0.1;
+
+        window.addEventListener("message", (e) => {
+          if (e.data === "PLAY_BGM") {
+            bgm.play().catch(() => {
+              // If autoplay fails, it will wait for the next interaction on the parent
+              console.log("Parent BGM play pending interaction");
+            });
+          } else if (e.data === "STOP_BGM") {
+            bgm.pause();
+          }
+        });
+
+        // Also try to play on any click in the document (parent level)
+        document.addEventListener("click", () => {
+          // This is a backup to ensure the audio context is resumed
+          if (window.lastBgmCommand === "PLAY_BGM") {
+            bgm.play().catch(() => {});
+          }
+        }, { once: false });
+        
+        // Track the last command
+        window.addEventListener("message", (e) => {
+          if (e.data === "PLAY_BGM" || e.data === "STOP_BGM") {
+            window.lastBgmCommand = e.data;
+          }
+        });
+      })();
+    </script>
+  </body>
+</html>
+

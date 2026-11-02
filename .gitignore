@@ -1,0 +1,27 @@
+# 依賴套件快取
+node_modules/
+.pnpm-store/
+.npm/
+
+# 打包與建置輸出
+dist/
+build/
+.vite/
+*.local
+
+# 系統與編輯器暫存
+.DS_Store
+Thumbs.db
+.vscode/*
+!.vscode/extensions.json
+!.vscode/settings.json
+
+# 環境變數與金鑰（避免洩漏個人金鑰）
+.env
+.env.local
+.env.*.local
+
+# 大型壓縮檔備份（解壓縮後保留於本地，不重複推送到遠端）
+*.zip
+*.rar
+*.7z

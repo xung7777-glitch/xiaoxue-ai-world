@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
+  <title>小雪的修仙世界 - 數位避風港</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- =====================================================================
+       全域視窗縮放包覆層（智慧填滿螢幕並水平置中）
+       ===================================================================== -->
+  <div id="viewport-wrapper">
+    <div class="ambient-glow"></div>
+
+    <!-- 直式手機遊戲主畫面容器 (430 x 932 基準) -->
+    <main id="game-container">
+
+      <!-- =================================================================
+           場景一：洞府主介面 (Scene: Cave Dwelling)
+           ================================================================= -->
+      <section id="scene-cave" class="scene active">
+        
+        <!-- 頂部導航列 -->
+        <header class="top-navbar">
+          <button class="nav-btn" id="btn-menu" title="系統選單" aria-label="系統選單">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <line x1="3" y1="12" x2="21" y2="12"></line>
+              <line x1="3" y1="6" x2="21" y2="6"></line>
+              <line x1="3" y1="18" x2="21" y2="18"></line>
+            </svg>
+          </button>
+          
+          <h1 class="nav-title" id="app-title">小雪的修仙世界</h1>
+          
+          <div class="user-avatar-wrap" id="btn-user-profile" title="修仙道友個人檔案">
+            <img id="user-avatar-img" src="assets/images/avatar_user.jpg" alt="道友頭像" onerror="this.src='data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\' width=\'38\' height=\'38\' viewBox=\'0 0 24 24\' fill=\'%234de8e0\'><circle cx=\'12\' cy=\'8\' r=\'4\'/><path d=\'M12 14c-6.1 0-8 4-8 4v2h16v-2s-1.9-4-8-4z\'/></svg>'">
+          </div>
+        </header>
+
+        <!-- 主滑動內容區 (Hero 橫幅與雙欄功能卡片) -->
+        <div class="scroll-content">
+
+          <!-- 頂部 Hero 卡片：小雪起居室冥想 -->
+          <article class="hero-card" id="hero-card">
+            <img class="hero-bg-img" id="hero-bg-img" src="assets/images/hero_meditation.jpg" alt="小雪起居室冥想" onerror="this.style.display='none'; document.getElementById('hero-art-placeholder').style.display='flex';">
+            <div class="hero-placeholder-art" id="hero-art-placeholder" style="display: none;">🧘‍♀️</div>
+            
+            <div class="hero-overlay">
+              <div class="hero-title-group">
+                <h2 id="hero-title">小雪起居室</h2>
+                <p id="hero-subtitle">冥想初始化</p>
+              </div>
+
+              <div class="hero-status-pill">
+                <span class="pulse-dot"></span>
+                <span id="user-realm-text">當前修為：煉氣初期</span>
+              </div>
+
+              <!-- Google 快速登入按鈕 -->
+              <button class="google-login-btn" id="btn-google-login">
+                <svg viewBox="0 0 24 24">
+                  <path fill="#4285F4" d="M23.745 12.27c0-.7-.06-1.4-.19-2.07H12v4.51h6.6c-.29 1.52-1.14 2.82-2.4 3.68v3.05h3.88c2.27-2.09 3.665-5.17 3.665-9.17z"/>
+                  <path fill="#34A853" d="M12 24c3.24 0 5.95-1.08 7.93-2.91l-3.88-3.05c-1.08.72-2.45 1.16-4.05 1.16-3.12 0-5.77-2.1-6.72-4.93H1.25v3.15C3.26 21.36 7.34 24 12 24z"/>
+                  <path fill="#FBBC05" d="M5.28 14.27c-.25-.72-.38-1.49-.38-2.27s.13-1.55.38-2.27V6.58H1.25C.45 8.18 0 9.99 0 12s.45 3.82 1.25 5.42l4.03-3.15z"/>
+                  <path fill="#EA4335" d="M12 4.75c1.77 0 3.35.61 4.6 1.8l3.42-3.42C17.95 1.19 15.24 0 12 0 7.34 0 3.26 2.64 1.25 6.58l4.03 3.15c.95-2.83 3.6-4.98 6.72-4.98z"/>
+                </svg>
+                <span id="login-btn-text">Google 帳號登入</span>
+              </button>
+            </div>
+          </article>
+
+          <!-- 雙欄功能模組網格（由 main.js 動態渲染自 config.json） -->
+          <section class="modules-grid" id="modules-grid" aria-label="功能模組選單">
+            <!-- 動態插入模組卡片 -->
+          </section>
+
+        </div>
+      </section>
+
+      <!-- =================================================================
+           場景二：世界大地圖全螢幕視圖 (Scene: World Map)
+           ================================================================= -->
+      <section id="scene-world-map" class="scene hidden">
+        <header class="map-header">
+          <button class="back-btn" id="btn-back-cave">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M19 12H5M12 19l-7-7 7-7"/>
+            </svg>
+            返回洞府
+          </button>
+          <div class="hero-status-pill">
+            <span class="pulse-dot"></span>
+            蠻荒仙府世界圖志
+          </div>
+        </header>
+
+        <div class="map-canvas-container" id="map-canvas-container">
+          <img class="world-map-img" id="world-map-img" src="assets/design/世界地圖.jfif" alt="修仙大地圖" onerror="this.src='assets/design/世界地圖(含小雪所在位置).jfif'">
+          
+          <!-- 小雪秘境定位錨點（可點擊傳送回洞府） -->
+          <div class="map-pin-sanctuary" id="map-pin-sanctuary" style="top: 52%; left: 50%;">
+            <div class="pin-ripple">
+              <span class="pin-core-icon">🧘‍♀️</span>
+            </div>
+            <div class="pin-label">小雪修仙秘境（點擊返回）</div>
+          </div>
+        </div>
+      </section>
+
+      <!-- =================================================================
+           全域彈窗：修為狀態面板 (Modal: Cultivation Stats)
+           ================================================================= -->
+      <div class="modal-backdrop" id="modal-stats" role="dialog" aria-modal="true">
+        <div class="modal-card">
+          <div class="modal-header">
+            <h3>修仙者道基狀態</h3>
+            <button class="modal-close-btn" id="btn-close-stats" aria-label="關閉">&times;</button>
+          </div>
+          <div class="modal-body">
+            <div class="stat-row">
+              <span class="stat-label">當前境界</span>
+              <span class="stat-value" id="stat-realm" style="color: var(--accent-cyan);">煉氣初期</span>
+            </div>
+            <div class="stat-row">
+              <span class="stat-label">修為境界進度</span>
+              <span class="stat-value" id="stat-exp-text">120 / 300 靈氣</span>
+            </div>
+            <div class="progress-container">
+              <div class="progress-bar" id="stat-exp-bar" style="width: 40%;"></div>
+            </div>
+            <div style="height: 14px;"></div>
+            <div class="stat-row">
+              <span class="stat-label">隨身靈石</span>
+              <span class="stat-value" id="stat-stones" style="color: var(--accent-gold);">88 顆</span>
+            </div>
+            <div class="stat-row">
+              <span class="stat-label">異獸討伐數</span>
+              <span class="stat-value" id="stat-beasts">0 隻</span>
+            </div>
+            <div class="stat-row">
+              <span class="stat-label">英文法咒掌握</span>
+              <span class="stat-value" id="stat-words">0 個</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </main>
+  </div>
+
+  <!-- 主邏輯程式碼 -->
+  <script src="main.js"></script>
+</body>
+</html>

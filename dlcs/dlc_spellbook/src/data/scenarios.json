@@ -1,0 +1,1770 @@
+[
+  {
+    "id": 1,
+    "title": { "zh": "機場報到", "en": "Airport Check-in" },
+    "category": "travel",
+    "learning_objective": { "zh": "學習機場報到流程中的基礎溝通及行李處理能力。", "en": "Learn basic airport check-in and baggage handling." },
+    "a2": {
+      "scene": "旅客在機場櫃檯辦理登機手續",
+      "learning_focus": ["基礎報到英文", "護照與行李單字"],
+      "learning_note": "基本溝通流程：出示護照、確認行李。",
+      "dialogue": [
+        { "speaker": "旅客", "text": "I have a reservation.", "translation": "我有一份預約。" },
+        { "speaker": "櫃檯人員", "text": "May I see your passport?", "translation": "我可以看一下您的護照嗎？" },
+        { "speaker": "旅客", "text": "Here you are.", "translation": "在這裡。" },
+        { "speaker": "櫃檯人員", "text": "Do you have any baggage to check in?", "translation": "您有任何託運行李嗎？" },
+        { "speaker": "旅客", "text": "Yes, one suitcase.", "translation": "是的，一個行李箱。" },
+        { "speaker": "櫃檯人員", "text": "Here is your boarding pass.", "translation": "這是您的登機證。" },
+        { "speaker": "旅客", "text": "Thank you.", "translation": "謝謝。" }
+      ],
+      "key_sentences": ["I have a reservation", "May I see your passport"]
+    },
+    "b2": {
+      "scene": "處理座位變更與行李超重協商",
+      "learning_focus": ["問題處理", "正式請求"],
+      "learning_note": "訓練在遇到突發狀況時的應對與付費協商。",
+      "dialogue": [
+        { "speaker": "旅客", "text": "I checked in online, but I’d like to confirm my seat.", "translation": "我已經網上報到了，但我想確認我的座位。" },
+        { "speaker": "櫃檯人員", "text": "Let me check. Your seat was changed.", "translation": "讓我查一下。您的座位被更換了。" },
+        { "speaker": "旅客", "text": "Can I get an aisle seat instead?", "translation": "我可以換成靠走道的座位嗎？" },
+        { "speaker": "櫃檯人員", "text": "I can try to rearrange it.", "translation": "我可以試著重新安排。" },
+        { "speaker": "旅客", "text": "Also, can I pay for overweight baggage here?", "translation": "另外，我可以在這裡支付超重行李費嗎？" },
+        { "speaker": "櫃檯人員", "text": "Yes, you can pay at this counter.", "translation": "是的，您可以在這個櫃檯支付。" },
+        { "speaker": "旅客", "text": "Thanks for your help.", "translation": "謝謝您的幫忙。" }
+      ],
+      "key_sentences": ["I’d like to confirm my seat", "Can I pay for it here"]
+    }
+  },
+  {
+    "id": 2,
+    "title": { "zh": "登機與安檢", "en": "Security / Boarding" },
+    "category": "travel",
+    "learning_objective": { "zh": "學習通過機場安檢的流程，以及正確理解並執行工作人員的指令。", "en": "Learn the security screening process and how to follow staff instructions." },
+    "a2": {
+      "scene": "旅客正在通過機場安全檢查點",
+      "learning_focus": ["安檢常見動詞 (remove, take out)", "物件單字 (laptop, liquids, jacket)", "基礎指令句型"],
+      "learning_note": "重點在於聽懂指示並迅速反應，減少安檢時間。",
+      "dialogue": [
+        { "speaker": "櫃檯人員", "text": "Please put your bags on the belt.", "translation": "請把您的包放在傳送帶上。" },
+        { "speaker": "旅客", "text": "Do I need to take out my laptop?", "translation": "我需要把筆記型電腦拿出來嗎？" },
+        { "speaker": "櫃檯人員", "text": "Yes, and please remove your jacket as well.", "translation": "是的，也請脫掉您的夾克。" },
+        { "speaker": "旅客", "text": "Should I take off my shoes?", "translation": "我需要脫鞋嗎？" },
+        { "speaker": "櫃檯人員", "text": "No, that's not necessary. Step through the scanner, please.", "translation": "不，那沒必要。請通過掃描儀。" },
+        { "speaker": "旅客", "text": "(Beep) Oh, sorry!", "translation": "（嗶）喔，抱歉！" },
+        { "speaker": "櫃檯人員", "text": "Empty your pockets and try again.", "translation": "請清空口袋再試一次。" },
+        { "speaker": "旅客", "text": "It was my keys. Here you go.", "translation": "那是我的鑰匙。給你。" }
+      ],
+      "key_sentences": ["take out my laptop", "remove your jacket", "empty your pockets"]
+    },
+    "b2": {
+      "scene": "旅客在安檢時被要求開箱檢查，並在登機口詢問升等。",
+      "learning_focus": ["開箱檢查應對", "解釋物品用途", "登機口詢問句型", "升等表達法"],
+      "learning_note": "學習如何專業地詢問升等可能性，以及冷靜配合安檢抽查。",
+      "dialogue": [
+        { "speaker": "櫃檯人員", "text": "Excuse me, sir. We need to open your bag for a manual check.", "translation": "不好意思，先生。我們需要打開您的包進行人工檢查。" },
+        { "speaker": "旅客", "text": "Is there a problem? I'm in a bit of a rush for my flight.", "translation": "有什麼問題嗎？我正趕著去搭飛機。" },
+        { "speaker": "櫃檯人員", "text": "Just a routine check. There's an unidentified liquid in your bag.", "translation": "只是例行檢查。您的包裡有不明液體。" },
+        { "speaker": "旅客", "text": "That's just my facial toner. It's under 100ml.", "translation": "那只是我的化妝水。不到100毫升。" },
+        { "speaker": "櫃檯人員", "text": "I see. Next time, please put all liquids in a clear plastic bag.", "translation": "我明白了。下次請將所有液體放入透明塑料袋中。" },
+        { "speaker": "旅客", "text": "(At the gate) Excuse me, are there any upgrades available for this flight?", "translation": "（在登機口）抱歉，這架航班有升等機會嗎？" },
+        { "speaker": "櫃檯人員", "text": "The flight is fully booked today, but I can check the standby list.", "translation": "今天航班已滿，但我可以幫您查備選名單。" },
+        { "speaker": "旅客", "text": "I understand. I have a long layover later, so I was hoping for more comfort.", "translation": "我明白。我待會要長時間轉機，所以希望能舒服一點。" }
+      ],
+      "key_sentences": ["manual check", "unidentified liquid", "upgrades available", "standby list"]
+    }
+  },
+  {
+    "id": 3,
+    "title": { "zh": "航班延誤 / 改票", "en": "Flight Change" },
+    "category": "travel",
+    "learning_objective": { "zh": "學習因應航班延誤或取消時的基礎應對與改票流程。", "en": "Learn basic responses and rebooking procedures for flight delays or cancellations." },
+    "a2": {
+      "scene": "旅客在機場櫃檯詢問航班延誤情況",
+      "learning_focus": ["延遲相關單字 (delayed, cancelled)", "詢問時間句型", "簡單表達不滿"],
+      "learning_note": "能夠聽懂延誤通知並詢問替代方案。",
+      "dialogue": [
+        { "speaker": "旅客", "text": "My flight is delayed. When will it depart?", "translation": "我的航班延誤了。什麼時候起飛？" },
+        { "speaker": "櫃檯人員", "text": "I'm sorry, it's delayed by two hours.", "translation": "抱歉，延誤了兩個小時。" },
+        { "speaker": "旅客", "text": "That's a long time. Can I get another flight?", "translation": "那很久。我可以換其他航班嗎？" },
+        { "speaker": "櫃檯人員", "text": "Let me check. There is a flight at 3 PM.", "translation": "我查一下。下午三點有一班。" },
+        { "speaker": "旅客", "text": "Yes, please change to that one.", "translation": "好的，請幫我換到那班。" },
+        { "speaker": "櫃檯人員", "text": "OK. Here is your new boarding pass.", "translation": "好的。這是您的新登機證。" },
+        { "speaker": "旅客", "text": "Thank you for your help.", "translation": "謝謝您的幫忙。" }
+      ],
+      "key_sentences": ["flight is delayed", "get another flight", "change to that one"]
+    },
+    "b2": {
+      "scene": "航班取消後要求轉簽他航並爭取補償",
+      "learning_focus": ["航班取消應對", "轉簽他航表達", "補償請求 (voucher, hotel)"],
+      "learning_note": "學習在非自願情況下維護權益，要求合理安排。",
+      "dialogue": [
+        { "speaker": "旅客", "text": "My flight has been cancelled. I need to get to London today.", "translation": "我的航班被取消了。我今天必須到倫敦。" },
+        { "speaker": "櫃檯人員", "text": "I'm very sorry. The next available flight is tomorrow morning.", "translation": "非常抱歉。下一班有空位的航班是明天早上。" },
+        { "speaker": "旅客", "text": "That's unacceptable. Can you rebook me on another airline?", "translation": "這無法接受。你能幫我轉簽到其他航空公司嗎？" },
+        { "speaker": "櫃檯人員", "text": "I can check. British Airways has a flight at 6 PM.", "translation": "我可以查查。英國航空下午六點有班機。" },
+        { "speaker": "旅客", "text": "Please do that. Also, what about compensation for the delay?", "translation": "請那樣做。另外，延誤的補償呢？" },
+        { "speaker": "櫃檯人員", "text": "You will receive a meal voucher and we can arrange a hotel if needed.", "translation": "您會收到餐券，如果需要我們也可以安排飯店。" },
+        { "speaker": "旅客", "text": "Thank you. Please send the confirmation to my email.", "translation": "謝謝。請將確認信寄到我的電子郵件。" }
+      ],
+      "key_sentences": ["flight has been cancelled", "rebook me on another airline", "compensation for the delay", "meal voucher"]
+    }
+  },
+  {
+    "id": 4,
+    "title": { "zh": "託運行李", "en": "Baggage Claim" },
+    "category": "travel",
+    "learning_objective": { "zh": "學習行李託運、遺失申報及索賠的基本對話。", "en": "Learn basic conversations for baggage check-in, lost luggage reporting and claims." },
+    "a2": {
+      "scene": "旅客在行李轉盤等待行李",
+      "learning_focus": ["行李單字 (suitcase, bag)", "遺失表達", "填表用語"],
+      "learning_note": "能夠描述行李外觀並請求協助。",
+      "dialogue": [
+        { "speaker": "旅客", "text": "I can't find my suitcase.", "translation": "我找不到我的行李箱。" },
+        { "speaker": "地勤人員", "text": "What does it look like?", "translation": "它長什麼樣子？" },
+        { "speaker": "旅客", "text": "It's a black hard-shell suitcase.", "translation": "是一個黑色的硬殼行李箱。" },
+        { "speaker": "地勤人員", "text": "Do you have your baggage claim tag?", "translation": "您有行李提領牌嗎？" },
+        { "speaker": "旅客", "text": "Yes, here it is.", "translation": "有的，在這裡。" },
+        { "speaker": "地勤人員", "text": "Please fill out this form. We will contact you.", "translation": "請填寫這張表格。我們會聯繫您。" },
+        { "speaker": "旅客", "text": "Thank you. I hope you find it soon.", "translation": "謝謝。希望你們快點找到。" }
+      ],
+      "key_sentences": ["can't find my suitcase", "baggage claim tag", "fill out this form"]
+    },
+    "b2": {
+      "scene": "行李延誤超過24小時，要求賠償及緊急用品補貼",
+      "learning_focus": ["行李延誤索賠", "緊急用品補貼", "正式投訴語氣"],
+      "learning_note": "學習引用航空法規爭取合理賠償。",
+      "dialogue": [
+        { "speaker": "旅客", "text": "My bag hasn't arrived for over 24 hours. I need to file a claim.", "translation": "我的行李已經超過24小時沒到。我需要申報索賠。" },
+        { "speaker": "地勤人員", "text": "I apologize for the inconvenience. Please provide your report reference number.", "translation": "很抱歉造成不便。請提供您的申報編號。" },
+        { "speaker": "旅客", "text": "It's BA-12345. I've had to buy essential items like toiletries and clothes.", "translation": "編號 BA-12345。我已經買了像是盥洗用品和衣服等必需品。" },
+        { "speaker": "地勤人員", "text": "You are entitled to reimbursement for reasonable expenses. Do you have receipts?", "translation": "您有權獲得合理費用的補償。您有收據嗎？" },
+        { "speaker": "旅客", "text": "Yes, I kept all of them. What is the maximum amount?", "translation": "有，我全部留著。最高金額是多少？" },
+        { "speaker": "地勤人員", "text": "Up to 100 euros per day. Please email the receipts to our claims department.", "translation": "每天最多100歐元。請將收據用電子郵件寄給我們的索賠部門。" },
+        { "speaker": "旅客", "text": "I will. Also, please update me on the bag's location as soon as possible.", "translation": "我會的。另外，請盡快告訴我行李的位置。" }
+      ],
+      "key_sentences": ["file a claim", "entitled to reimbursement", "reasonable expenses", "claims department"]
+    }
+  },
+  {
+    "id": 5,
+    "title": { "zh": "出租車 / Uber", "en": "Taxi Ride" },
+    "category": "travel",
+    "learning_objective": { "zh": "學習搭乘計程車或叫車服務時的基礎溝通，包括告知地點與付款。", "en": "Learn basic communication when taking a taxi or ride-hailing service, including giving directions and payment." },
+    "a2": {
+      "scene": "旅客在路邊攔計程車並前往飯店",
+      "learning_focus": ["目的地表達", "詢問車資", "付款用語"],
+      "learning_note": "能夠清楚告知地址並確認費用。",
+      "dialogue": [
+        { "speaker": "旅客", "text": "Hello. I need to go to this address.", "translation": "你好。我要去這個地址。" },
+        { "speaker": "司機", "text": "Sure. Please get in. It's about 15 minutes.", "translation": "好的。請上車。大約15分鐘。" },
+        { "speaker": "旅客", "text": "How much will it cost?", "translation": "大概多少錢？" },
+        { "speaker": "司機", "text": "Around 20 dollars.", "translation": "大約20美元。" },
+        { "speaker": "旅客", "text": "OK. Do you take credit cards?", "translation": "好的。你們收信用卡嗎？" },
+        { "speaker": "司機", "text": "Yes, we do.", "translation": "是的，我們收。" },
+        { "speaker": "旅客", "text": "Here we are. Thank you. Keep the change.", "translation": "到了。謝謝。不用找了。" }
+      ],
+      "key_sentences": ["go to this address", "How much will it cost", "take credit cards", "keep the change"]
+    },
+    "b2": {
+      "scene": "使用Uber遇到路線爭議並與客服溝通",
+      "learning_focus": ["路線爭議表達", "客服申訴", "費用調整請求"],
+      "learning_note": "訓練在遇到多收費或路線問題時冷靜溝通。",
+      "dialogue": [
+        { "speaker": "旅客", "text": "I think you took a longer route than necessary.", "translation": "我覺得你繞路了。" },
+        { "speaker": "司機", "text": "No, the GPS suggested this way due to traffic.", "translation": "沒有，因為交通狀況GPS建議這條路。" },
+        { "speaker": "旅客", "text": "But the estimated fare was $15, and now it's $25. That's a big difference.", "translation": "但預估車資是15美元，現在是25美元。差太多了。" },
+        { "speaker": "司機", "text": "I can show you the app. There was an accident on the main road.", "translation": "我可以給你看app。主要道路上有事故。" },
+        { "speaker": "旅客", "text": "I understand, but I still want to dispute the fare. I'll contact Uber support.", "translation": "我理解，但我還是要對車費提出異議。我會聯繫Uber客服。" },
+        { "speaker": "旅客（事後）", "text": "Hello, my trip was overcharged due to a disputed route. Can you review it?", "translation": "您好，我的行程因為路線爭議被多收費。您可以審查一下嗎？" },
+        { "speaker": "客服", "text": "We will investigate and adjust the fare if necessary. Please allow 24 hours.", "translation": "我們會調查，必要時調整車資。請等待24小時。" }
+      ],
+      "key_sentences": ["took a longer route", "estimated fare", "dispute the fare", "Uber support"]
+    }
+  },
+  {
+    "id": 6,
+    "title": { "zh": "地鐵 / 公車", "en": "Transportation" },
+    "category": "travel",
+    "learning_objective": { "zh": "學習搭乘大眾運輸工具的基礎用語，包括購票、詢問路線等。", "en": "Learn basic terms for using public transportation, including buying tickets and asking for routes." },
+    "a2": {
+      "scene": "旅客在地鐵站購票並詢問路線",
+      "learning_focus": ["票種 (single ticket, day pass)", "路線詢問", "站名發音"],
+      "learning_note": "能夠購買車票並確認搭乘方向。",
+      "dialogue": [
+        { "speaker": "旅客", "text": "Excuse me. Where can I buy a ticket?", "translation": "不好意思。哪裡可以買票？" },
+        { "speaker": "站務員", "text": "You can use the ticket machine over there.", "translation": "你可以用那邊的自動售票機。" },
+        { "speaker": "旅客", "text": "I need to go to Central Station. Which line?", "translation": "我要去中央車站。坐哪一條線？" },
+        { "speaker": "站務員", "text": "Take the blue line southbound.", "translation": "搭乘藍線往南方向。" },
+        { "speaker": "旅客", "text": "How many stops?", "translation": "幾站？" },
+        { "speaker": "站務員", "text": "Three stops. Get off at Central.", "translation": "三站。在中央站下車。" },
+        { "speaker": "旅客", "text": "Thank you very much.", "translation": "非常謝謝你。" }
+      ],
+      "key_sentences": ["Where can I buy a ticket", "Which line", "How many stops"]
+    },
+    "b2": {
+      "scene": "公車路線臨時改道，旅客詢問替代方案並客訴",
+      "learning_focus": ["路線變更應對", "替代方案詢問", "客訴信件撰寫"],
+      "learning_note": "學習處理突發交通狀況並有效投訴。",
+      "dialogue": [
+        { "speaker": "旅客", "text": "Excuse me, the bus didn't stop at my usual stop. Is there a detour?", "translation": "不好意思，公車沒有在我平常下車的站停。是有改道嗎？" },
+        { "speaker": "司機", "text": "Yes, due to road construction, we are skipping two stops.", "translation": "是的，因為道路施工，我們跳過兩站。" },
+        { "speaker": "旅客", "text": "That's inconvenient. Where is the nearest alternative stop?", "translation": "那很不方便。最近的替代站牌在哪？" },
+        { "speaker": "司機", "text": "You can get off at the next stop and walk back about 5 minutes.", "translation": "你可以在下一站下車，往回走大約5分鐘。" },
+        { "speaker": "旅客", "text": "There was no prior announcement. I'll file a complaint with the transit authority.", "translation": "之前沒有任何公告。我要向交通局投訴。" },
+        { "speaker": "客服（電話）", "text": "We apologize for the lack of notice. We will forward your feedback.", "translation": "我們為缺乏通知道歉。我們會轉達您的反饋。" },
+        { "speaker": "旅客", "text": "Please ensure such changes are communicated in advance next time.", "translation": "請確保下次提前通知這樣的變更。" }
+      ],
+      "key_sentences": ["due to road construction", "alternative stop", "file a complaint", "communicated in advance"]
+    }
+  },
+  {
+    "id": 7,
+    "title": { "zh": "問路", "en": "Asking Directions" },
+    "category": "travel",
+    "learning_objective": { "zh": "學習如何問路及理解方向指引。", "en": "Learn how to ask for directions and understand guidance." },
+    "a2": {
+      "scene": "遊客在街上詢問去博物館的路",
+      "learning_focus": ["方向介係詞 (next to, across from)", "地標單字", "簡單指引句型"],
+      "learning_note": "能夠聽懂並重複確認方向。",
+      "dialogue": [
+        { "speaker": "旅客", "text": "Excuse me, I'm looking for the art museum.", "translation": "不好意思，我在找藝術博物館。" },
+        { "speaker": "路人", "text": "It's straight ahead. Go two blocks.", "translation": "就在前面。走兩個街區。" },
+        { "speaker": "旅客", "text": "Is it on the left or right?", "translation": "在左邊還是右邊？" },
+        { "speaker": "路人", "text": "On the left, next to the library.", "translation": "左邊，圖書館隔壁。" },
+        { "speaker": "旅客", "text": "Thank you. Is it far?", "translation": "謝謝。很遠嗎？" },
+        { "speaker": "路人", "text": "No, about a 5-minute walk.", "translation": "不遠，走路約5分鐘。" },
+        { "speaker": "旅客", "text": "Great. Thanks a lot!", "translation": "太好了。非常感謝！" }
+      ],
+      "key_sentences": ["looking for", "straight ahead", "on the left", "next to"]
+    },
+    "b2": {
+      "scene": "旅客迷路且手機沒電，向路人詢問複雜路線並請對方畫地圖",
+      "learning_focus": ["複雜路線描述", "迷路應對", "請求畫圖", "禮貌用語"],
+      "learning_note": "訓練在沒有科技輔助下用英語描述位置並理解複雜指示。",
+      "dialogue": [
+        { "speaker": "旅客", "text": "I'm afraid I'm lost. My phone died and I need to get to the old town.", "translation": "我恐怕迷路了。我手機沒電了，我需要去舊城區。" },
+        { "speaker": "路人", "text": "Don't worry. It's a bit tricky. First, go down this street until you see a fountain.", "translation": "別擔心。有點複雜。首先，沿這條街走直到看到一個噴泉。" },
+        { "speaker": "旅客", "text": "A fountain. OK. And then?", "translation": "噴泉。好。然後呢？" },
+        { "speaker": "路人", "text": "Turn right at the fountain, then left at the second alley. The old town entrance will be on your right.", "translation": "在噴泉右轉，然後在第二條小巷左轉。舊城區入口就在你右邊。" },
+        { "speaker": "旅客", "text": "That sounds complicated. Could you draw a quick map for me?", "translation": "聽起來很複雜。你能幫我簡單畫個地圖嗎？" },
+        { "speaker": "路人", "text": "Sure. Here's a rough sketch. You'll also see signs after the first turn.", "translation": "當然。這是粗略的草圖。你在第一個轉彎後也會看到標誌。" },
+        { "speaker": "旅客", "text": "You've been very helpful. Thank you so much for your time.", "translation": "你幫了大忙。非常感謝你花時間。" }
+      ],
+      "key_sentences": ["I'm afraid I'm lost", "draw a quick map", "rough sketch", "You've been very helpful"]
+    }
+  },
+  {
+    "id": 8,
+    "title": { "zh": "租車", "en": "Car Rental" },
+    "category": "travel",
+    "learning_objective": { "zh": "學習租車相關對話，包括車型選擇、保險及還車事項。", "en": "Learn car rental conversations, including vehicle selection, insurance and return." },
+    "a2": {
+      "scene": "旅客在租車櫃檯租一輛經濟型轎車",
+      "learning_focus": ["車型單字 (compact, SUV)", "租期表達", "保險基本詞彙"],
+      "learning_note": "能夠順利完成租車手續。",
+      "dialogue": [
+        { "speaker": "旅客", "text": "I'd like to rent a car for three days.", "translation": "我想租一輛車，租三天。" },
+        { "speaker": "店員", "text": "What type of car do you prefer?", "translation": "您偏好哪種車型？" },
+        { "speaker": "旅客", "text": "An economy car is fine. How much per day?", "translation": "經濟型就可以。每天多少錢？" },
+        { "speaker": "店員", "text": "$30 per day, including basic insurance.", "translation": "每天30美元，含基本保險。" },
+        { "speaker": "旅客", "text": "Do I need to return the car with a full tank?", "translation": "我需要滿油還車嗎？" },
+        { "speaker": "店員", "text": "Yes, please. Here are the keys. Have a nice trip.", "translation": "是的。這是鑰匙。祝您旅途愉快。" }
+      ],
+      "key_sentences": ["rent a car for three days", "economy car", "basic insurance", "full tank"]
+    },
+    "b2": {
+      "scene": "租車時遇到隱藏費用及車輛刮傷爭議",
+      "learning_focus": ["費用明細詢問", "車輛損傷檢查", "爭議協商"],
+      "learning_note": "訓練仔細檢查合約並處理還車時的糾紛。",
+      "dialogue": [
+        { "speaker": "旅客", "text": "I reserved a compact car online for $120 total. Why is the total now $180?", "translation": "我在網上預訂了一輛緊湊型車，總價120美元。為什麼現在總共是180美元？" },
+        { "speaker": "店員", "text": "That includes mandatory liability insurance and a young driver fee.", "translation": "那包含了強制責任險和年輕駕駛人費用。" },
+        { "speaker": "旅客", "text": "I wasn't informed about those fees. Can you remove the young driver fee? I'm 25.", "translation": "沒有人告知我這些費用。你能取消年輕駕駛人費用嗎？我25歲了。" },
+        { "speaker": "店員", "text": "I'll check. Actually, you are just above the age limit. I can waive it.", "translation": "我查一下。實際上您剛好超過年齡限制。我可以免除。" },
+        { "speaker": "旅客", "text": "Thank you. Also, I noticed a scratch on the door. I want it noted before I drive off.", "translation": "謝謝。另外，我注意到車門上有一道刮痕。我希望在我開走前記錄下來。" },
+        { "speaker": "店員", "text": "Let me mark it on the rental agreement. You are wise to do that.", "translation": "讓我在租賃協議上標記。您這樣做很明智。" },
+        { "speaker": "旅客", "text": "I've had bad experiences before. Better safe than sorry.", "translation": "我以前有過不好的經驗。小心駛得萬年船。" }
+      ],
+      "key_sentences": ["mandatory liability insurance", "waive the fee", "noted before I drive off", "rental agreement"]
+    }
+  },
+  {
+    "id": 9,
+    "title": { "zh": "旅遊詢問", "en": "Tourist Information" },
+    "category": "travel",
+    "learning_objective": { "zh": "學習在遊客中心詢問景點資訊、開放時間及票價。", "en": "Learn to ask for attraction info, opening hours and ticket prices at a tourist information center." },
+    "a2": {
+      "scene": "旅客在遊客中心詢問當地景點",
+      "learning_focus": ["景點名稱", "開放時間", "票價詢問"],
+      "learning_note": "能夠取得基本旅遊資訊。",
+      "dialogue": [
+        { "speaker": "旅客", "text": "What are the most popular attractions here?", "translation": "這裡最受歡迎的景點是什麼？" },
+        { "speaker": "服務人員", "text": "The castle and the botanical garden are very popular.", "translation": "城堡和植物園很受歡迎。" },
+        { "speaker": "旅客", "text": "What time does the castle open?", "translation": "城堡幾點開門？" },
+        { "speaker": "服務人員", "text": "It opens at 9 AM and closes at 5 PM.", "translation": "早上9點開門，下午5點關門。" },
+        { "speaker": "旅客", "text": "How much is the entrance fee?", "translation": "門票多少錢？" },
+        { "speaker": "服務人員", "text": "10 euros for adults. Children are free.", "translation": "成人10歐元。兒童免費。" },
+        { "speaker": "旅客", "text": "Can I get a map of the city?", "translation": "我可以拿一張城市地圖嗎？" }
+      ],
+      "key_sentences": ["popular attractions", "What time does it open", "entrance fee", "map of the city"]
+    },
+    "b2": {
+      "scene": "旅客計畫一日遊，詢問交通聯票及人潮較少的秘境",
+      "learning_focus": ["一日遊規劃", "交通聯票", "推薦秘境", "避開人潮"],
+      "learning_note": "學習深入詢問旅遊細節，獲得客製化建議。",
+      "dialogue": [
+        { "speaker": "旅客", "text": "I have only one day. Can you suggest an itinerary that avoids crowds?", "translation": "我只有一天。你能建議一個避開人潮的行程嗎？" },
+        { "speaker": "服務人員", "text": "Sure. Start early at the castle (right when it opens), then visit the less-known museum of ceramics.", "translation": "當然。早點去城堡（一開門就去），然後參觀較不知名的陶瓷博物館。" },
+        { "speaker": "旅客", "text": "That sounds perfect. Is there a combined ticket for transportation and attractions?", "translation": "聽起來很完美。有交通和景點的聯票嗎？" },
+        { "speaker": "服務人員", "text": "Yes, the City Pass gives you free entry to 10 museums and unlimited public transport for 24 hours.", "translation": "有的，城市通行證可以免費進入10個博物館，並在24小時內無限次搭乘大眾運輸。" },
+        { "speaker": "旅客", "text": "Where can I buy it? And does it include the castle?", "translation": "哪裡可以買？包含城堡嗎？" },
+        { "speaker": "服務人員", "text": "You can buy it here or online. Yes, the castle is included but you need to reserve a time slot in advance.", "translation": "您可以在這裡或線上購買。有的，包含城堡，但需要提前預約時段。" },
+        { "speaker": "旅客", "text": "Great. I'll buy it here. Also, any local restaurant recommendations for lunch near the museum?", "translation": "太好了。我在這裡買。另外，博物館附近有推薦的午餐餐廳嗎？" }
+      ],
+      "key_sentences": ["avoids crowds", "combined ticket", "City Pass", "reserve a time slot"]
+    }
+  },
+  {
+    "id": 10,
+    "title": { "zh": "過海關", "en": "Immigration" },
+    "category": "travel",
+    "learning_objective": { "zh": "學習通過海關時的基礎問答，如目的、停留時間等。", "en": "Learn basic Q&A at immigration, such as purpose of visit and length of stay." },
+    "a2": {
+      "scene": "旅客抵達外國機場，通過護照查驗",
+      "learning_focus": ["旅行目的詞彙 (tourism, business)", "停留時間回答", "住宿表達"],
+      "learning_note": "能夠簡短正確回答官員問題。",
+      "dialogue": [
+        { "speaker": "海關人員", "text": "What is the purpose of your visit?", "translation": "您此行的目的是？" },
+        { "speaker": "旅客", "text": "Tourism.", "translation": "觀光。" },
+        { "speaker": "海關人員", "text": "How long will you stay?", "translation": "您會停留多久？" },
+        { "speaker": "旅客", "text": "One week.", "translation": "一週。" },
+        { "speaker": "海關人員", "text": "Where will you be staying?", "translation": "您會住在哪裡？" },
+        { "speaker": "旅客", "text": "At a hotel in downtown.", "translation": "在市區的一家飯店。" },
+        { "speaker": "海關人員", "text": "Do you have a return ticket?", "translation": "您有回程機票嗎？" },
+        { "speaker": "旅客", "text": "Yes, here it is.", "translation": "有的，在這裡。" }
+      ],
+      "key_sentences": ["purpose of your visit", "How long will you stay", "return ticket"]
+    },
+    "b2": {
+      "scene": "旅客因商務目的入境，被問及詳細行程及邀請函",
+      "learning_focus": ["商務訪問用語", "邀請函說明", "行程詳細描述", "應對深入提問"],
+      "learning_note": "訓練在面對更多細節提問時保持鎮定並提供文件。",
+      "dialogue": [
+        { "speaker": "海關人員", "text": "What is the nature of your business trip?", "translation": "您商務旅行的性質是什麼？" },
+        { "speaker": "旅客", "text": "I am attending a software conference and meeting potential clients.", "translation": "我要參加一個軟體會議並拜訪潛在客戶。" },
+        { "speaker": "海關人員", "text": "Do you have an invitation letter from the conference organizer or the clients?", "translation": "您有會議主辦方或客戶的邀請函嗎？" },
+        { "speaker": "旅客", "text": "Yes, I have both. Here is the conference registration and an email from our partner company.", "translation": "有的，我都有。這是會議註冊證明，以及我們合作公司的電子郵件。" },
+        { "speaker": "海關人員", "text": "How long will you be staying? And what is your planned itinerary?", "translation": "您會停留多久？您的計劃行程是什麼？" },
+        { "speaker": "旅客", "text": "Ten days. The first three days are for the conference, then three days of meetings, and the rest for sightseeing.", "translation": "十天。頭三天參加會議，接著三天開會，剩下時間觀光。" },
+        { "speaker": "海關人員", "text": "Do you have sufficient funds for your stay?", "translation": "您有足夠的資金支付停留期間的費用嗎？" },
+        { "speaker": "旅客", "text": "Yes, I have credit cards and a company credit card for expenses. Would you like to see my bank statement?", "translation": "是的，我有信用卡和公司信用卡支付開銷。您要看我的銀行對帳單嗎？" },
+        { "speaker": "海關人員", "text": "That won't be necessary. Enjoy your trip.", "translation": "不需要了。祝您旅途愉快。" }
+      ],
+      "key_sentences": ["nature of your business trip", "invitation letter", "planned itinerary", "sufficient funds"]
+    }
+  },
+  {
+    "id": 11,
+    "title": { "zh": "飯店入住", "en": "Hotel Check-in" },
+    "category": "accommodation",
+    "learning_objective": { "zh": "學習辦理飯店入住的基礎對話，包括預訂確認及設施詢問。", "en": "Learn basic hotel check-in conversations, including reservation confirmation and facility inquiries." },
+    "a2": {
+      "scene": "旅客抵達飯店櫃檯辦理入住",
+      "learning_focus": ["預訂確認用語", "入住/退房時間", "房間鑰匙"],
+      "learning_note": "能順利完成入住手續。",
+      "dialogue": [
+        { "speaker": "旅客", "text": "Hello, I have a reservation under the name Wang.", "translation": "你好，我有一個王先生的預訂。" },
+        { "speaker": "櫃檯人員", "text": "Welcome. May I see your passport?", "translation": "歡迎。可以看一下您的護照嗎？" },
+        { "speaker": "旅客", "text": "Here you are.", "translation": "在這裡。" },
+        { "speaker": "櫃檯人員", "text": "You have booked a single room for two nights. Is that correct?", "translation": "您預訂了一間單人房住兩晚，對嗎？" },
+        { "speaker": "旅客", "text": "Yes.", "translation": "對的。" },
+        { "speaker": "櫃檯人員", "text": "Here is your key. Check-out is at 11 AM.", "translation": "這是您的鑰匙。退房時間是上午11點。" },
+        { "speaker": "旅客", "text": "What time is breakfast?", "translation": "早餐幾點？" },
+        { "speaker": "櫃檯人員", "text": "From 7 to 10 AM in the lobby.", "translation": "早上7點到10點在大廳。" }
+      ],
+      "key_sentences": ["have a reservation", "single room for two nights", "check-out is at 11 AM", "What time is breakfast"]
+    },
+    "b2": {
+      "scene": "旅客入住時發現房間與預訂不符，要求升級並協商價格",
+      "learning_focus": ["房間不符抱怨", "升級請求", "價格協商", "替代方案"],
+      "learning_note": "訓練處理預訂問題並爭取更好安排。",
+      "dialogue": [
+        { "speaker": "旅客", "text": "I booked a deluxe ocean-view room, but this room faces the parking lot.", "translation": "我預訂的是豪華海景房，但這個房間面向停車場。" },
+        { "speaker": "櫃檯人員", "text": "I'm sorry for the mistake. Let me check availability. Unfortunately, we are fully booked for ocean-view rooms tonight.", "translation": "很抱歉出錯了。讓我查詢空房。不幸的是，今晚海景房已經訂滿了。" },
+        { "speaker": "旅客", "text": "That's disappointing. Is there any other upgrade you can offer? A suite perhaps?", "translation": "這令人失望。你們能提供其他升級嗎？也許一間套房？" },
+        { "speaker": "櫃檯人員", "text": "We do have a junior suite available, but it is usually $100 more per night.", "translation": "我們有一間小型套房，但通常每晚貴100美元。" },
+        { "speaker": "旅客", "text": "Since it was your error, could you waive the difference for tonight? I would be willing to pay the upgrade for the second night.", "translation": "既然這是你們的錯誤，今晚能免除差額嗎？第二晚我願意支付升等費用。" },
+        { "speaker": "櫃檯人員", "text": "Let me talk to my manager. I think we can offer you the junior suite at no extra charge for the first night.", "translation": "讓我與經理談談。我想我們可以第一晚免費為您升級到小型套房。" },
+        { "speaker": "旅客", "text": "That would be acceptable. I appreciate your flexibility.", "translation": "那可以接受。感謝您的通融。" },
+        { "speaker": "櫃檯人員", "text": "You're welcome. We'll also add a complimentary fruit basket as an apology.", "translation": "不客氣。我們還會提供免費水果籃作為道歉。" }
+      ],
+      "key_sentences": ["booked a deluxe ocean-view room", "junior suite", "waive the difference", "complimentary fruit basket"]
+    }
+  },
+  {
+    "id": 12,
+    "title": { "zh": "飯店退房", "en": "Hotel Check-out" },
+    "category": "accommodation",
+    "learning_objective": { "zh": "學習退房流程，包括結帳、寄放行李及表達住宿體驗。", "en": "Learn check-out procedures, including settling the bill, luggage storage and giving feedback." },
+    "a2": {
+      "scene": "旅客辦理退房並結清費用",
+      "learning_focus": ["退房用語", "費用確認", "付款方式"],
+      "learning_note": "能順利完成退房並支付額外費用。",
+      "dialogue": [
+        { "speaker": "旅客", "text": "I'd like to check out, please. Room 205.", "translation": "我要退房。205號房。" },
+        { "speaker": "櫃檯人員", "text": "Certainly. Here is your bill. You had two nights and one breakfast.", "translation": "好的。這是您的帳單。您住了兩晚並用了一次早餐。" },
+        { "speaker": "旅客", "text": "Can you explain the service charge?", "translation": "能解釋一下服務費嗎？" },
+        { "speaker": "櫃檯人員", "text": "It's a 10% service fee added to all bills.", "translation": "所有帳單都會加收10%服務費。" },
+        { "speaker": "旅客", "text": "I see. Can I pay by credit card?", "translation": "原來如此。我可以刷信用卡嗎？" },
+        { "speaker": "櫃檯人員", "text": "Yes. Please sign here. Would you like a printed receipt?", "translation": "可以。請在這裡簽名。您需要紙本收據嗎？" },
+        { "speaker": "旅客", "text": "Yes, please. Thank you.", "translation": "好的。謝謝。" }
+      ],
+      "key_sentences": ["check out", "here is your bill", "service charge", "printed receipt"]
+    },
+    "b2": {
+      "scene": "退房時發現帳單有誤（多收費），要求更正並協商部分折扣",
+      "learning_focus": ["帳單爭議", "費用明細核對", "要求更正", "折扣協商"],
+      "learning_note": "訓練仔細檢查帳單並有效爭取權益。",
+      "dialogue": [
+        { "speaker": "旅客", "text": "I'm checking out, but there seems to be a mistake on my bill. I was charged for two minibar items I didn't consume.", "translation": "我要退房，但我的帳單好像有誤。我被收了兩樣我沒消費的迷你吧商品。" },
+        { "speaker": "櫃檯人員", "text": "I apologize. Let me review the record. It shows a bottle of water and a chocolate bar charged at 9 PM yesterday.", "translation": "我很抱歉。讓我查看記錄。記錄顯示昨天晚上9點有一瓶水和一條巧克力。" },
+        { "speaker": "旅客", "text": "I was out for dinner at that time. Could it be a mistake from the previous guest? I only used the coffee maker.", "translation": "那個時間我在外面吃晚餐。是不是前一位客人的錯誤？我只用了咖啡機。" },
+        { "speaker": "櫃檯人員", "text": "I'll remove those charges immediately. Is there anything else?", "translation": "我會立即刪除這些費用。還有其他問題嗎？" },
+        { "speaker": "旅客", "text": "Also, the air conditioning was not working properly last night. I reported it but no one came.", "translation": "另外，昨晚空調運作不正常。我反應了但沒人來。" },
+        { "speaker": "櫃檯人員", "text": "I'm very sorry about that. As a gesture of goodwill, I can offer a 15% discount on your room rate.", "translation": "對此我非常抱歉。作為誠意，我可以給您房費15%的折扣。" },
+        { "speaker": "旅客", "text": "That would be fair. Thank you for handling this promptly.", "translation": "那很合理。感謝您迅速處理。" }
+      ],
+      "key_sentences": ["mistake on my bill", "minibar items", "remove those charges", "gesture of goodwill"]
+    }
+  },
+  {
+    "id": 13,
+    "title": { "zh": "房間問題", "en": "Room Issue" },
+    "category": "accommodation",
+    "learning_objective": { "zh": "學習回報房間硬體問題，如空調、熱水或馬桶故障，並要求維修或換房。", "en": "Learn to report room issues like AC, hot water or toilet problems, and request repair or room change." },
+    "a2": {
+      "scene": "旅客發現房間空調不冷，打電話給櫃檯",
+      "learning_focus": ["故障描述 (not working)", "要求維修", "簡單請求"],
+      "learning_note": "能夠清楚描述問題並要求協助。",
+      "dialogue": [
+        { "speaker": "旅客", "text": "Hello, this is room 310. The air conditioner is not working.", "translation": "你好，這裡是310房。空調壞了。" },
+        { "speaker": "櫃檯人員", "text": "I'm sorry to hear that. Did you try the remote control?", "translation": "很抱歉聽您這麼說。您試過遙控器了嗎？" },
+        { "speaker": "旅客", "text": "Yes, but nothing happens. It's very hot.", "translation": "試過了，但是沒反應。很熱。" },
+        { "speaker": "櫃檯人員", "text": "I will send maintenance to your room in 10 minutes.", "translation": "我會在10分鐘內派維修人員到您房間。" },
+        { "speaker": "旅客", "text": "Thank you. Please hurry.", "translation": "謝謝。請快一點。" },
+        { "speaker": "維修人員", "text": "Sorry for the trouble. It just needed a reset. It's working now.", "translation": "抱歉造成困擾。只需要重置一下。現在可以了。" }
+      ],
+      "key_sentences": ["air conditioner is not working", "send maintenance", "needed a reset"]
+    },
+    "b2": {
+      "scene": "旅客回報馬桶堵塞且熱水不足，要求換房並補償",
+      "learning_focus": ["多重問題回報", "要求換房", "補償請求", "禮貌但堅定語氣"],
+      "learning_note": "訓練整合多個問題並爭取合理補償。",
+      "dialogue": [
+        { "speaker": "旅客", "text": "I'm calling about two issues in my room. First, the toilet is clogged. Second, there's very little hot water.", "translation": "我打電話來關於我房間的兩個問題。第一，馬桶堵塞了。第二，熱水很少。" },
+        { "speaker": "櫃檯人員", "text": "I apologize. I will send a plumber and check the boiler immediately.", "translation": "我很抱歉。我會立刻派水電工並檢查鍋爐。" },
+        { "speaker": "旅客", "text": "We have already waited 30 minutes since the first call. Could you also consider moving us to another room? This is unacceptable for a four-star hotel.", "translation": "自從第一次打電話後我們已經等了30分鐘。你能不能考慮幫我們換到另一間房？這對四星級飯店來說是不可接受的。" },
+        { "speaker": "櫃檯人員", "text": "I understand your frustration. Let me check if a similar room is available. I have one on the 5th floor. Would that work?", "translation": "我理解您的不滿。我查詢是否有類似的空房。五樓有一間。可以嗎？" },
+        { "speaker": "旅客", "text": "Yes, but we would also like a late check-out tomorrow to make up for the inconvenience.", "translation": "可以，但我們也希望明天能延遲退房以彌補不便。" },
+        { "speaker": "櫃檯人員", "text": "I can offer a 2 PM check-out instead of 11 AM. I will also send a bellboy to help you move.", "translation": "我可以提供下午2點退房（原為11點）。我也會派行李員協助您搬遷。" },
+        { "speaker": "旅客", "text": "That's acceptable. Thank you for resolving this.", "translation": "可以接受。謝謝您解決這個問題。" }
+      ],
+      "key_sentences": ["toilet is clogged", "move us to another room", "late check-out", "resolve this"]
+    }
+  },
+  {
+    "id": 14,
+    "title": { "zh": "訂房", "en": "Reservation" },
+    "category": "accommodation",
+    "learning_objective": { "zh": "學習打電話或在櫃檯訂房，包括詢問房型、價格及取消政策。", "en": "Learn to make a reservation over the phone or at the front desk, including asking for room types, prices and cancellation policy." },
+    "a2": {
+      "scene": "旅客打電話到飯店預訂一間雙人房",
+      "learning_focus": ["訂房用語 (I'd like to book)", "日期表達", "取消政策"],
+      "learning_note": "能完成電話訂房並確認細節。",
+      "dialogue": [
+        { "speaker": "旅客", "text": "I'd like to book a double room for two nights, from May 10th to 12th.", "translation": "我想訂一間雙人房，從5月10日到12日，兩晚。" },
+        { "speaker": "櫃檯人員", "text": "Let me check availability. Yes, we have a room. The rate is $120 per night.", "translation": "我查詢空房。有的，一晚120美元。" },
+        { "speaker": "旅客", "text": "Does that include breakfast?", "translation": "包含早餐嗎？" },
+        { "speaker": "櫃檯人員", "text": "No, breakfast is $15 extra per person.", "translation": "不包含，早餐每人額外15美元。" },
+        { "speaker": "旅客", "text": "What is the cancellation policy?", "translation": "取消政策是什麼？" },
+        { "speaker": "櫃檯人員", "text": "You can cancel for free up to 48 hours before arrival.", "translation": "抵達前48小時內可免費取消。" },
+        { "speaker": "旅客", "text": "Great. I'll take it. Can I pay at check-in?", "translation": "太好了。我訂了。我可以入住時付款嗎？" }
+      ],
+      "key_sentences": ["book a double room", "rate per night", "cancellation policy", "pay at check-in"]
+    },
+    "b2": {
+      "scene": "旅客透過第三方網站訂房後想更改日期，但遇到差價問題，與飯店直接協商",
+      "learning_focus": ["更改訂房", "差價協商", "政策解釋", "直接與飯店溝通"],
+      "learning_note": "訓練處理已經存在的訂單變更，並與不同管道協調。",
+      "dialogue": [
+        { "speaker": "旅客", "text": "I booked a room through Booking.com for next week, but I need to change the dates to the following week. Booking.com says I need your confirmation.", "translation": "我透過Booking.com訂了下週的房間，但我需要改到再下一週。Booking.com說我需要你們的確認。" },
+        { "speaker": "櫃檯人員", "text": "I can check availability for the new dates. For the new week, the rate is $150 instead of $120 because of a local festival.", "translation": "我可以查詢新日期的空房。因為當地節日，新一週的房價是150美元而不是120美元。" },
+        { "speaker": "旅客", "text": "I understand the rate difference. Can I keep the original rate since it's a change of dates, not a new booking?", "translation": "我理解價差。但這是日期變更而不是新訂房，我能維持原價嗎？" },
+        { "speaker": "櫃檯人員", "text": "I'm afraid not. The rate is dynamic and based on availability. However, I can waive the change fee that the OTA might charge.", "translation": "恐怕不行。房價是浮動的且取決於空房情況。不過，我可以免除OTA可能收取的更改費。" },
+        { "speaker": "旅客", "text": "That's fair. Please go ahead and confirm the new dates for me. I'll contact Booking.com to update.", "translation": "那很合理。請幫我確認新日期。我會聯繫Booking.com更新。" },
+        { "speaker": "櫃檯人員", "text": "I will send you an email confirmation for the rate change. Just show it to the OTA if needed.", "translation": "我會寄一封關於房價變更的電子郵件確認信給您。如有需要，請向OTA出示。" }
+      ],
+      "key_sentences": ["change the dates", "rate difference", "waive the change fee", "OTA (Online Travel Agency)"]
+    }
+  },
+  {
+    "id": 15,
+    "title": { "zh": "房型升級", "en": "Upgrade Request" },
+    "category": "accommodation",
+    "learning_objective": { "zh": "學習向飯店要求房型升級，並詢問額外費用及福利。", "en": "Learn to request a room upgrade and ask about extra fees and benefits." },
+    "a2": {
+      "scene": "旅客詢問是否有更安靜的房間",
+      "learning_focus": ["升級請求", "安靜房間", "額外費用"],
+      "learning_note": "能簡單表達需求並接受報價。",
+      "dialogue": [
+        { "speaker": "旅客", "text": "Do you have any quieter rooms? Mine is near the elevator.", "translation": "你們有更安靜的房間嗎？我的房間靠近電梯。" },
+        { "speaker": "櫃檯人員", "text": "We have a room at the end of the hall. It's quieter.", "translation": "走廊底端有一間房。比較安靜。" },
+        { "speaker": "旅客", "text": "Is that an upgrade? How much extra?", "translation": "那是升級嗎？要加多少錢？" },
+        { "speaker": "櫃檯人員", "text": "It's a superior room, $30 more per night.", "translation": "那是高級房，每晚多30美元。" },
+        { "speaker": "旅客", "text": "Can you give me a discount? I'm staying three nights.", "translation": "能打折嗎？我住三晚。" },
+        { "speaker": "櫃檯人員", "text": "I can offer $20 extra per night instead of $30.", "translation": "我可以算每晚多20美元而不是30美元。" },
+        { "speaker": "旅客", "text": "OK, I'll take it. Thank you.", "translation": "好的，我換。謝謝。" }
+      ],
+      "key_sentences": ["quieter rooms", "how much extra", "superior room", "give me a discount"]
+    },
+    "b2": {
+      "scene": "旅客是飯店會員，要求免費升等至套房，並提及過往忠誠度",
+      "learning_focus": ["會員權益", "免費升等請求", "忠誠度提及", "婉拒後協商"],
+      "learning_note": "訓練使用會員身份爭取福利，並在拒絕後協商替代方案。",
+      "dialogue": [
+        { "speaker": "旅客", "text": "I'm a Gold member of your loyalty program. According to the benefits, I should be eligible for a complimentary upgrade if available.", "translation": "我是您會員計畫的金卡會員。根據福利，如果有空房我應享有免費升等。" },
+        { "speaker": "櫃檯人員", "text": "Welcome, Mr. Wang. I see your membership. Let me check suites. Unfortunately, our standard suites are fully booked. However, I can upgrade you to a deluxe room with a view.", "translation": "歡迎，王先生。我看到您的會員資格。讓我查詢套房。不幸的是，我們的標準套房已訂滿。不過，我可以將您升等到有景觀的豪華房。" },
+        { "speaker": "旅客", "text": "A deluxe room is a bit of a downgrade from a suite. Are there any other perks you can offer, such as late check-out or lounge access?", "translation": "豪華房比起套房有點降級。你們能提供其他福利嗎？例如延遲退房或行政酒廊使用權？" },
+        { "speaker": "櫃檯人員", "text": "I can give you access to the executive lounge (usually $50 per day) for free and a 2 PM check-out.", "translation": "我可以免費給您行政酒廊使用權（通常每天50美元），以及下午2點退房。" },
+        { "speaker": "旅客", "text": "That sounds good. Also, could you note my preference for a suite next time? I stay at your hotels frequently.", "translation": "聽起來不錯。另外，你能記錄我下次偏好套房嗎？我經常入住你們的飯店。" },
+        { "speaker": "櫃檯人員", "text": "Absolutely. I've added a note to your profile. Enjoy your stay.", "translation": "當然。我已在您的檔案中加註。祝您住宿愉快。" }
+      ],
+      "key_sentences": ["Gold member", "complimentary upgrade", "executive lounge", "note to your profile"]
+    }
+  },
+  {
+    "id": 16,
+    "title": { "zh": "客訴", "en": "Complaint" },
+    "category": "accommodation",
+    "learning_objective": { "zh": "學習向飯店管理層表達強烈不滿，要求實質補償。", "en": "Learn to express strong dissatisfaction to hotel management and demand substantial compensation." },
+    "a2": {
+      "scene": "旅客抱怨房間清潔度不佳",
+      "learning_focus": ["抱怨用語 (not clean)", "要求重新打掃", "簡單補償"],
+      "learning_note": "能清楚指出問題並要求解決。",
+      "dialogue": [
+        { "speaker": "旅客", "text": "I'm not happy. My room is not clean. There is hair on the bed.", "translation": "我不滿意。我的房間不乾淨。床上有頭髮。" },
+        { "speaker": "櫃檯人員", "text": "I'm very sorry. I will send housekeeping immediately.", "translation": "非常抱歉。我會立刻派房務人員過去。" },
+        { "speaker": "旅客", "text": "This is unacceptable. Can you give me a discount?", "translation": "這無法接受。你能給我折扣嗎？" },
+        { "speaker": "櫃檯人員", "text": "We will clean the room and offer you a free breakfast tomorrow.", "translation": "我們會清潔房間並提供您明天免費早餐。" },
+        { "speaker": "旅客", "text": "OK. But please make sure it's really clean this time.", "translation": "好吧。但請確保這次真的乾淨。" }
+      ],
+      "key_sentences": ["not clean", "send housekeeping", "unacceptable", "free breakfast"]
+    },
+    "b2": {
+      "scene": "旅客連續兩晚被隔壁噪音打擾，要求經理出面並全額退款",
+      "learning_focus": ["連續問題", "要求經理", "全額退款", "法規引述"],
+      "learning_note": "訓練堅持權益並引述消費者保護概念。",
+      "dialogue": [
+        { "speaker": "旅客", "text": "I need to speak to the manager. This is the second night I've been kept awake by loud noise from the next room. I complained last night but nothing changed.", "translation": "我要跟經理談話。這已經是第二晚被隔壁房間的噪音吵得無法入睡。我昨晚投訴了但沒有改善。" },
+        { "speaker": "櫃檯人員", "text": "I apologize again. The manager is on her way. We have already spoken to the guests next door.", "translation": "我再次道歉。經理馬上過來。我們已經跟隔壁客人談過了。" },
+        { "speaker": "經理", "text": "I'm the manager. I understand your frustration. We have offered those guests a warning. Is there anything else we can do to make your stay comfortable?", "translation": "我是經理。我理解您的不滿。我們已警告了那些客人。我們還能做什麼讓您住得舒適？" },
+        { "speaker": "旅客", "text": "I didn't sleep well for two nights. I believe a full refund for both nights is reasonable. According to consumer law, you failed to provide a quiet environment.", "translation": "我兩晚都沒睡好。我認為全額退還兩晚的費用是合理的。根據消費者法，你們未能提供安靜的環境。" },
+        { "speaker": "經理", "text": "I see your point. As a gesture of goodwill, I will refund one night and offer a free upgrade for your next stay. A full refund is not our policy.", "translation": "我明白您的觀點。作為誠意，我會退還一晚費用，並在您下次入住時提供免費升等。全額退款不是我們的政策。" },
+        { "speaker": "旅客", "text": "That is not acceptable. I will post reviews on all major travel sites if this is not resolved fairly.", "translation": "這不能接受。如果問題未得到公平解決，我會在所有主要旅遊網站上發表評論。" },
+        { "speaker": "經理", "text": "Let me make an exception. I will issue a full refund. Please allow me to offer a sincere apology.", "translation": "讓我破例。我會全額退款。請允許我誠摯道歉。" }
+      ],
+      "key_sentences": ["speak to the manager", "full refund", "consumer law", "post reviews"]
+    }
+  },
+  {
+    "id": 17,
+    "title": { "zh": "點餐", "en": "Ordering Food" },
+    "category": "dining",
+    "learning_objective": { "zh": "學習在餐廳點餐，包括詢問菜色、特殊要求及結帳。", "en": "Learn to order food in a restaurant, including asking about dishes, special requests and paying the bill." },
+    "a2": {
+      "scene": "旅客在餐廳點午餐",
+      "learning_focus": ["菜單閱讀", "點餐用語 (I'll have)", "簡單要求"],
+      "learning_note": "能看懂菜單並完成點餐。",
+      "dialogue": [
+        { "speaker": "服務生", "text": "Are you ready to order?", "translation": "您準備好點餐了嗎？" },
+        { "speaker": "旅客", "text": "Yes. What is the soup of the day?", "translation": "是的。今天的例湯是什麼？" },
+        { "speaker": "服務生", "text": "It's tomato soup.", "translation": "是番茄湯。" },
+        { "speaker": "旅客", "text": "I'll have the tomato soup and a grilled chicken sandwich.", "translation": "我要一份番茄湯和烤雞三明治。" },
+        { "speaker": "服務生", "text": "Would you like fries or salad with that?", "translation": "要搭配薯條還是沙拉？" },
+        { "speaker": "旅客", "text": "Salad, please. And a glass of water.", "translation": "沙拉，謝謝。還有一杯水。" },
+        { "speaker": "服務生", "text": "Coming right up.", "translation": "馬上來。" }
+      ],
+      "key_sentences": ["ready to order", "soup of the day", "I'll have", "fries or salad"]
+    },
+    "b2": {
+      "scene": "旅客對菜色有特殊過敏要求，並詢問食材來源及烹調方式",
+      "learning_focus": ["食物過敏說明", "食材來源詢問", "烹調方式要求", "客製化點餐"],
+      "learning_note": "訓練詳細溝通飲食限制並確認廚房處理流程。",
+      "dialogue": [
+        { "speaker": "旅客", "text": "I have a severe nut allergy. Can you confirm that this pasta dish contains no nuts and is prepared in a separate area?", "translation": "我對堅果嚴重過敏。你能確認這道義大利麵不含堅果，並且是在獨立區域製作的嗎？" },
+        { "speaker": "服務生", "text": "Thank you for letting us know. The pasta itself is nut-free, but our kitchen does handle nuts. We can take extra precautions and use a clean pan and utensils.", "translation": "謝謝您告知。義大利麵本身不含堅果，但我們的廚房會處理堅果。我們可以採取額外預防措施，使用乾淨的鍋子和用具。" },
+        { "speaker": "旅客", "text": "I appreciate that. Also, is the chicken free-range and the cheese locally sourced?", "translation": "非常感謝。另外，雞肉是放養的嗎？起司是當地產的嗎？" },
+        { "speaker": "服務生", "text": "Yes, our chicken is free-range from a local farm, and the cheese comes from a small dairy in the region.", "translation": "是的，我們的雞肉來自當地農場的放養雞，起司來自本地區的一個小型酪農場。" },
+        { "speaker": "旅客", "text": "Perfect. I'll have that, but please make sure the sauce is on the side and no garlic.", "translation": "完美。我點那個，但請確保醬汁分開且不加蒜。" },
+        { "speaker": "服務生", "text": "I will write it all down. The chef will be notified of your allergy.", "translation": "我會全部記下。廚師會被告知您的過敏情況。" }
+      ],
+      "key_sentences": ["severe nut allergy", "take extra precautions", "free-range", "locally sourced"]
+    }
+  },
+  {
+    "id": 18,
+    "title": { "zh": "特殊需求", "en": "Special Request" },
+    "category": "dining",
+    "learning_objective": { "zh": "學習提出特殊飲食需求，如素食、無麩質或兒童餐。", "en": "Learn to make special dietary requests, such as vegetarian, gluten-free or kids' meals." },
+    "a2": {
+      "scene": "旅客要求素食餐點",
+      "learning_focus": ["素食表達", "更改菜色", "簡單確認"],
+      "learning_note": "能清楚表達飲食限制。",
+      "dialogue": [
+        { "speaker": "旅客", "text": "I'm a vegetarian. Do you have any vegetarian dishes?", "translation": "我是素食者。你們有素食餐嗎？" },
+        { "speaker": "服務生", "text": "Yes, we have a vegetable stir-fry and a mushroom risotto.", "translation": "有的，我們有炒時蔬和蘑菇燉飯。" },
+        { "speaker": "旅客", "text": "The risotto sounds good. Does it contain cheese?", "translation": "燉飯聽起來不錯。裡面有起司嗎？" },
+        { "speaker": "服務生", "text": "Yes, Parmesan cheese. Is that okay?", "translation": "有的，帕瑪森起司。可以嗎？" },
+        { "speaker": "旅客", "text": "Yes, that's fine. No meat or fish, please.", "translation": "可以。請不要有肉或魚。" },
+        { "speaker": "服務生", "text": "Understood. I'll make a note.", "translation": "明白了。我會備註。" }
+      ],
+      "key_sentences": ["vegetarian", "vegetable stir-fry", "no meat or fish", "make a note"]
+    },
+    "b2": {
+      "scene": "旅客要求無麩質、低鈉並客製化餐點，同時確認廚房能力",
+      "learning_focus": ["無麩質要求", "低鈉 / 健康考量", "客製化調味", "廚房能力確認"],
+      "learning_note": "訓練詳細說明多重飲食需求並確保餐廳能執行。",
+      "dialogue": [
+        { "speaker": "旅客", "text": "I have celiac disease, so I need a completely gluten-free meal. I also need low sodium due to high blood pressure. Can your kitchen accommodate both?", "translation": "我有乳糜瀉，所以我需要完全無麩質的餐點。我還有高血壓，需要低鈉。你們的廚房能同時滿足嗎？" },
+        { "speaker": "服務生", "text": "We can prepare gluten-free pasta and use no added salt. However, some ingredients naturally contain sodium. Is that acceptable?", "translation": "我們可以準備無麩質義大利麵且不加鹽。但有些食材本身含有鈉。可以接受嗎？" },
+        { "speaker": "旅客", "text": "Yes, as long as you don't add extra salt or high-sodium sauces. Could you also use olive oil instead of butter?", "translation": "可以，只要你們不額外加鹽或高鈉醬汁。另外，能用橄欖油代替奶油嗎？" },
+        { "speaker": "服務生", "text": "Certainly. I will personally speak to the chef. We will use a separate cutting board and pan to avoid cross-contamination.", "translation": "當然。我會親自跟主廚說。我們會使用獨立的砧板和鍋子以避免交叉污染。" },
+        { "speaker": "旅客", "text": "Thank you so much for taking this seriously. I've had bad reactions in other restaurants.", "translation": "非常感謝您認真對待。我在其他餐廳有過不好的反應。" },
+        { "speaker": "服務生", "text": "Your health is our priority. Would you like me to bring the gluten-free bread as a starter?", "translation": "您的健康是我們的首要考量。需要我先送上無麩質麵包作為開胃菜嗎？" }
+      ],
+      "key_sentences": ["celiac disease", "gluten-free", "low sodium", "cross-contamination"]
+    }
+  },
+  {
+    "id": 19,
+    "title": { "zh": "結帳", "en": "Paying Bill" },
+    "category": "dining",
+    "learning_objective": { "zh": "學習索取帳單、分開付款及支付小費。", "en": "Learn to ask for the bill, split the payment and tip." },
+    "a2": {
+      "scene": "旅客用餐後要求結帳",
+      "learning_focus": ["索取帳單", "付款方式", "小費表達"],
+      "learning_note": "能完成結帳流程。",
+      "dialogue": [
+        { "speaker": "旅客", "text": "Can I have the bill, please?", "translation": "請給我帳單。" },
+        { "speaker": "服務生", "text": "Here you are. Would you like to pay by cash or card?", "translation": "這是您的帳單。您想用現金還是刷卡？" },
+        { "speaker": "旅客", "text": "Card, please. Can you split the bill? I'm with a friend.", "translation": "刷卡。可以分開結帳嗎？我跟朋友一起。" },
+        { "speaker": "服務生", "text": "Of course. How would you like to split it?", "translation": "當然。您想怎麼分？" },
+        { "speaker": "旅客", "text": "Half and half. Also, is service charge included?", "translation": "一半一半。另外，服務費包含在內了嗎？" },
+        { "speaker": "服務生", "text": "Yes, 10% service is already added. No need for extra tip.", "translation": "是的，已加收10%服務費。不需要再給小費。" }
+      ],
+      "key_sentences": ["have the bill", "split the bill", "service charge included", "no need for extra tip"]
+    },
+    "b2": {
+      "scene": "旅客發現帳單包含未點餐點，要求更正並協商補償",
+      "learning_focus": ["帳單錯誤", "要求更正", "補償協商", "經理介入"],
+      "learning_note": "訓練處理帳單爭議並獲得合理調整。",
+      "dialogue": [
+        { "speaker": "旅客", "text": "Excuse me, there seems to be a mistake on our bill. We didn't order the grilled salmon or the second bottle of wine.", "translation": "不好意思，我們的帳單似乎有誤。我們沒有點烤鮭魚和第二瓶酒。" },
+        { "speaker": "服務生", "text": "Let me double-check. I'm sorry, those items were from table 12. I'll remove them immediately.", "translation": "讓我再核對一下。很抱歉，那些是12桌的。我會立刻刪除。" },
+        { "speaker": "旅客", "text": "Thank you. However, because of this error, we have been waiting for 15 minutes. Can you offer any discount for the inconvenience?", "translation": "謝謝。但因為這個錯誤，我們多等了15分鐘。你能為不便提供折扣嗎？" },
+        { "speaker": "服務生", "text": "I'll speak to the manager. He has approved a 10% discount on the corrected total.", "translation": "我會跟經理說。他核准在更正後總額上打9折。" },
+        { "speaker": "旅客", "text": "That's fair. Also, we would like to pay separately. I'll pay for the appetizers and my friend the mains.", "translation": "這很公平。另外，我們想分開付。我付開胃菜，我朋友付主餐。" },
+        { "speaker": "服務生", "text": "We can do that. I'll split the bill accordingly. Here are the two receipts.", "translation": "我們可以做到。我會相應地分開帳單。這是兩張收據。" }
+      ],
+      "key_sentences": ["mistake on our bill", "remove them", "discount for the inconvenience", "split the bill accordingly"]
+    }
+  },
+  {
+    "id": 20,
+    "title": { "zh": "食物問題", "en": "Food Complaint" },
+    "category": "dining",
+    "learning_objective": { "zh": "學習反應食物品質問題，如太鹹、不熟或有異物。", "en": "Learn to report food quality issues, such as too salty, undercooked or foreign objects." },
+    "a2": {
+      "scene": "旅客反應湯太鹹",
+      "learning_focus": ["食物缺點描述", "要求更換", "簡單道歉"],
+      "learning_note": "能禮貌指出問題並要求處理。",
+      "dialogue": [
+        { "speaker": "旅客", "text": "Excuse me, this soup is too salty. I can't drink it.", "translation": "不好意思，這個湯太鹹了。我喝不下去。" },
+        { "speaker": "服務生", "text": "I'm sorry to hear that. Would you like me to bring a new bowl or something else?", "translation": "很抱歉。您想要我換一碗或是別的？" },
+        { "speaker": "旅客", "text": "Can I have a salad instead?", "translation": "我可以換成沙拉嗎？" },
+        { "speaker": "服務生", "text": "Of course. I'll take the soup away. Sorry for the trouble.", "translation": "當然。我會把湯收走。抱歉造成困擾。" },
+        { "speaker": "旅客", "text": "Thank you. Please make sure the salad dressing is on the side.", "translation": "謝謝。請確保沙拉醬分開放。" }
+      ],
+      "key_sentences": ["too salty", "bring a new bowl", "instead", "dressing on the side"]
+    },
+    "b2": {
+      "scene": "旅客在牛排中發現頭髮，要求見經理並要求免費餐點",
+      "learning_focus": ["異物投訴", "衛生問題", "要求經理", "要求免費補償"],
+      "learning_note": "訓練在重大衛生問題時堅定要求合理賠償。",
+      "dialogue": [
+        { "speaker": "旅客", "text": "I need to speak to the manager immediately. I found a hair in my steak, and it's undercooked as requested medium well.", "translation": "我需要立刻見經理。我在我的牛排裡發現一根頭髮，而且牛排沒有達到我要的五分熟。" },
+        { "speaker": "服務生", "text": "Oh, I'm terribly sorry. Let me get the manager for you. Would you like a replacement?", "translation": "噢，我非常抱歉。我幫您請經理。您要換一份嗎？" },
+        { "speaker": "經理", "text": "I'm the manager. I apologize for this unacceptable experience. We will of course replace the steak and also remove it from your bill.", "translation": "我是經理。我為這次不可接受的體驗道歉。我們當然會更換牛排，並且從帳單中刪除這道菜。" },
+        { "speaker": "旅客", "text": "That's a start, but I've lost my appetite. I think the entire meal should be complimentary given the health risk.", "translation": "這是基本，但我已經沒胃口了。考慮到健康風險，我認為整頓餐應該免費。" },
+        { "speaker": "經理", "text": "I understand your concern. I will comp your entire meal and offer you a $50 gift certificate for your next visit. Is that acceptable?", "translation": "我理解您的顧慮。我會免費招待您整頓餐，並提供您下次來訪時50美元的禮券。可以接受嗎？" },
+        { "speaker": "旅客", "text": "Yes, but please ensure the kitchen follows proper hygiene. I will also expect an apology letter if possible.", "translation": "可以，但請確保廚房遵守適當衛生規範。如果可能，我也希望能收到道歉信。" },
+        { "speaker": "經理", "text": "We will send an email. Again, my deepest apologies.", "translation": "我們會發送電子郵件。再次深表歉意。" }
+      ],
+      "key_sentences": ["found a hair", "speak to the manager", "comp your entire meal", "gift certificate"]
+    }
+  },
+  {
+    "id": 21,
+    "title": { "zh": "預約餐廳", "en": "Reservation" },
+    "category": "dining",
+    "learning_objective": { "zh": "學習電話預約餐廳，包括日期、人數及特殊座位需求。", "en": "Learn to make a restaurant reservation over the phone, including date, number of people and special seating requests." },
+    "a2": {
+      "scene": "旅客打電話預訂晚餐",
+      "learning_focus": ["預訂用語 (I'd like to book)", "人數時間", "確認電話"],
+      "learning_note": "能完成電話訂位。",
+      "dialogue": [
+        { "speaker": "旅客", "text": "Hello, I'd like to make a reservation for tonight.", "translation": "你好，我想預訂今晚的位子。" },
+        { "speaker": "餐廳人員", "text": "For how many people and at what time?", "translation": "幾個人？幾點？" },
+        { "speaker": "旅客", "text": "Two people at 7 PM.", "translation": "兩個人，晚上7點。" },
+        { "speaker": "餐廳人員", "text": "We have availability. Can I have your name and phone number?", "translation": "有空位。能給我您的姓名和電話嗎？" },
+        { "speaker": "旅客", "text": "My name is Li. 090-1234-5678.", "translation": "我姓李。090-1234-5678。" },
+        { "speaker": "餐廳人員", "text": "Your reservation is confirmed. Please call if you are delayed.", "translation": "您的訂位已確認。如果延遲請來電。" }
+      ],
+      "key_sentences": ["make a reservation", "for how many people", "confirmed", "if you are delayed"]
+    },
+    "b2": {
+      "scene": "旅客預訂靠窗雅座，並詢問私人包廂及酒單，同時告知慶祝特殊場合",
+      "learning_focus": ["特殊要求 (window seat, private room)", "慶祝場合 (anniversary)", "酒單詢問", "取消政策"],
+      "learning_note": "訓練詳細訂位並提出多項需求。",
+      "dialogue": [
+        { "speaker": "旅客", "text": "I'd like to book a table for Saturday at 8 PM for four people. It's our wedding anniversary, so we'd prefer a quiet window table if possible.", "translation": "我想預訂週六晚上8點四個人的位子。這是我們的結婚紀念日，所以如果可能，我們偏好安靜的靠窗座位。" },
+        { "speaker": "餐廳人員", "text": "Congratulations. We have a window table available. Would you like it to be in the non-smoking section?", "translation": "恭喜。我們有靠窗的位子。您要安排在非吸菸區嗎？" },
+        { "speaker": "旅客", "text": "Yes, please. Also, do you have a private room for four? And what is the minimum charge?", "translation": "是的。另外，你們有四個人的私人包廂嗎？最低消費是多少？" },
+        { "speaker": "餐廳人員", "text": "Our private room requires a minimum spend of $300. The window table has no minimum.", "translation": "我們的私人包廂最低消費300美元。靠窗座位沒有低消。" },
+        { "speaker": "旅客", "text": "We'll stick with the window table. Can you email me the wine list in advance? Also, what is the cancellation policy?", "translation": "我們還是選靠窗座位。你能先把酒單email給我嗎？另外，取消政策是什麼？" },
+        { "speaker": "餐廳人員", "text": "Certainly. You can cancel up to 24 hours before without charge. After that, a $20 per person fee applies.", "translation": "當然。您可以在24小時前免費取消。之後每人收取20美元費用。" },
+        { "speaker": "旅客", "text": "Understood. Please also note the anniversary – maybe a small dessert with a candle?", "translation": "明白了。請順便備註是紀念日——或許可以來個有蠟燭的小甜點？" },
+        { "speaker": "餐廳人員", "text": "We'll be happy to arrange that. Thank you for celebrating with us.", "translation": "我們很樂意安排。感謝您與我們一同慶祝。" }
+      ],
+      "key_sentences": ["wedding anniversary", "window table", "private room", "minimum spend", "cancellation policy"]
+    }
+  },
+  {
+    "id": 22,
+    "title": { "zh": "外帶 / 外送", "en": "Takeout / Delivery" },
+    "category": "dining",
+    "learning_objective": { "zh": "學習電話點餐外帶或外送，包括確認餐點、地址及付款。", "en": "Learn to order takeout or delivery over the phone, including confirming dishes, address and payment." },
+    "a2": {
+      "scene": "旅客打電話點披薩外送",
+      "learning_focus": ["外送用語 (delivery)", "地址告知", "付款方式"],
+      "learning_note": "能下單並提供必要資訊。",
+      "dialogue": [
+        { "speaker": "旅客", "text": "Hello, I'd like to order a large pepperoni pizza for delivery.", "translation": "你好，我想點一個大份義式臘腸披薩外送。" },
+        { "speaker": "店員", "text": "What's your address?", "translation": "您的地址？" },
+        { "speaker": "旅客", "text": "15 Park Avenue, apartment 3B.", "translation": "公園大道15號，3B公寓。" },
+        { "speaker": "店員", "text": "That will be $18.99. How would you like to pay?", "translation": "總共18.99美元。您想怎麼付款？" },
+        { "speaker": "旅客", "text": "Cash when delivered. How long will it take?", "translation": "送達時付現金。要多久？" },
+        { "speaker": "店員", "text": "About 30 minutes.", "translation": "大約30分鐘。" }
+      ],
+      "key_sentences": ["order for delivery", "large pepperoni pizza", "pay cash", "how long will it take"]
+    },
+    "b2": {
+      "scene": "旅客透過外送平台下單後餐點有漏，與餐廳直接溝通補償",
+      "learning_focus": ["漏單處理", "直接與餐廳協商", "補償要求 (退款或重新配送)", "外送平台責任"],
+      "learning_note": "訓練處理第三方外送的問題並爭取解決。",
+      "dialogue": [
+        { "speaker": "旅客", "text": "I just received my delivery from your restaurant through Uber Eats, but the order is missing the side of fries and the drink.", "translation": "我剛剛收到透過Uber Eats從你們餐廳外送的餐點，但少了薯條和飲料。" },
+        { "speaker": "店員", "text": "I'm sorry for the mistake. Do you have the order number?", "translation": "很抱歉出錯。您有訂單編號嗎？" },
+        { "speaker": "旅客", "text": "Yes, it's #8923. Can you send the missing items? Or should I contact Uber Eats?", "translation": "有，編號8923。你們能補送缺少的東西嗎？還是我應該聯絡Uber Eats？" },
+        { "speaker": "店員", "text": "Since it's our error, we can send a driver with the missing items. It will take about 20 minutes. As an apology, we'll also include a free dessert.", "translation": "既然是我們的錯誤，我們可以派司機補送缺少的物品。大約20分鐘。另外，為表歉意，我們會附贈一份免費甜點。" },
+        { "speaker": "旅客", "text": "That's very kind. However, the fries will be cold. Could you instead refund the cost of the fries and drink, and still send the dessert?", "translation": "太好了。但薯條送來會冷掉。你能退款薯條和飲料的費用，同時仍然送甜點嗎？" },
+        { "speaker": "店員", "text": "I understand. I'll issue a partial refund for those items through the platform. Please confirm your name.", "translation": "我理解。我會透過平台部分退款那些品項。請確認您的姓名。" },
+        { "speaker": "旅客", "text": "It's Wang. Thank you for handling this quickly. I'll order again from you based on this service.", "translation": "姓王。感謝您快速處理。基於這次服務，我會再次向你們訂購。" }
+      ],
+      "key_sentences": ["missing the side", "order number", "partial refund", "based on this service"]
+    }
+  },
+  {
+    "id": 23,
+    "title": { "zh": "詢問價格", "en": "Asking Price" },
+    "category": "shopping",
+    "learning_objective": { "zh": "學習詢問商品價格、比較不同選項及簡單議價。", "en": "Learn to ask for product prices, compare options and simple bargaining." },
+    "a2": {
+      "scene": "旅客在紀念品店詢問價格",
+      "learning_focus": ["價格詢問", "折扣表達", "計算單位"],
+      "learning_note": "能看懂標價並詢問折扣。",
+      "dialogue": [
+        { "speaker": "旅客", "text": "How much is this T-shirt?", "translation": "這件T恤多少錢？" },
+        { "speaker": "店員", "text": "It's $15.99.", "translation": "15.99美元。" },
+        { "speaker": "旅客", "text": "Are there any discounts if I buy two?", "translation": "如果我買兩件有折扣嗎？" },
+        { "speaker": "店員", "text": "Two for $30. So you save $2.", "translation": "兩件30美元。所以省2美元。" },
+        { "speaker": "旅客", "text": "I'll take two. Can I pay with a credit card?", "translation": "我買兩件。我可以刷卡嗎？" },
+        { "speaker": "店員", "text": "Yes, minimum $10 for card payment.", "translation": "可以，刷卡最低10美元。" }
+      ],
+      "key_sentences": ["How much is this", "discounts if I buy two", "I'll take two", "pay with a credit card"]
+    },
+    "b2": {
+      "scene": "旅客在百貨公司詢問高價商品價格，並與其他店家價格比較，要求價格匹配",
+      "learning_focus": ["價格匹配 (price match)", "比較購物", "稅費詢問", "保固討論"],
+      "learning_note": "訓練進行深度價格協商並引用競爭對手的報價。",
+      "dialogue": [
+        { "speaker": "旅客", "text": "I'm interested in this espresso machine. The price tag says $450. But I saw the same model at another store for $399. Do you offer price matching?", "translation": "我對這台濃縮咖啡機有興趣。標價是450美元。但我在另一家店看到同一型號是399美元。你們提供價格匹配嗎？" },
+        { "speaker": "店員", "text": "Yes, we do. Do you have proof of the other store's price? It must be a current advertised price.", "translation": "有的。您有其他店家價格的證明嗎？必須是當前的廣告價格。" },
+        { "speaker": "旅客", "text": "I have a photo from their shelf label taken today. Here it is.", "translation": "我有今天拍的商品標籤照片。在這裡。" },
+        { "speaker": "店員", "text": "That works. I can match $399. Also, our store includes a 2-year warranty, while theirs is only 1 year.", "translation": "可以。我可以匹配399美元。另外，我們店包含兩年保固，他們只有一年。" },
+        { "speaker": "旅客", "text": "Great. Does the $399 include tax?", "translation": "太好了。399美元含稅嗎？" },
+        { "speaker": "店員", "text": "Tax is added at checkout. The total would be about $430 after 8% sales tax.", "translation": "稅在結帳時加上。8%的營業稅後總額約430美元。" },
+        { "speaker": "旅客", "text": "That's fine. Can I also get free delivery? I live nearby.", "translation": "可以。能免費運送嗎？我住在附近。" },
+        { "speaker": "店員", "text": "Normally delivery is $20, but I'll waive it since you're a first-time customer.", "translation": "通常運費20美元，但因為您是首次客戶，我為您免除。" },
+        { "speaker": "旅客", "text": "Sold. Please proceed with the purchase.", "translation": "成交。請繼續購買程序。" }
+      ],
+      "key_sentences": ["price matching", "proof of the other store's price", "2-year warranty", "waive delivery"]
+    }
+  },
+  {
+    "id": 24,
+    "title": { "zh": "尺寸 / 顏色", "en": "Size / Color" },
+    "category": "shopping",
+    "learning_objective": { "zh": "學習詢問商品的尺寸、顏色選項及試穿。", "en": "Learn to ask about product sizes, color options and trying on." },
+    "a2": {
+      "scene": "旅客在服飾店找尺寸",
+      "learning_focus": ["尺寸表達 (small, medium)", "顏色喜好", "試穿室"],
+      "learning_note": "能詢問並找到合適尺寸。",
+      "dialogue": [
+        { "speaker": "旅客", "text": "Do you have this jacket in medium?", "translation": "這件夾克有M號嗎？" },
+        { "speaker": "店員", "text": "Let me check. Yes, we have medium in black and navy.", "translation": "我查一下。有的，M號有黑色和深藍色。" },
+        { "speaker": "旅客", "text": "I'd like to try the navy one. Where is the fitting room?", "translation": "我想試穿深藍色的。試穿間在哪？" },
+        { "speaker": "店員", "text": "It's at the back on the left. How does it fit?", "translation": "在後面左邊。穿起來如何？" },
+        { "speaker": "旅客", "text": "It's a bit tight on the shoulders. Do you have large?", "translation": "肩膀有點緊。有大號嗎？" },
+        { "speaker": "店員", "text": "I'll bring a large. Here you go.", "translation": "我拿大號。給您。" }
+      ],
+      "key_sentences": ["in medium", "try the navy one", "fitting room", "a bit tight"]
+    },
+    "b2": {
+      "scene": "旅客需要特定版型（修身）及顏色（橄欖綠），但店內缺貨，要求調貨並運送",
+      "learning_focus": ["特定版型要求 (slim fit)", "缺貨調貨", "跨店運送", "會員折扣"],
+      "learning_note": "訓練處理缺貨情況並協商調貨及運費。",
+      "dialogue": [
+        { "speaker": "旅客", "text": "I'm looking for this blazer in a slim fit, size 40, in olive green. Do you have it in stock?", "translation": "我在找這件西裝外套，修身版型，40號，橄欖綠色。你們有現貨嗎？" },
+        { "speaker": "店員", "text": "Unfortunately, we only have regular fit in olive green. Slim fit is sold out in most stores. Let me check our inventory system.", "translation": "不幸地，我們只有橄欖綠的標準版型。修身版型在大多數店面都賣完了。我查一下庫存系統。" },
+        { "speaker": "旅客", "text": "I really need the slim fit. Can you order from another store?", "translation": "我真的需要修身版型。你能從其他店調貨嗎？" },
+        { "speaker": "店員", "text": "Our downtown location shows one in stock. I can have it shipped here within 3 business days. Would you like me to reserve it?", "translation": "我們的市區分店顯示有一件。我可以在3個工作日內運送到這裡。您要我保留嗎？" },
+        { "speaker": "旅客", "text": "Yes, please. Can I also apply my 15% member discount on the transfer item?", "translation": "好的。另外，我可以在調貨商品上使用我的會員15%折扣嗎？" },
+        { "speaker": "店員", "text": "Yes, the discount applies. Shipping to the store is free. If you want home delivery, there is a $10 fee.", "translation": "可以，折扣適用。運送到店鋪免費。如果您要宅配，則有10美元運費。" },
+        { "speaker": "旅客", "text": "I'll pick it up here. Please call me when it arrives. Here's my number.", "translation": "我會到店取貨。到達時請打電話給我。這是我的電話。" }
+      ],
+      "key_sentences": ["slim fit", "check inventory", "shipped here", "member discount", "pick it up"]
+    }
+  },
+  {
+    "id": 25,
+    "title": { "zh": "退貨", "en": "Refund / Return" },
+    "category": "shopping",
+    "learning_objective": { "zh": "學習退貨流程，包括原因說明、收據要求及退款方式。", "en": "Learn the return process, including reason explanation, receipt requirement and refund method." },
+    "a2": {
+      "scene": "旅客退還一雙不合腳的鞋子",
+      "learning_focus": ["退貨原因 (doesn't fit)", "收據表達", "退款選項"],
+      "learning_note": "能完成簡單退貨。",
+      "dialogue": [
+        { "speaker": "旅客", "text": "I'd like to return these shoes. They don't fit.", "translation": "我想退這雙鞋。不合腳。" },
+        { "speaker": "店員", "text": "Do you have the receipt?", "translation": "您有收據嗎？" },
+        { "speaker": "旅客", "text": "Yes, here it is. I bought them three days ago.", "translation": "有，在這裡。我三天前買的。" },
+        { "speaker": "店員", "text": "We can give you a full refund. Would you like cash or store credit?", "translation": "我們可以全額退款。您要現金還是商店信用額度？" },
+        { "speaker": "旅客", "text": "Cash, please.", "translation": "現金。" },
+        { "speaker": "店員", "text": "Here you are. Sorry they didn't work out.", "translation": "給您。抱歉不合適。" }
+      ],
+      "key_sentences": ["return these shoes", "don't fit", "full refund", "store credit"]
+    },
+    "b2": {
+      "scene": "旅客退貨時因包裝破損被拒絕，爭論產品瑕疵非人為造成",
+      "learning_focus": ["退貨政策爭議", "產品瑕疵 vs 人為損壞", "消費者權益", "換貨協商"],
+      "learning_note": "訓練處理退貨被拒情況並引用合理理由。",
+      "dialogue": [
+        { "speaker": "旅客", "text": "I'd like to return this blender. It stopped working after two uses. Here's my receipt from 10 days ago.", "translation": "我想退這台果汁機。用了兩次就壞了。這是我十天前的收據。" },
+        { "speaker": "店員", "text": "Let me see. The box is damaged and there are scratches on the base. This looks like user misuse. Our return policy says we only accept defective items in original condition.", "translation": "我看看。盒子損壞了，底座有刮痕。這看起來像是使用不當。我們的退貨政策規定只接受原始狀態的瑕疵品。" },
+        { "speaker": "旅客", "text": "The scratches are from normal use, and the box has no relation to the functionality. The motor simply died. I believe this is a manufacturing defect.", "translation": "刮痕是正常使用造成的，盒子與功能無關。馬達就是壞了。我認為這是製造瑕疵。" },
+        { "speaker": "店員", "text": "Without the original packaging, we may only offer an exchange, not a refund.", "translation": "沒有原始包裝，我們可能只能提供換貨，不能退款。" },
+        { "speaker": "旅客", "text": "I'm fine with an exchange, but I want the same model. Do you have it in stock?", "translation": "我接受換貨，但我要同型號。你們有現貨嗎？" },
+        { "speaker": "店員", "text": "We have one left. I'll process the exchange. Please sign here.", "translation": "我們還有一個。我會處理換貨。請在這裡簽名。" },
+        { "speaker": "旅客", "text": "Thank you. And could you test this new one before I leave? I don't want to come back again.", "translation": "謝謝。在我離開前你能測試一下這個新的嗎？我不想再跑一趟。" },
+        { "speaker": "店員", "text": "Good idea. I'll plug it in for you. Works perfectly.", "translation": "好主意。我幫您插電。運作完美。" }
+      ],
+      "key_sentences": ["stopped working", "user misuse", "manufacturing defect", "exchange", "test this new one"]
+    }
+  },
+  {
+    "id": 26,
+    "title": { "zh": "折扣", "en": "Discount Negotiation" },
+    "category": "shopping",
+    "learning_objective": { "zh": "學習協商折扣，尤其是購買多件或大量商品時。", "en": "Learn to negotiate discounts, especially when buying multiple or bulk items." },
+    "a2": {
+      "scene": "旅客在市場購買三個手工錢包，要求折扣",
+      "learning_focus": ["議價用語 (Can you give me a discount)", "購買數量", "最終價格"],
+      "learning_note": "能在非固定價格商店簡單議價。",
+      "dialogue": [
+        { "speaker": "旅客", "text": "How much for this wallet?", "translation": "這個錢包多少錢？" },
+        { "speaker": "店員", "text": "20 dollars each.", "translation": "每個20美元。" },
+        { "speaker": "旅客", "text": "If I buy three, can you give me a discount?", "translation": "如果我買三個，可以打折嗎？" },
+        { "speaker": "店員", "text": "I can do 50 dollars for three.", "translation": "三個50美元。" },
+        { "speaker": "旅客", "text": "How about 45 dollars?", "translation": "45美元怎麼樣？" },
+        { "speaker": "店員", "text": "48 is the lowest.", "translation": "最低48。" },
+        { "speaker": "旅客", "text": "OK, I'll take three. Here's 50, keep the change.", "translation": "好，我買三個。這是50，不用找了。" }
+      ],
+      "key_sentences": ["buy three", "give me a discount", "lowest", "keep the change"]
+    },
+    "b2": {
+      "scene": "旅客購買高價電子產品，要求結合會員折扣、學生優惠及免息分期",
+      "learning_focus": ["多重折扣疊加", "學生優惠", "免息分期", "延長保固協商"],
+      "learning_note": "訓練組合不同優惠以最大化折扣。",
+      "dialogue": [
+        { "speaker": "旅客", "text": "I want to buy this laptop. The price is $1200. I have a 10% off member coupon and I'm a student. Do you have a student discount?", "translation": "我想買這台筆電。價格是1200美元。我有會員9折優惠券，而且我是學生。你們有學生折扣嗎？" },
+        { "speaker": "店員", "text": "Yes, we offer an additional 5% student discount. However, they cannot be combined with the member coupon. You would have to choose the better one.", "translation": "有的，我們提供額外5%學生折扣。但是這兩者不能合併使用。您必須選擇較優的一個。" },
+        { "speaker": "旅客", "text": "10% is better. But can you match the online price? I saw it for $1100 on your website.", "translation": "9折更好。但你能匹配線上價格嗎？我在你們網站上看到1100美元。" },
+        { "speaker": "店員", "text": "We can price match our own website. So $1100 minus 10% would be $990. That's the best we can do.", "translation": "我們可以匹配自家網站價格。所以1100美元減10%是990美元。這是我們能提供的最好價格。" },
+        { "speaker": "旅客", "text": "That works. Can I also get 12-month interest-free financing? And what about an extended warranty?", "translation": "可以。我還能享有12個月免息分期嗎？延長保固呢？" },
+        { "speaker": "店員", "text": "Financing is available for purchases over $500 with our store card. Extended warranty is $150 for 3 years, but I can give it for $100 since you're buying the laptop.", "translation": "使用我們商店卡消費滿500美元即可分期。延長保固3年150美元，但既然您買筆電，我可以算100美元。" },
+        { "speaker": "旅客", "text": "I'll take the warranty as well. Total with tax?", "translation": "保固我也要。含稅總共？" },
+        { "speaker": "店員", "text": "$990 + $100 = $1090, plus 7% tax = $1166.30. Here is your financing application.", "translation": "990+100=1090美元，加7%稅=1166.30美元。這是您的分期申請表。" }
+      ],
+      "key_sentences": ["member coupon", "student discount", "price match", "interest-free financing", "extended warranty"]
+    }
+  },
+  {
+    "id": 27,
+    "title": { "zh": "商品問題", "en": "Product Issue" },
+    "category": "shopping",
+    "learning_objective": { "zh": "學習反應商品瑕疵或功能異常，並要求維修或更換。", "en": "Learn to report product defects or malfunctions and request repair or replacement." },
+    "a2": {
+      "scene": "旅客買的電子錶不準，要求更換",
+      "learning_focus": ["瑕疵描述 (doesn't work correctly)", "更換要求", "保固"],
+      "learning_note": "能簡單說明問題並要求換貨。",
+      "dialogue": [
+        { "speaker": "旅客", "text": "I bought this watch last week, but it doesn't keep the correct time.", "translation": "我上週買了這支錶，但時間不準。" },
+        { "speaker": "店員", "text": "Do you have the receipt and warranty card?", "translation": "您有收據和保固卡嗎？" },
+        { "speaker": "旅客", "text": "Yes, here they are.", "translation": "有，在這裡。" },
+        { "speaker": "店員", "text": "We can replace it with a new one. Let me get it for you.", "translation": "我們可以換新的給您。我幫您拿。" },
+        { "speaker": "旅客", "text": "Thank you. Can you test this new one before I leave?", "translation": "謝謝。我離開前你能測試新的嗎？" },
+        { "speaker": "店員", "text": "Sure. It's working fine. Sorry for the trouble.", "translation": "當然。沒問題。抱歉造成困擾。" }
+      ],
+      "key_sentences": ["doesn't keep correct time", "warranty card", "replace it", "test this new one"]
+    },
+    "b2": {
+      "scene": "高價耳機在保固期內出現斷續聲音，但客服要求支付維修費，旅客爭議",
+      "learning_focus": ["保固範圍爭議", "技術問題描述", "要求免費維修", "升級處理"],
+      "learning_note": "訓練針對保固條款進行爭辯並要求免費服務。",
+      "dialogue": [
+        { "speaker": "旅客", "text": "I'm calling about my noise-cancelling headphones, model X100, purchased 8 months ago. The left ear cup intermittently cuts out. This should be covered under the 1-year warranty.", "translation": "我打電話關於我的降噪耳機，型號X100，8個月前購買。左耳罩會間歇性斷訊。這應該在一年保固範圍內。" },
+        { "speaker": "客服", "text": "I see the purchase date. The warranty covers manufacturing defects, but our diagnostic shows possible liquid damage. That is not covered.", "translation": "我看到購買日期。保固涵蓋製造瑕疵，但我們的診斷顯示可能是液體損壞。這不在保固內。" },
+        { "speaker": "旅客", "text": "I have never exposed the headphones to liquid. I suspect a loose internal connection. Can you send me a prepaid shipping label for a second opinion from your repair center?", "translation": "我從未讓耳機接觸液體。我懷疑是內部連接鬆動。你能寄給我預付運費標籤，讓你們的維修中心再檢查一次嗎？" },
+        { "speaker": "客服", "text": "I can authorize a free inspection. If it's not liquid damage, the repair will be free. Otherwise, you will be quoted for repair.", "translation": "我可以授權免費檢查。如果不是液體損壞，維修免費。否則，我們會報價維修費用。" },
+        { "speaker": "旅客", "text": "That's fair. I want to note that the product has been handled carefully. Please escalate this to a supervisor if needed.", "translation": "這很公平。我想註明產品一直被小心使用。如有必要，請將這件事升級給主管。" },
+        { "speaker": "客服", "text": "I've noted your account. Please package the headphones and send to the address we email you. Expect a response within 7 business days.", "translation": "我已在您的帳戶中備註。請包裝好耳機並寄到我們郵件給您的地址。預計7個工作日內回覆。" }
+      ],
+      "key_sentences": ["intermittently cuts out", "manufacturing defects", "liquid damage", "second opinion", "escalate to a supervisor"]
+    }
+  },
+  {
+    "id": 28,
+    "title": { "zh": "看醫生", "en": "Doctor Visit" },
+    "category": "emergency",
+    "learning_objective": { "zh": "學習描述症狀、理解醫囑及取得處方。", "en": "Learn to describe symptoms, understand medical advice and get a prescription." },
+    "a2": {
+      "scene": "旅客因頭痛及發燒看醫生",
+      "learning_focus": ["症狀描述 (headache, fever)", "醫囑聽取", "用藥指示"],
+      "learning_note": "能簡單說明身體不適並遵循醫囑。",
+      "dialogue": [
+        { "speaker": "醫生", "text": "What seems to be the problem?", "translation": "哪裡不舒服？" },
+        { "speaker": "旅客", "text": "I have a headache and a fever since yesterday.", "translation": "我從昨天開始頭痛和發燒。" },
+        { "speaker": "醫生", "text": "Let me check your temperature. It's 38.5. You have a mild flu.", "translation": "我量一下體溫。38.5度。是輕微流感。" },
+        { "speaker": "旅客", "text": "Do I need medicine?", "translation": "我需要吃藥嗎？" },
+        { "speaker": "醫生", "text": "I'll prescribe some pain relievers and rest. Drink lots of water.", "translation": "我會開一些止痛藥，多休息。多喝水。" },
+        { "speaker": "旅客", "text": "How many days should I rest?", "translation": "我應該休息幾天？" },
+        { "speaker": "醫生", "text": "At least two days. Come back if it gets worse.", "translation": "至少兩天。如果惡化再回來。" }
+      ],
+      "key_sentences": ["have a headache and a fever", "mild flu", "prescribe pain relievers", "rest for two days"]
+    },
+    "b2": {
+      "scene": "旅客有慢性病史，因胸痛就醫，要求做進一步檢查並討論藥物交互作用",
+      "learning_focus": ["慢性病史說明", "詳細症狀 (sharp pain)", "檢查要求 (ECG)", "藥物交互作用"],
+      "learning_note": "訓練提供完整病史並主動要求必要檢查。",
+      "dialogue": [
+        { "speaker": "旅客", "text": "I've been having intermittent sharp chest pain for three days, especially when walking fast. I have a history of high blood pressure and take lisinopril daily.", "translation": "我三天來間歇性出現尖銳胸痛，尤其是快走時。我有高血壓病史，每天服用賴諾普利。" },
+        { "speaker": "醫生", "text": "That's concerning. I want to do an ECG and check your blood pressure immediately. Have you had any recent changes in medication or stress?", "translation": "這令人擔心。我想立刻做心電圖並檢查您的血壓。最近有改變藥物或壓力嗎？" },
+        { "speaker": "旅客", "text": "No change in medication, but I've been travelling and eating poorly. Could that affect my heart?", "translation": "藥物沒變，但我一直在旅行吃得不好。那會影響心臟嗎？" },
+        { "speaker": "醫生", "text": "It could. The ECG looks normal, but I'd like to do a blood test to rule out a heart attack. Also, I'll prescribe a beta-blocker temporarily. Please make sure it's safe with your lisinopril.", "translation": "有可能。心電圖看起來正常，但我想做血液檢測以排除心臟病發作。另外，我會暫時開β受體阻斷劑。請確保與您的賴諾普利一起服用是安全的。" },
+        { "speaker": "旅客", "text": "Can you check for drug interactions? I'm also taking an over-the-counter antacid occasionally.", "translation": "你能檢查藥物交互作用嗎？我偶爾也會服用非處方胃藥。" },
+        { "speaker": "醫生", "text": "Good you told me. Beta-blockers and antacids can interact. I'll prescribe a different medication. Also, please schedule a follow-up in one week.", "translation": "幸好您告訴我。β受體阻斷劑和胃藥會交互作用。我會開另一種藥。另外，請預約一週後回診。" },
+        { "speaker": "旅客", "text": "Thank you, doctor. I'll avoid strenuous activity until the test results.", "translation": "謝謝醫生。在檢查結果出來前我會避免劇烈活動。" }
+      ],
+      "key_sentences": ["intermittent sharp chest pain", "history of high blood pressure", "ECG", "rule out a heart attack", "drug interactions"]
+    }
+  },
+  {
+    "id": 29,
+    "title": { "zh": "藥局", "en": "Pharmacy" },
+    "category": "emergency",
+    "learning_objective": { "zh": "學習在藥局購買非處方藥、閱讀說明及諮詢藥師。", "en": "Learn to buy over-the-counter medicine at a pharmacy, read instructions and consult a pharmacist." },
+    "a2": {
+      "scene": "旅客因過敏想買抗組織胺",
+      "learning_focus": ["症狀描述 (allergy, itchy eyes)", "非處方藥詢問", "用藥劑量"],
+      "learning_note": "能向藥師說明需求並獲取建議。",
+      "dialogue": [
+        { "speaker": "旅客", "text": "I have allergies. My eyes are itchy and I sneeze a lot. Do you have something for that?", "translation": "我過敏。眼睛癢而且一直打噴嚏。你們有藥嗎？" },
+        { "speaker": "藥師", "text": "Yes, we have cetirizine. It's an antihistamine. Take one pill a day.", "translation": "有的，我們有西替利嗪。是抗組織胺。一天一顆。" },
+        { "speaker": "旅客", "text": "Does it cause drowsiness?", "translation": "會嗜睡嗎？" },
+        { "speaker": "藥師", "text": "Some people feel drowsy. Avoid driving for the first dose.", "translation": "有些人會嗜睡。第一次服用後避免開車。" },
+        { "speaker": "旅客", "text": "I'll take it. How many pills are in a pack?", "translation": "我買。一包幾顆？" },
+        { "speaker": "藥師", "text": "10 pills. That's $15.", "translation": "10顆。15美元。" }
+      ],
+      "key_sentences": ["have allergies", "antihistamine", "cause drowsiness", "avoid driving"]
+    },
+    "b2": {
+      "scene": "旅客需要處方藥，但藥局缺貨，協商替代藥物並聯繫醫生",
+      "learning_focus": ["處方藥缺貨", "替代藥物詢問", "生體相等性 (generic)", "聯繫醫生授權"],
+      "learning_note": "訓練處理處方藥供應問題並與醫療專業人員溝通。",
+      "dialogue": [
+        { "speaker": "旅客", "text": "I have a prescription for a specific antibiotic, amoxicillin 500mg. But I see you're out of stock. Do you have a generic equivalent?", "translation": "我有一張特定抗生素的處方，阿莫西林500毫克。但你們缺貨。你們有同成分的學名藥嗎？" },
+        { "speaker": "藥師", "text": "We have the generic version, but the doctor must approve substitution on the prescription. It says 'dispense as written', so I cannot substitute without permission.", "translation": "我們有學名藥，但醫生必須在處方上批准替代。這裡寫著「依處方調劑」，所以沒有許可我不能替代。" },
+        { "speaker": "旅客", "text": "Can you call my doctor's office to request a change? I need to start the medication today.", "translation": "你能打電話給我的醫生辦公室要求更改嗎？我需要今天開始用藥。" },
+        { "speaker": "藥師", "text": "I can try. What is the doctor's number? Also, I have another antibiotic, clarithromycin, but it's not a direct substitute. The doctor would need to prescribe that.", "translation": "我可以試試。醫生的電話是多少？另外，我有另一種抗生素克拉黴素，但不是直接替代品。醫生需要開那個處方。" },
+        { "speaker": "旅客", "text": "Let's start with the generic request. If that fails, could you lend me a few doses from another location?", "translation": "先嘗試學名藥請求。如果不行，你能從其他分店借給我幾天的量嗎？" },
+        { "speaker": "藥師 (after call)", "text": "I reached the doctor. They approved the generic. I'll fill it now. Also, your insurance covers it fully.", "translation": "我聯絡上醫生了。他們批准了學名藥。我現在就調劑。另外，您的保險全額給付。" },
+        { "speaker": "旅客", "text": "Excellent. Thank you for your persistence. I'll wait here.", "translation": "太好了。感謝您的堅持。我在這裡等。" }
+      ],
+      "key_sentences": ["prescription for antibiotic", "generic equivalent", "dispense as written", "call my doctor", "insurance covers it"]
+    }
+  },
+  {
+    "id": 30,
+    "title": { "zh": "緊急狀況", "en": "Emergency" },
+    "category": "emergency",
+    "learning_objective": { "zh": "學習在緊急情況（如火災、受傷）撥打求救電話並描述狀況。", "en": "Learn to call for help in emergencies (e.g., fire, injury) and describe the situation." },
+    "a2": {
+      "scene": "旅客目睹車禍，打電話報警",
+      "learning_focus": ["緊急數字 (911)", "事件描述 (accident, injured)", "位置提供"],
+      "learning_note": "能撥打緊急電話並提供基本資訊。",
+      "dialogue": [
+        { "speaker": "旅客", "text": "Hello, I need to report an accident.", "translation": "你好，我要報案，有事故。" },
+        { "speaker": "接線員", "text": "What is the location?", "translation": "地點在哪？" },
+        { "speaker": "旅客", "text": "Corner of Main Street and 5th Avenue. A car hit a bicycle.", "translation": "主街和第五大道的轉角。一輛汽車撞到腳踏車。" },
+        { "speaker": "接線員", "text": "Are there any injuries?", "translation": "有人受傷嗎？" },
+        { "speaker": "旅客", "text": "Yes, the cyclist is on the ground and bleeding. Please send an ambulance.", "translation": "有，騎腳踏車的人倒在地上有流血。請派救護車。" },
+        { "speaker": "接線員", "text": "Help is on the way. Stay on the line if you can.", "translation": "援助正在路上。如果可以請不要掛斷。" }
+      ],
+      "key_sentences": ["report an accident", "location", "any injuries", "send an ambulance"]
+    },
+    "b2": {
+      "scene": "旅客在飯店房間聞到瓦斯味，須疏散並與消防隊溝通",
+      "learning_focus": ["瓦斯外洩報告", "疏散指示", "提供詳細位置 (樓層、房間)", "跟進確認安全"],
+      "learning_note": "訓練在危險情況下冷靜提供資訊並遵循救援指示。",
+      "dialogue": [
+        { "speaker": "旅客", "text": "I'm calling from room 812 at the Grand Hotel. I smell a strong gas odor in the hallway. I think there might be a gas leak.", "translation": "我從大飯店812房打來。我在走廊聞到很強的瓦斯味。我覺得可能有瓦斯外洩。" },
+        { "speaker": "接線員", "text": "Do not use any electrical switches or open flames. Evacuate immediately using the stairs. Do not use the elevator. Are there other guests around?", "translation": "不要使用任何電器開關或明火。立即使用樓梯疏散。不要用電梯。附近有其他客人嗎？" },
+        { "speaker": "旅客", "text": "I see a few people in the hallway as well. I'll knock on doors to alert them. What should we do after exiting the building?", "translation": "我看到走廊還有幾個人。我會敲門提醒他們。我們離開建築物後該怎麼做？" },
+        { "speaker": "接線員", "text": "Gather at the assembly point across the street. Fire trucks are on their way. Stay away from the building. Do you have any injuries or breathing difficulties?", "translation": "在對街的集合點集合。消防車正在路上。遠離建築物。您有任何受傷或呼吸困難嗎？" },
+        { "speaker": "旅客", "text": "I feel a bit dizzy, but I'm fine. I'm leaving now. Please let the fire department know room 812 is where the smell is strongest.", "translation": "我有點暈，但還好。我現在離開。請告知消防隊812房是味道最強的地方。" },
+        { "speaker": "接線員", "text": "I've noted that. Once you are safe, stay on the line until an officer reaches you.", "translation": "我已記錄。一旦您安全，請保持通話直到有警官找到您。" },
+        { "speaker": "旅客", "text": "Understood. I'm heading to the stairs now.", "translation": "明白。我現在去樓梯間。" }
+      ],
+      "key_sentences": ["gas odor", "gas leak", "evacuate immediately", "assembly point", "fire trucks on the way"]
+    }
+  },
+  {
+    "id": 31,
+    "title": { "zh": "身體不適描述", "en": "Symptoms" },
+    "category": "emergency",
+    "learning_objective": { "zh": "學習詳細描述身體不適的症狀、持續時間及嚴重程度。", "en": "Learn to describe physical discomfort in detail, including duration and severity." },
+    "a2": {
+      "scene": "旅客在藥局描述胃痛",
+      "learning_focus": ["疼痛描述 (stomach ache)", "持續時間", "嚴重程度 (mild, severe)"],
+      "learning_note": "能使用基本形容詞描述症狀。",
+      "dialogue": [
+        { "speaker": "旅客", "text": "I have a stomach ache since this morning.", "translation": "我從早上開始胃痛。" },
+        { "speaker": "藥師", "text": "Is it mild or severe?", "translation": "是輕微還是嚴重？" },
+        { "speaker": "旅客", "text": "It's moderate. It hurts after I eat.", "translation": "中等。吃完東西後會痛。" },
+        { "speaker": "藥師", "text": "Do you feel nauseous?", "translation": "你覺得噁心嗎？" },
+        { "speaker": "旅客", "text": "A little. No vomiting.", "translation": "一點點。沒有嘔吐。" },
+        { "speaker": "藥師", "text": "Try this antacid. If it worsens, see a doctor.", "translation": "試試這個胃藥。如果惡化，去看醫生。" }
+      ],
+      "key_sentences": ["stomach ache", "moderate", "after I eat", "nauseous", "antacid"]
+    },
+    "b2": {
+      "scene": "旅客使用遠距醫療描述複雜症狀：頭痛伴隨視力模糊及噁心",
+      "learning_focus": ["多種症狀組合", "誘發因素 (triggers)", "疼痛質量 (throbbing)", "遠距溝通技巧"],
+      "learning_note": "訓練用精確醫學詞彙描述症狀以便遠距診斷。",
+      "dialogue": [
+        { "speaker": "醫生", "text": "Please describe your symptoms in detail.", "translation": "請詳細描述您的症狀。" },
+        { "speaker": "旅客", "text": "I have a throbbing headache on the right side, behind my eye. It started about 6 hours ago. I also have blurred vision in that eye and feel nauseous. I haven't eaten anything unusual.", "translation": "我右側頭部有搏動性頭痛，在眼睛後面。大約6小時前開始。我同一隻眼睛還有視力模糊，並且覺得噁心。我沒有吃什麼不尋常的東西。" },
+        { "speaker": "醫生", "text": "Have you ever had migraines before? Do you see any aura like flashing lights?", "translation": "您以前有過偏頭痛嗎？您是否看到任何預兆，像是閃光？" },
+        { "speaker": "旅客", "text": "No history of migraines. No flashing lights, but the blurred vision comes and goes. The pain is worse with light and noise.", "translation": "沒有偏頭痛史。沒有閃光，但視力模糊時好時壞。光和噪音會使疼痛加劇。" },
+        { "speaker": "醫生", "text": "This sounds like a migraine with aura. I'll prescribe a triptan. Also, try resting in a dark room. When did you last eat or drink?", "translation": "聽起來像是有預兆的偏頭痛。我會開曲普坦類藥物。另外，試著在暗房休息。您最後一次進食或喝水是什麼時候？" },
+        { "speaker": "旅客", "text": "I had lunch 4 hours ago. I've been drinking water. Could the headache be related to high blood pressure? I do have hypertension.", "translation": "我4小時前吃過午餐。我一直有喝水。頭痛會與高血壓有關嗎？我確實有高血壓。" },
+        { "speaker": "醫生", "text": "It's possible, but your symptoms are classic for migraine. I still recommend monitoring your blood pressure. If it exceeds 180/110, go to the ER.", "translation": "有可能，但您的症狀是典型的偏頭痛。我仍建議監測血壓。如果超過180/110，去急診室。" },
+        { "speaker": "旅客", "text": "Thank you, doctor. I'll pick up the prescription and rest.", "translation": "謝謝醫生。我會去拿藥並休息。" }
+      ],
+      "key_sentences": ["throbbing headache", "blurred vision", "migraine with aura", "worse with light and noise", "monitor blood pressure"]
+    }
+  },
+  {
+    "id": 32,
+    "title": { "zh": "學校詢問", "en": "School Inquiry" },
+    "category": "work",
+    "learning_objective": { "zh": "學習詢問學校入學資訊、課程安排及費用。", "en": "Learn to ask about school admission information, course schedules and fees." },
+    "a2": {
+      "scene": "家長打電話詢問語言學校的課程",
+      "learning_focus": ["課程詢問", "開課日期", "費用", "註冊流程"],
+      "learning_note": "能獲取基本課程資訊。",
+      "dialogue": [
+        { "speaker": "旅客", "text": "Hello, I'm interested in your English courses for adults.", "translation": "你好，我對你們的成人英文課程有興趣。" },
+        { "speaker": "學校人員", "text": "We have beginner and intermediate levels. When would you like to start?", "translation": "我們有初級和中級班。您想何時開始？" },
+        { "speaker": "旅客", "text": "Next month. How much is the tuition?", "translation": "下個月。學費多少？" },
+        { "speaker": "學校人員", "text": "$300 for a 4-week course. Classes are Monday to Friday, 9 AM to 12 PM.", "translation": "四週課程300美元。週一到週五上午9點到12點。" },
+        { "speaker": "旅客", "text": "Do I need to take a placement test?", "translation": "我需要參加分班測驗嗎？" },
+        { "speaker": "學校人員", "text": "Yes, we can schedule it for next week.", "translation": "是的，我們可以安排在下週。" }
+      ],
+      "key_sentences": ["interested in English courses", "beginner and intermediate", "tuition", "placement test"]
+    },
+    "b2": {
+      "scene": "家長為孩子詢問國際學校的入學要求、課外活動及師生比",
+      "learning_focus": ["入學要求 (transcripts, recommendations)", "課外活動 (extracurricular)", "師生比", "學費分期"],
+      "learning_note": "訓練詢問深入的教育細節以評估學校品質。",
+      "dialogue": [
+        { "speaker": "家長", "text": "I'm considering your school for my 10-year-old daughter. Could you tell me about the admission requirements for grade 5?", "translation": "我在考慮讓10歲的女兒就讀貴校。能告訴我五年級的入學要求嗎？" },
+        { "speaker": "招生人員", "text": "Certainly. We require previous school transcripts, a recommendation letter from her current teacher, and an entrance exam in English and math.", "translation": "當然。我們需要前一所學校的成績單、現任老師的推薦信，以及英語和數學的入學考試。" },
+        { "speaker": "家長", "text": "What is the average class size and teacher-to-student ratio?", "translation": "平均班級人數和師生比是多少？" },
+        { "speaker": "招生人員", "text": "We have a maximum of 20 students per class with a ratio of 1:10, plus a teaching assistant.", "translation": "每班最多20名學生，師生比1:10，另有一名教學助理。" },
+        { "speaker": "家長", "text": "That's good. Can you also describe the extracurricular activities, especially in sports and music?", "translation": "那很好。能也描述一下課外活動嗎？特別是體育和音樂。" },
+        { "speaker": "招生人員", "text": "We offer soccer, basketball, swimming, and a school orchestra for violin and piano. There are also after-school clubs like coding and chess.", "translation": "我們提供足球、籃球、游泳，以及小提琴和鋼琴的學校管弦樂團。還有課後社團如程式設計和西洋棋。" },
+        { "speaker": "家長", "text": "What is the annual tuition and are there payment plans? Also, do you offer scholarships?", "translation": "每年學費是多少？有分期付款計畫嗎？另外，你們提供獎學金嗎？" },
+        { "speaker": "招生人員", "text": "Tuition is $18,000 per year. We have monthly payment plans. Merit-based scholarships are available for high-achieving students, but they require separate applications.", "translation": "學費每年18,000美元。我們有每月付款計畫。優秀學生可申請績優獎學金，但需要單獨申請。" },
+        { "speaker": "家長", "text": "I see. Could you email me the application forms and a school brochure? We'd like to schedule a campus tour as well.", "translation": "我了解了。你能將申請表和學校手冊用電子郵件寄給我嗎？我們也想安排校園參觀。" }
+      ],
+      "key_sentences": ["admission requirements", "transcripts", "recommendation letter", "teacher-to-student ratio", "extracurricular activities", "payment plans"]
+    }
+  },
+  {
+    "id": 33,
+    "title": { "zh": "課程問題", "en": "Course Question" },
+    "category": "work",
+    "learning_objective": { "zh": "學習詢問課程內容、作業及評分方式。", "en": "Learn to ask about course content, assignments and grading." },
+    "a2": {
+      "scene": "學生詢問課程大綱及教科書",
+      "learning_focus": ["課程大綱 (syllabus)", "教科書", "作業頻率"],
+      "learning_note": "能了解課程基本要求。",
+      "dialogue": [
+        { "speaker": "學生", "text": "I'm registered for the beginner English course. Can I see the syllabus?", "translation": "我註冊了初級英文課。我可以看課程大綱嗎？" },
+        { "speaker": "老師", "text": "Sure. Here it is. We cover grammar, vocabulary, and speaking.", "translation": "當然。在這裡。我們涵蓋文法、單字和口說。" },
+        { "speaker": "學生", "text": "What textbook do we need?", "translation": "我們需要哪本課本？" },
+        { "speaker": "老師", "text": "We use 'English for Everyone'. You can buy it at the school bookstore.", "translation": "我們用《大家的英文》。你可以在學校書店買。" },
+        { "speaker": "學生", "text": "How often are there homework assignments?", "translation": "作業多久一次？" },
+        { "speaker": "老師", "text": "After every class, but it's short.", "translation": "每堂課後，但很短。" }
+      ],
+      "key_sentences": ["see the syllabus", "grammar, vocabulary, speaking", "textbook", "homework assignments"]
+    },
+    "b2": {
+      "scene": "學生對課程評分標準及期末專案細節有疑問，並要求調整deadline",
+      "learning_focus": ["評分標準細項", "期末專案要求", "延長截止日請求", "學術誠信"],
+      "learning_note": "訓練與教授溝通學術細節並協商合理調整。",
+      "dialogue": [
+        { "speaker": "學生", "text": "Professor, I have a few questions about the course grading and the final project. The syllabus says 40% of the grade is the final project, but it doesn't break down the rubric.", "translation": "教授，關於課程評分和期末專案我有幾個問題。課程大綱說期末專案佔40%，但沒有細分評分標準。" },
+        { "speaker": "教授", "text": "Good question. The project rubric will be posted next week. It includes research quality (20%), presentation (10%), and originality (10%). Do you have any specific concerns?", "translation": "好問題。專案評分標準將在下週公布。包含研究品質（20%）、簡報（10%）和原創性（10%）。您有任何具體疑慮嗎？" },
+        { "speaker": "學生", "text": "Yes, the deadline for the project is the same week as two other exams. Could I request a 3-day extension? I can submit a draft earlier for feedback.", "translation": "有的，專案的截止日與其他兩科考試在同一週。我能請求延長3天嗎？我可以提早提交草稿以獲得反饋。" },
+        { "speaker": "教授", "text": "I understand. I can grant a 2-day extension for the whole class if everyone agrees. For you personally, I'll allow 3 days but with a 5% penalty per day. Alternatively, you can submit on time with no penalty but lower quality.", "translation": "我理解。如果全班同意，我可以給全體2天的延長。對於您個人，我可以允許3天，但每天扣5%的分數。或者，您可以準時提交但品質較低。" },
+        { "speaker": "學生", "text": "I'd prefer the extension with penalty. Also, regarding academic integrity, are we allowed to use AI for proofreading? I want to be clear.", "translation": "我選擇延長但接受扣分。另外，關於學術誠信，我們可以使用AI校對嗎？我想釐清楚。" },
+        { "speaker": "教授", "text": "You may use AI for grammar and spell-check, but the content must be your own. Any AI-generated text must be cited. Please refer to the university policy.", "translation": "你可以使用AI進行文法及拼寫檢查，但內容必須是你自己的。任何AI生成的文本必須引用。請參閱大學政策。" },
+        { "speaker": "學生", "text": "Thank you for clarifying. I will manage my time and submit the draft as requested.", "translation": "謝謝您的釐清。我會管理好時間並按要求提交草稿。" }
+      ],
+      "key_sentences": ["grading rubric", "final project", "extension", "academic integrity", "AI for proofreading"]
+    }
+  },
+  {
+    "id": 34,
+    "title": { "zh": "面試", "en": "Interview" },
+    "category": "work",
+    "learning_objective": { "zh": "學習求職面試的自我介紹、回答常見問題及提問。", "en": "Learn to introduce yourself, answer common questions and ask questions in a job interview." },
+    "a2": {
+      "scene": "應徵餐飲服務生的面試",
+      "learning_focus": ["自我介紹 (name, experience)", "工作經驗描述", "可工作時間"],
+      "learning_note": "能完成基本面試對話。",
+      "dialogue": [
+        { "speaker": "面試官", "text": "Please introduce yourself briefly.", "translation": "請簡單自我介紹。" },
+        { "speaker": "應徵者", "text": "My name is Lin. I have one year of experience as a waitress.", "translation": "我姓林。我有一年的服務生經驗。" },
+        { "speaker": "面試官", "text": "Why do you want to work here?", "translation": "為什麼想來這裡工作？" },
+        { "speaker": "應徵者", "text": "I like the environment and I'm good with customers.", "translation": "我喜歡這裡的環境，而且我善於與顧客相處。" },
+        { "speaker": "面試官", "text": "What days are you available?", "translation": "你哪幾天可以上班？" },
+        { "speaker": "應徵者", "text": "Monday to Friday evenings and weekends.", "translation": "週一到週五晚上和週末。" },
+        { "speaker": "面試官", "text": "Great. We'll call you next week.", "translation": "很好。我們下週會打電話給你。" }
+      ],
+      "key_sentences": ["introduce yourself", "experience as a waitress", "good with customers", "available"]
+    },
+    "b2": {
+      "scene": "應徵軟體工程師，需回答技術問題、行為問題及談期望薪資",
+      "learning_focus": ["技術問答", "行為問題 (STAR)", "薪資談判", "提問策略"],
+      "learning_note": "訓練專業面試技巧及薪資協商。",
+      "dialogue": [
+        { "speaker": "面試官", "text": "Tell me about a challenging project you worked on and how you solved a technical problem.", "translation": "請告訴我一個您做過的具挑戰性的專案，以及您如何解決一個技術問題。" },
+        { "speaker": "應徵者", "text": "At my previous job, our e-commerce site slowed down during peak traffic. I used the STAR method: Situation, Task, Action, Result. I profiled the database queries, identified an inefficient join, rewrote it, and reduced page load time by 40%. Resulting in a 15% increase in conversions.", "translation": "在我上一份工作中，我們的電子商務網站在流量高峰時變慢。我使用了STAR方法：情境、任務、行動、結果。我分析了資料庫查詢，發現一個效率低下的聯結，重寫後將頁面載入時間減少了40%，從而轉換率提升15%。" },
+        { "speaker": "面試官", "text": "Impressive. How do you handle tight deadlines and conflicting priorities?", "translation": "印象深刻。您如何處理緊迫的截止日期和衝突的優先事項？" },
+        { "speaker": "應徵者", "text": "I prioritize based on business impact and communicate with stakeholders. For example, I would break tasks into MVPs and negotiate scope if necessary.", "translation": "我根據業務影響程度排序，並與利害關係人溝通。例如，我會將任務分解為最小可行產品，必要時協商範圍。" },
+        { "speaker": "面試官", "text": "What is your expected salary?", "translation": "您的期望薪資是多少？" },
+        { "speaker": "應徵者", "text": "Based on market research for this role and my 5 years of experience, I'm looking for a base salary between $90k and $100k, plus benefits. However, I'm open to discussing total compensation including stock options.", "translation": "根據市場調查以及我5年的經驗，我期望的基本薪資在9萬到10萬美元之間，外加福利。不過，我也願意討論包括股票選擇權的總薪酬。" },
+        { "speaker": "面試官", "text": "We can offer $95k plus 5% bonus. Do you have any questions for us?", "translation": "我們可以提供9.5萬美元加上5%獎金。您對我們有什麼問題嗎？" },
+        { "speaker": "應徵者", "text": "Yes. What does success look like in this role in the first 90 days? And what is the team's engineering culture like?", "translation": "有的。在這職位的前90天，成功是什麼樣子？團隊的工程文化是怎樣的？" }
+      ],
+      "key_sentences": ["STAR method", "tight deadlines", "expected salary", "total compensation", "success in the first 90 days"]
+    }
+  },
+  {
+    "id": 35,
+    "title": { "zh": "工作溝通", "en": "Workplace Talk" },
+    "category": "work",
+    "learning_objective": { "zh": "學習辦公室日常溝通，如請求協助、回報進度及會議發言。", "en": "Learn daily workplace communication, such as asking for help, reporting progress and speaking in meetings." },
+    "a2": {
+      "scene": "員工向主管請假",
+      "learning_focus": ["請假請求", "理由說明", "工作交接"],
+      "learning_note": "能禮貌請假並告知代理。",
+      "dialogue": [
+        { "speaker": "員工", "text": "Hi, I need to take a day off tomorrow. I have a dentist appointment.", "translation": "嗨，我明天需要請一天假。我要去看牙醫。" },
+        { "speaker": "主管", "text": "OK. Have you finished the report?", "translation": "好的。報告完成了嗎？" },
+        { "speaker": "員工", "text": "Not yet, but I will finish it today before I leave.", "translation": "還沒，但我今天下班前會完成。" },
+        { "speaker": "主管", "text": "Please also let your teammate know so they can cover anything urgent.", "translation": "也請告知你的同事，以便他們處理緊急事情。" },
+        { "speaker": "員工", "text": "Will do. Thanks!", "translation": "會的。謝謝！" }
+      ],
+      "key_sentences": ["take a day off", "dentist appointment", "finish the report", "cover anything urgent"]
+    },
+    "b2": {
+      "scene": "團隊會議中討論專案延遲，員工主動提出解決方案並請求資源",
+      "learning_focus": ["專案延遲報告", "提出解決方案", "請求額外資源", "會議溝通技巧"],
+      "learning_note": "訓練在會議中有效溝通問題並爭取支持。",
+      "dialogue": [
+        { "speaker": "專案經理", "text": "The client launch is in two weeks, but we are three days behind schedule. What's the blocker?", "translation": "客戶上線在兩週後，但我們進度落後三天。阻礙是什麼？" },
+        { "speaker": "員工", "text": "The integration with the payment API is taking longer than expected due to documentation gaps. I've already contacted their support, but no reply yet.", "translation": "與支付API的整合因文件缺口而花費比預期更長的時間。我已經聯繫了他們的支持團隊，但還沒有回覆。" },
+        { "speaker": "專案經理", "text": "How can we get back on track?", "translation": "我們如何回到正軌？" },
+        { "speaker": "員工", "text": "I propose two solutions: First, we could temporarily use a fallback payment gateway we have used before. That would take one day to reconfigure. Second, we could allocate an additional developer to work with me in parallel on the problematic API.", "translation": "我提出兩個解決方案：第一，我們可以暫時使用之前用過的備用支付閘道。重新配置需要一天。第二，我們可以分配另一名開發人員與我並行處理有問題的API。" },
+        { "speaker": "專案經理", "text": "I like the first option for reliability. What resources do you need?", "translation": "我比較喜歡第一個選項，較可靠。你需要什麼資源？" },
+        { "speaker": "員工", "text": "Just approval to switch gateways. Also, I need access to the production environment for testing, which I currently don't have.", "translation": "只需要批准更換閘道。另外，我需要生產環境的測試權限，我目前沒有。" },
+        { "speaker": "專案經理", "text": "You have my approval. I'll notify the security team to grant you access by end of day. Please update me on progress tomorrow morning.", "translation": "我批准。我會通知安全團隊在今天結束前給您權限。請明早向我更新進度。" },
+        { "speaker": "員工", "text": "Will do. Thanks for the support.", "translation": "好的。感謝支持。" }
+      ],
+      "key_sentences": ["behind schedule", "blocker", "propose two solutions", "fallback payment gateway", "access to production environment"]
+    }
+  },
+  {
+    "id": 36,
+    "title": { "zh": "請假", "en": "Request Leave" },
+    "category": "work",
+    "learning_objective": { "zh": "學習正式請假流程，包括病假、年假等。", "en": "Learn formal leave request procedures, including sick leave and annual leave." },
+    "a2": {
+      "scene": "員工因感冒請病假",
+      "learning_focus": ["病假用語 (sick leave)", "症狀說明", "通知方式"],
+      "learning_note": "能打電話或寫訊息請病假。",
+      "dialogue": [
+        { "speaker": "員工", "text": "Hello, I can't come in today. I have a bad cold.", "translation": "你好，我今天無法上班。我得了重感冒。" },
+        { "speaker": "主管", "text": "Sorry to hear that. Rest well. Do you have a doctor's note?", "translation": "很遺憾。好好休息。你有醫生證明嗎？" },
+        { "speaker": "員工", "text": "I will see the doctor this afternoon and send it to you.", "translation": "我今天下午會去看醫生並寄給你。" },
+        { "speaker": "主管", "text": "OK. Please also update your tasks in the shared calendar.", "translation": "好的。也請在共享日曆中更新你的任務。" },
+        { "speaker": "員工", "text": "I will. Thank you.", "translation": "我會的。謝謝。" }
+      ],
+      "key_sentences": ["can't come in", "bad cold", "doctor's note", "update your tasks"]
+    },
+    "b2": {
+      "scene": "員工申請兩週年假並協調工作交接，同時涉及突發事件時的後備計畫",
+      "learning_focus": ["年假申請", "工作交接協調", "後備計畫", "正式書面請求"],
+      "learning_note": "訓練提前規劃假期並確保工作無縫交接。",
+      "dialogue": [
+        { "speaker": "員工", "text": "I'd like to request annual leave for two weeks from July 10th to 24th. I've already checked the team calendar and there are no major deadlines during that period.", "translation": "我想申請7月10日至24日的兩週年假。我已經檢查了團隊日曆，那段期間沒有重大截止日期。" },
+        { "speaker": "主管", "text": "Thank you for the advance notice. Can you ensure that all your ongoing tasks are handed over to Sarah? Please create a handover document by July 5th.", "translation": "感謝您提前通知。您能確保您所有進行中的任務都交接給Sarah嗎？請在7月5日前製作交接文件。" },
+        { "speaker": "員工", "text": "Absolutely. I will also list any pending decisions that might need escalation. For critical issues, Sarah can reach me via WhatsApp in case of emergency, though I prefer not to be disturbed.", "translation": "當然。我也會列出可能需要升級的任何待定決策。對於關鍵問題，Sarah可以在緊急情況下通過WhatsApp聯繫我，儘管我希望不被干擾。" },
+        { "speaker": "主管", "text": "That's reasonable. Also, please set up an out-of-office email reply and redirect your calls to the team line.", "translation": "這很合理。另外，請設置郵件自動回覆，並將您的電話轉接到團隊線路。" },
+        { "speaker": "員工", "text": "Will do. I've already prepared a draft handover document. May I email it to you for review?", "translation": "會的。我已經準備了一份交接文件草稿。我可以郵件給您審閱嗎？" },
+        { "speaker": "主管", "text": "Yes. Once approved, share it with Sarah. Enjoy your vacation. By the way, are you traveling internationally? If so, please fill out the travel risk form for HR.", "translation": "可以。批准後，與Sarah共享。祝您假期愉快。順便問一下，您要出國旅行嗎？如果是，請為人力資源部門填寫旅行風險表。" },
+        { "speaker": "員工", "text": "Yes, I'm going to Japan. I'll complete the form today. Thanks for your support.", "translation": "是的，我要去日本。我今天會填寫表格。感謝您的支持。" }
+      ],
+      "key_sentences": ["request annual leave", "handover document", "out-of-office", "critical issues", "travel risk form"]
+    }
+  },
+  {
+    "id": 37,
+    "title": { "zh": "自我介紹", "en": "Introduction" },
+    "category": "social",
+    "learning_objective": { "zh": "學習在不同場合（派對、會議等）介紹自己，包括姓名、職業及興趣。", "en": "Learn to introduce yourself in different settings (party, conference etc.), including name, job and interests." },
+    "a2": {
+      "scene": "在語言交換活動中自我介紹",
+      "learning_focus": ["姓名、國籍", "職業 / 學生", "興趣"],
+      "learning_note": "能簡單介紹背景並開啟對話。",
+      "dialogue": [
+        { "speaker": "A", "text": "Hi, I'm Anna. I'm from Germany. What's your name?", "translation": "嗨，我是安娜。我來自德國。你叫什麼名字？" },
+        { "speaker": "旅客", "text": "I'm Li. I'm from Taiwan. I'm a software engineer.", "translation": "我是李。我來自台灣。我是軟體工程師。" },
+        { "speaker": "A", "text": "Nice to meet you. Do you like traveling?", "translation": "很高興認識你。你喜歡旅行嗎？" },
+        { "speaker": "旅客", "text": "Yes, very much. I also like hiking.", "translation": "是的，非常喜歡。我也喜歡健行。" },
+        { "speaker": "A", "text": "Me too! Maybe we can go hiking together sometime.", "translation": "我也是！或許我們可以找時間一起去健行。" }
+      ],
+      "key_sentences": ["I'm from", "Nice to meet you", "like traveling", "hiking"]
+    },
+    "b2": {
+      "scene": "在行業研討會上自我介紹，並提及專業背景及尋求合作機會",
+      "learning_focus": ["專業頭銜", "公司背景", "專業成就", "尋求合作", "交換名片"],
+      "learning_note": "訓練專業社交場合中的自我推銷及建立人脈。",
+      "dialogue": [
+        { "speaker": "A", "text": "Hello, I'm Jennifer, Head of Product at DataDrive. And you are?", "translation": "你好，我是珍妮佛，DataDrive的產品負責人。您呢？" },
+        { "speaker": "旅客", "text": "I'm David Wang. I'm a senior data scientist at AI Solutions. I specialize in natural language processing. I saw your talk on customer insights – very impressive.", "translation": "我是王大衛。我是AI Solutions的資深資料科學家。我專精於自然語言處理。我看了您關於客戶洞察的演講——非常精彩。" },
+        { "speaker": "A", "text": "Thank you. Your company has done some great work in sentiment analysis. Are you looking to collaborate with other firms?", "translation": "謝謝。貴公司在情感分析方面做了一些很棒的工作。您在尋找與其他公司合作的機會嗎？" },
+        { "speaker": "旅客", "text": "Yes, that's why I'm here. We're particularly interested in integrating real-time analytics into customer service platforms. Could we exchange business cards and perhaps schedule a follow-up call?", "translation": "是的，這就是我來這裡的原因。我們特別有興趣將即時分析整合到客服平台。我們可以交換名片，也許安排後續電話嗎？" },
+        { "speaker": "A", "text": "Absolutely. Here's my card. I'll also connect with you on LinkedIn. What's your focus for the rest of the conference?", "translation": "當然。這是我的名片。我也會在領英上與您聯繫。您會議接下來的重點是什麼？" },
+        { "speaker": "旅客", "text": "I'm attending the workshop on ethical AI tomorrow. Are you going to that?", "translation": "我明天會參加關於道德AI的工作坊。您會去嗎？" },
+        { "speaker": "A", "text": "Yes, let's sit together. I'd love to hear more about your work over coffee afterwards.", "translation": "會的，我們坐一起吧。之後喝咖啡時我很想多聽聽您的工作。" }
+      ],
+      "key_sentences": ["Head of Product", "senior data scientist", "specialize in", "exchange business cards", "follow-up call"]
+    }
+  },
+  {
+    "id": 38,
+    "title": { "zh": "社交", "en": "Small Talk" },
+    "category": "social",
+    "learning_objective": { "zh": "學習閒聊技巧，如談論天氣、週末計畫及共同興趣。", "en": "Learn small talk techniques, such as talking about weather, weekend plans and common interests." },
+    "a2": {
+      "scene": "在聚會中與新認識的朋友聊天",
+      "learning_focus": ["問候語", "週末活動", "簡單回應"],
+      "learning_note": "能維持簡單對話。",
+      "dialogue": [
+        { "speaker": "A", "text": "Hi! How are you?", "translation": "嗨！你好嗎？" },
+        { "speaker": "旅客", "text": "I'm good, thanks. And you?", "translation": "我很好，謝謝。你呢？" },
+        { "speaker": "A", "text": "Doing well. Did you do anything fun last weekend?", "translation": "也不錯。你上週末有做什麼好玩的事嗎？" },
+        { "speaker": "旅客", "text": "I went to a movie with friends. What about you?", "translation": "我跟朋友去看電影。你呢？" },
+        { "speaker": "A", "text": "I stayed home and cooked a big meal. It was relaxing.", "translation": "我待在家煮了一頓大餐。很放鬆。" },
+        { "speaker": "旅客", "text": "Sounds nice. What's your favorite kind of food?", "translation": "聽起來不錯。你最喜歡哪種食物？" }
+      ],
+      "key_sentences": ["How are you", "last weekend", "went to a movie", "favorite kind of food"]
+    },
+    "b2": {
+      "scene": "在商務午餐中與客戶閒聊，同時試探合作意向但不顯強勢",
+      "learning_focus": ["中性話題 (旅遊、運動)", "試探性提問", "避免敏感話題", "建立關係"],
+      "learning_note": "訓練在專業場合中自然進行社交對話以建立融洽關係。",
+      "dialogue": [
+        { "speaker": "客戶", "text": "The weather has been great for this time of year. Are you a fan of outdoor activities?", "translation": "這個時節的天氣真不錯。您喜歡戶外活動嗎？" },
+        { "speaker": "旅客", "text": "Absolutely. I try to go cycling on weekends. Do you have any favorite spots around here?", "translation": "非常喜歡。我周末會去騎腳踏車。這附近你有什麼推薦的景點嗎？" },
+        { "speaker": "客戶", "text": "There's a beautiful trail along the river. I go there often with my family.", "translation": "沿著河邊有一條很漂亮的步道。我常和家人一起去那邊。" },
+        { "speaker": "旅客", "text": "That sounds lovely. Speaking of family, how have they been?", "translation": "聽起來很棒。說到家人，他們最近好嗎？" }
+      ],
+      "key_sentences": ["The weather", "outdoor activities", "go cycling", "favorite spots"]
+    }
+  },
+  {
+    "id": 39,
+    "title": { "zh": "邀約", "en": "Invitation" },
+    "category": "social",
+    "learning_objective": { "zh": "學習正式與非正式的邀約方式，及如何詢問活動細節。", "en": "Learn formal and informal ways to invite someone and how to ask for event details." },
+    "a2": {
+      "scene": "邀請朋友參加週末烤肉聚會",
+      "learning_focus": ["邀約用語 (Would you like to...)", "時間地點", "物資準備"],
+      "learning_note": "能進行簡單的社交邀約。",
+      "dialogue": [
+        { "speaker": "旅客", "text": "Hi, I'm having a barbecue this Sunday at my place. Would you like to come?", "translation": "嗨，我這禮拜天在我家辦烤肉。你想來嗎？" },
+        { "speaker": "朋友", "text": "I'd love to! What time does it start?", "translation": "我很想去！幾點開始？" },
+        { "speaker": "旅客", "text": "Around 2 PM. You don't need to bring anything, just yourself.", "translation": "下午兩點左右。你不用帶任何東西，人到就好。" },
+        { "speaker": "朋友", "text": "Are you sure? I can bring some drinks or a dessert.", "translation": "你確定嗎？我可以帶些飲料或甜點。" },
+        { "speaker": "旅客", "text": "Well, some extra cold drinks would be great. See you then!", "translation": "嗯，帶些額外的冰飲會很棒。到時見！" }
+      ],
+      "key_sentences": ["having a barbecue", "Would you like to come", "don't need to bring anything", "I'd love to"]
+    },
+    "b2": {
+      "scene": "商務社交：邀請客戶參加慈善高爾夫球賽並說明活動形式",
+      "learning_focus": ["正式邀約", "活動細節說明 (scramble format)", "服裝要求", "攜帶伴侶/嘉賓詢問"],
+      "learning_note": "訓練在商務背景下的社交邀約與細節溝通。",
+      "dialogue": [
+        { "speaker": "旅客", "text": "We are hosting a charity golf outing next month, and I'd like to invite you to join our group.", "translation": "我們下個月要舉辦一場慈善高爾夫球賽，我想邀請您加入我們這一組。" },
+        { "speaker": "客戶", "text": "That sounds wonderful. I haven't played in a while, though. What's the format?", "translation": "聽起來很棒。不過我有一陣子沒打了。形式是什麼？" },
+        { "speaker": "旅客", "text": "It's a casual scramble format, so there's no pressure. It's more about networking and supporting the cause.", "translation": "是輕鬆的隊制賽（scramble）形式，所以沒壓力。主要是為了建立人脈和支持這項公益。" },
+        { "speaker": "客戶", "text": "In that case, I'd be happy to attend. Can I bring a guest?", "translation": "若是那樣的話，我很樂意參加。我可以帶一位嘉賓嗎？" },
+        { "speaker": "旅客", "text": "Absolutely, spouses and partners are welcome. I'll send you a confirmation email with the dress code and directions.", "translation": "當然，非常歡迎配偶和伴侶。我會寄一封確認郵件給您，包含服裝要求和路線。" },
+        { "speaker": "客戶", "text": "Perfect. Looking forward to it. Thank you for organizing.", "translation": "完美。期待。謝謝您的安排。" }
+      ],
+      "key_sentences": ["invite you to a golf outing", "casual scramble format", "bring a guest", "dress code", "confirmation email"]
+    }
+  },
+  {
+    "id": 40,
+    "title": { "zh": "拒絕 / 婉拒", "en": "Decline" },
+    "category": "social",
+    "learning_objective": { "zh": "學習禮貌拒絕邀約或請求，並提供理由。", "en": "Learn to politely decline invitations or requests and provide reasons." },
+    "a2": {
+      "scene": "婉拒朋友的派對邀約",
+      "learning_focus": ["拒絕用語 (I'm sorry, I can't)", "簡單理由", "表達遺憾"],
+      "learning_note": "能不失禮貌地拒絕。",
+      "dialogue": [
+        { "speaker": "朋友", "text": "Do you want to come to my party on Saturday?", "translation": "你週六要來我的派對嗎？" },
+        { "speaker": "旅客", "text": "I'm sorry, I can't. I have to work this weekend.", "translation": "抱歉，沒辦法。我這週末要工作。" },
+        { "speaker": "朋友", "text": "Oh, that's too bad. Maybe next time.", "translation": "噢，太可惜了。下次吧。" },
+        { "speaker": "旅客", "text": "Yes, I'd love to join another time. Have fun!", "translation": "好的，我下次很樂意參加。玩得開心！" }
+      ],
+      "key_sentences": ["I'm sorry, I can't", "have to work", "maybe next time", "have fun"]
+    },
+    "b2": {
+      "scene": "婉拒客戶提出的不合理截止日期，並提出替代方案",
+      "learning_focus": ["禮貌拒絕不合理要求", "提供替代時間", "解釋原因", "保持關係"],
+      "learning_note": "訓練如何在職場中堅定但專業地拒絕。",
+      "dialogue": [
+        { "speaker": "客戶", "text": "We need the full report by this Friday instead of next Monday. Can you make it happen?", "translation": "我們需要在這週五之前拿到完整報告，而不是下週一。你能做到嗎？" },
+        { "speaker": "旅客", "text": "I understand the urgency, but I'm afraid I can't deliver the full report by Friday due to the complexity of the data analysis. Rushing it would compromise quality.", "translation": "我理解緊迫性，但由於數據分析的複雜性，恐怕我無法在週五前交付完整報告。倉促完成會影響品質。" },
+        { "speaker": "客戶", "text": "What if we only need the executive summary and key findings by Friday, and the full report by next Wednesday?", "translation": "如果我們週五只需要執行摘要和關鍵發現，完整報告下週三之前呢？" },
+        { "speaker": "旅客", "text": "That is feasible. I can produce a condensed version with the top three insights by Friday, then the full detailed analysis by Wednesday. Would that work for you?", "translation": "這可行。我可以在週五前提供濃縮版，包含前三項洞察，然後在週三前提供完整詳細分析。您可以接受嗎？" },
+        { "speaker": "客戶", "text": "Yes, that would help. But we need the data charts included in the Friday version.", "translation": "可以，那會有幫助。但我們需要週五版本包含數據圖表。" },
+        { "speaker": "旅客", "text": "I can include the essential charts. To be transparent, I will need to deprioritize another client project. Is there any possibility of a partial fee adjustment to reflect the rush?", "translation": "我可以包含必要的圖表。坦率地說，我需要降低另一個客戶專案的優先級。是否可能調整部分費用以反映趕工？" },
+        { "speaker": "客戶", "text": "I can offer a 10% rush fee. Please confirm by end of day.", "translation": "我可以提供10%的趕工費。請在今天結束前確認。" },
+        { "speaker": "旅客", "text": "Confirmed. I'll adjust my schedule. Thank you for your flexibility.", "translation": "確認。我會調整我的日程。感謝您的通融。" }
+      ],
+      "key_sentences": ["I'm afraid I can't", "compromise quality", "executive summary", "feasible", "rush fee"]
+    }
+  },
+  {
+    "id": 41,
+    "title": { "zh": "道歉", "en": "Apology" },
+    "category": "social",
+    "learning_objective": { "zh": "學習道歉、承認錯誤及提出補償方式。", "en": "Learn to apologize, admit mistakes and offer compensation." },
+    "a2": {
+      "scene": "不小心遲到，向朋友道歉",
+      "learning_focus": ["道歉用語 (I'm sorry)", "遲到理由", "保證不再犯"],
+      "learning_note": "能簡單道歉並解釋。",
+      "dialogue": [
+        { "speaker": "旅客", "text": "I'm so sorry I'm late. The traffic was terrible.", "translation": "很抱歉我遲到了。交通糟透了。" },
+        { "speaker": "朋友", "text": "It's okay. I just got here too.", "translation": "沒關係。我也才剛到。" },
+        { "speaker": "旅客", "text": "I'll buy you a coffee to make up for it.", "translation": "我請你喝咖啡當作補償。" },
+        { "speaker": "朋友", "text": "You don't have to, but thanks.", "translation": "不用啦，但謝謝。" }
+      ],
+      "key_sentences": ["I'm sorry I'm late", "traffic was terrible", "make up for it"]
+    },
+    "b2": {
+      "scene": "工作上因疏忽導致客戶損失，正式向客戶道歉並提出補償方案",
+      "learning_focus": ["正式道歉", "承擔責任", "補償方案 (折扣或免費服務)", "防止再發措施"],
+      "learning_note": "訓練在專業場景中誠懇道歉並挽救關係。",
+      "dialogue": [
+        { "speaker": "旅客", "text": "Ms. Johnson, I want to personally apologize for the error in our last delivery. We sent you the wrong product due to a labeling mistake in our warehouse. This is completely our fault.", "translation": "強森女士，我為我們上次出貨的錯誤親自向您道歉。因為我們倉庫的標籤錯誤，寄錯了產品。這完全是我們的錯。" },
+        { "speaker": "客戶", "text": "I appreciate you calling. This caused a delay in our production line. We lost about $5000 in potential revenue.", "translation": "感謝您來電。這導致了我們生產線的延遲。我們損失了約5000美元的潛在收入。" },
+        { "speaker": "旅客", "text": "I completely understand your frustration. Here's what we propose: We will overnight the correct product at no charge. Additionally, we will give you a 20% discount on your next three orders, and we are reviewing our warehouse labeling process to ensure this never happens again.", "translation": "我完全理解您的不滿。我們提出以下方案：我們將免費隔夜快遞正確產品。此外，您接下來三筆訂單將獲得20%折扣，並且我們正在審查倉庫標籤流程以確保不再發生。" },
+        { "speaker": "客戶", "text": "That sounds reasonable. What about compensation for the $5000 loss?", "translation": "聽起來合理。那5000美元的損失補償呢？" },
+        { "speaker": "旅客", "text": "We cannot directly compensate for lost revenue, but we can offer a $2000 credit on your account as a goodwill gesture. I hope that helps rebuild trust.", "translation": "我們無法直接補償收入損失，但我們可以在您的帳戶中提供2000美元的信用額度作為誠意。我希望這有助於重建信任。" },
+        { "speaker": "客戶", "text": "That is acceptable. Please send me a written confirmation of these terms.", "translation": "可以接受。請將這些條款的書面確認寄給我。" },
+        { "speaker": "旅客", "text": "I will do that within the hour. Again, I deeply apologize for the inconvenience.", "translation": "我會在一小時內完成。再次對不便深表歉意。" }
+      ],
+      "key_sentences": ["personally apologize", "labeling mistake", "overnight the correct product", "goodwill gesture", "rebuild trust"]
+    }
+  },
+  {
+    "id": 42,
+    "title": { "zh": "付款", "en": "Payment" },
+    "category": "finance",
+    "learning_objective": { "zh": "學習付款相關對話，包括現金、刷卡、行動支付及收據。", "en": "Learn payment-related conversations, including cash, card, mobile payment and receipts." },
+    "a2": {
+      "scene": "在商店結帳",
+      "learning_focus": ["付款方式", "找零", "收據"],
+      "learning_note": "能完成交易。",
+      "dialogue": [
+        { "speaker": "店員", "text": "That will be $25.50.", "translation": "總共25.50美元。" },
+        { "speaker": "旅客", "text": "Here's $30.", "translation": "這是30美元。" },
+        { "speaker": "店員", "text": "And $4.50 change. Do you want a receipt?", "translation": "找您4.50美元。需要收據嗎？" },
+        { "speaker": "旅客", "text": "Yes, please. Do you accept credit cards?", "translation": "好的。你們收信用卡嗎？" },
+        { "speaker": "店員", "text": "Yes, but there's a $1 fee for cards under $10.", "translation": "收，但10美元以下刷卡收1美元手續費。" }
+      ],
+      "key_sentences": ["will be", "change", "receipt", "accept credit cards", "fee"]
+    },
+    "b2": {
+      "scene": "旅客使用國際信用卡遇到貨幣轉換費問題，要求以本幣結算",
+      "learning_focus": ["動態貨幣轉換 (DCC)", "要求以本幣結算", "手續費詢問", "簽帳單核對"],
+      "learning_note": "訓練避免額外費用及理解信用卡結算機制。",
+      "dialogue": [
+        { "speaker": "店員", "text": "Your total is 100 euros. Would you like to pay in euros or US dollars? The machine offers dynamic currency conversion.", "translation": "您的總額是100歐元。您想用歐元還是美元支付？機器提供動態貨幣轉換。" },
+        { "speaker": "旅客", "text": "Please charge me in euros. I know DCC often has poor exchange rates.", "translation": "請用歐元計價。我知道動態貨幣轉換通常匯率很差。" },
+        { "speaker": "店員", "text": "No problem. Insert your card. Then sign the terminal.", "translation": "沒問題。插入卡片。然後在終端機簽名。" },
+        { "speaker": "旅客", "text": "Wait, the terminal shows $112. I did the math: 100 euros at 1.10 exchange rate should be $110. Why the extra $2?", "translation": "等等，終端機顯示112美元。我算過：100歐元匯率1.10應為110美元。為什麼多2美元？" },
+        { "speaker": "店員", "text": "That's a 2% foreign transaction fee charged by your bank. It's not from us.", "translation": "那是您的銀行收取的2%國外交易費。不是我們收的。" },
+        { "speaker": "旅客", "text": "I see. Can you give me a receipt showing the amount in euros? I need it for expense reporting.", "translation": "我明白了。你能給我顯示歐元金額的收據嗎？我需要報帳。" },
+        { "speaker": "店員", "text": "Sure. Here's the itemized receipt and the credit card slip. Would you like it emailed as well?", "translation": "當然。這是明細收據和信用卡簽單。需要也郵寄給您嗎？" },
+        { "speaker": "旅客", "text": "Email would be great. My address is on the loyalty card.", "translation": "郵寄很好。我的地址在會員卡上。" }
+      ],
+      "key_sentences": ["dynamic currency conversion", "charge me in euros", "poor exchange rates", "foreign transaction fee", "itemized receipt"]
+    }
+  },
+  {
+    "id": 43,
+    "title": { "zh": "銀行", "en": "Banking" },
+    "category": "finance",
+    "learning_objective": { "zh": "學習銀行業務對話，如開戶、匯款及詢問手續費。", "en": "Learn banking conversations, such as opening an account, transferring money and asking about fees." },
+    "a2": {
+      "scene": "旅客在銀行兌換外幣",
+      "learning_focus": ["兌換貨幣", "匯率詢問", "手續費"],
+      "learning_note": "能完成簡單外幣兌換。",
+      "dialogue": [
+        { "speaker": "旅客", "text": "I'd like to exchange US dollars to euros.", "translation": "我想把美元換成歐元。" },
+        { "speaker": "行員", "text": "How much would you like to exchange?", "translation": "您想換多少？" },
+        { "speaker": "旅客", "text": "$200. What's the exchange rate today?", "translation": "200美元。今天的匯率是多少？" },
+        { "speaker": "行員", "text": "1 USD = 0.92 EUR. There's a $5 service fee.", "translation": "1美元兌0.92歐元。有5美元手續費。" },
+        { "speaker": "旅客", "text": "OK. Here's $200. Can I have small bills, please?", "translation": "好的。這是200美元。請給我小面額紙鈔。" }
+      ],
+      "key_sentences": ["exchange", "exchange rate", "service fee", "small bills"]
+    },
+    "b2": {
+      "scene": "旅客的信用卡被盜刷，聯繫銀行處理爭議款並申請臨時額度",
+      "learning_focus": ["盜刷通報", "爭議款處理 (dispute)", "臨時額度申請", "新卡補發"],
+      "learning_note": "訓練處理金融詐騙並保護自身權益。",
+      "dialogue": [
+        { "speaker": "旅客", "text": "I need to report fraudulent transactions on my credit card. I see two charges of $500 each from an online retailer I've never used.", "translation": "我需要通報信用卡的詐騙交易。我看到兩筆來自從未使用過的線上零售商的500美元消費。" },
+        { "speaker": "客服", "text": "I'm sorry to hear that. I will block your card immediately. Are these charges pending or posted?", "translation": "很遺憾聽到這個消息。我會立即凍結您的卡。這些是未請款還是已請款？" },
+        { "speaker": "旅客", "text": "They are posted. I still have the card with me, so it must be a data breach. Can you open a dispute for both charges?", "translation": "已請款。卡還在我身上，所以一定是資料外洩。您可以對這兩筆款項提出爭議嗎？" },
+        { "speaker": "客服", "text": "Yes. I'll file a dispute. You will receive a temporary credit within 5 business days while we investigate. You need to sign a fraud affidavit. I'll mail it to you.", "translation": "可以。我會提出爭議。在我們調查期間，您會在5個工作日內收到臨時信用額度。您需要簽署詐騙宣誓書。我會郵寄給您。" },
+        { "speaker": "旅客", "text": "Thank you. Also, I have some automatic payments set up on this card. What should I do?", "translation": "謝謝。另外，我用這張卡設定了一些自動扣款。我該怎麼辦？" },
+        { "speaker": "客服", "text": "We can issue a new card with a different number. The auto-payments will fail unless you update the merchants. I can also help you request a temporary credit limit increase on your other card to cover upcoming bills.", "translation": "我們可以發行不同號碼的新卡。除非您更新商家資訊，否則自動扣款會失敗。我也可以協助您申請另一張卡的臨時額度增加以支付即將到來的帳單。" },
+        { "speaker": "旅客", "text": "Please do that. And expedite the new card shipping. I'm traveling next week.", "translation": "請那樣做。並加快新卡寄送。我下週要旅行。" },
+        { "speaker": "客服", "text": "I'll send it via overnight courier at no charge. Is there anything else?", "translation": "我會免費透過隔夜快遞寄送。還有其他需要嗎？" }
+      ],
+      "key_sentences": ["fraudulent transactions", "block your card", "file a dispute", "fraud affidavit", "temporary credit limit increase"]
+    }
+  },
+  {
+    "id": 44,
+    "title": { "zh": "發票 / 收據", "en": "Receipt Issue" },
+    "category": "finance",
+    "learning_objective": { "zh": "學習要求發票、更正發票內容及報帳相關對話。", "en": "Learn to request invoices, correct invoice details and expense reporting conversations." },
+    "a2": {
+      "scene": "旅客購物後要求收據",
+      "learning_focus": ["要求收據", "確認金額", "收據格式"],
+      "learning_note": "能簡單取得交易憑證。",
+      "dialogue": [
+        { "speaker": "旅客", "text": "Can I have a receipt, please?", "translation": "請給我一張收據。" },
+        { "speaker": "店員", "text": "Sure. Here you are.", "translation": "好的。給您。" },
+        { "speaker": "旅客", "text": "Can you write the total in words? I need it for reimbursement.", "translation": "你能用文字寫總額嗎？我需要報帳。" },
+        { "speaker": "店員", "text": "We don't do that, but our receipt shows the amount in numbers and date. Is that okay?", "translation": "我們不那樣做，但我們的收據有數字金額和日期。可以嗎？" },
+        { "speaker": "旅客", "text": "Yes, that's fine. Thank you.", "translation": "可以，沒問題。謝謝。" }
+      ],
+      "key_sentences": ["have a receipt", "total in words", "reimbursement", "amount in numbers"]
+    },
+    "b2": {
+      "scene": "旅客需要公司抬頭的發票，但店家開錯了，要求重開並提供電子檔",
+      "learning_focus": ["公司抬頭 (company header)", "統一編號 (tax ID)", "發票重開", "電子發票"],
+      "learning_note": "訓練處理發票細節以符合公司財務要求。",
+      "dialogue": [
+        { "speaker": "旅客", "text": "I need an invoice with the following company details: 'ABC International', with our tax ID number 12345678. The invoice you gave me has no tax ID and the company name is misspelled as 'ABB International'.", "translation": "我需要一張包含以下公司資訊的發票：'ABC International'，統一編號12345678。您給我的發票沒有統編，而且公司名稱拼錯為'ABB International'。" },
+        { "speaker": "店員", "text": "I apologize. Let me correct it. Can you provide the exact details in writing?", "translation": "很抱歉。我來更正。您能提供確切的書面資訊嗎？" },
+        { "speaker": "旅客", "text": "Here's my business card with the info. Also, the invoice date should be today, not yesterday. We need to match the delivery date.", "translation": "這是我的名片，上面有資訊。另外，發票日期應該是今天而不是昨天。我們需要與交貨日期一致。" },
+        { "speaker": "店員", "text": "Noted. I will void the original invoice and issue a corrected one. Would you prefer a paper or electronic invoice?", "translation": "收到。我會作廢原發票並開立更正版。您偏好紙本還是電子發票？" },
+        { "speaker": "旅客", "text": "Both, please. Email the PDF to me now and also give me a printed copy. I need to submit the original for accounting.", "translation": "兩者都要。請現在將PDF用電子郵件寄給我，並給我列印副本。我需要將正本提交給會計。" },
+        { "speaker": "店員", "text": "Here is the printed corrected invoice. I've sent the PDF to your email. Please confirm you received it.", "translation": "這是列印的更正發票。我已將PDF寄到您的電子郵件。請確認您收到。" },
+        { "speaker": "旅客", "text": "Just got it. Thank you for the quick correction.", "translation": "剛收到。感謝您快速更正。" }
+      ],
+      "key_sentences": ["company details", "tax ID number", "void the original invoice", "electronic invoice", "submit for accounting"]
+    }
+  },
+  {
+    "id": 45,
+    "title": { "zh": "詢問費用", "en": "Charges" },
+    "category": "finance",
+    "learning_objective": { "zh": "學習詢問各種費用的明細，如隱藏費用、服務費及稅金。", "en": "Learn to ask for breakdown of various charges, such as hidden fees, service fees and taxes." },
+    "a2": {
+      "scene": "旅客在旅館詢問額外費用",
+      "learning_focus": ["詢問費用明細", "城市稅", "服務費"],
+      "learning_note": "能確認帳單上的項目。",
+      "dialogue": [
+        { "speaker": "旅客", "text": "What is this $5 charge on my bill?", "translation": "我帳單上的這5美元是什麼費用？" },
+        { "speaker": "櫃檯人員", "text": "That's the city tax, required by local law.", "translation": "那是城市稅，當地法律規定。" },
+        { "speaker": "旅客", "text": "Is it per night or per stay?", "translation": "是每晚還是一次住宿？" },
+        { "speaker": "櫃檯人員", "text": "Per night. There's also a 10% service charge added to food and beverage.", "translation": "每晚。另外餐飲加收10%服務費。" },
+        { "speaker": "旅客", "text": "I see. Can you show me the detailed breakdown?", "translation": "我明白了。你能給我看詳細明細嗎？" }
+      ],
+      "key_sentences": ["$5 charge", "city tax", "per night", "service charge", "detailed breakdown"]
+    },
+    "b2": {
+      "scene": "旅客收到醫療帳單，對某些項目有疑問並要求保險公司協商",
+      "learning_focus": ["醫療帳單明細", "保險給付範圍", "項目代碼 (CPT codes)", "協商降價"],
+      "learning_note": "訓練解讀複雜帳單並與保險公司溝通。",
+      "dialogue": [
+        { "speaker": "旅客", "text": "I received a bill from the hospital for $2,500 after my emergency visit. My insurance EOB says I owe only $800. Why the discrepancy?", "translation": "我收到醫院的帳單，急診後是2500美元。我的保險給付說明說我只欠800美元。為什麼有差異？" },
+        { "speaker": "醫院帳單部門", "text": "Let me check. Your insurance has a $1,700 deductible, and they only cover 80% after that. The $2,500 includes facility fees and physician fees. Some codes may not be covered.", "translation": "我查查。您的保險有1700美元自付額，之後只給付80%。2500美元包含設施費和醫生費。有些代碼可能不給付。" },
+        { "speaker": "旅客", "text": "Can you itemize the charges by CPT code? I need to see which codes were denied. Also, the ER visit was for a true emergency (chest pain). Under the prudent layperson standard, it should be covered.", "translation": "你能按CPT代碼逐項列出費用嗎？我需要看哪些代碼被拒絕了。另外，急診是因為真正的緊急情況（胸痛）。根據審慎外行標準，應該要給付。" },
+        { "speaker": "醫院帳單部門", "text": "I'll email you the itemized bill with codes. For the denied codes, you can appeal with your insurance using the medical records.", "translation": "我會將含代碼的明細帳單用電子郵件寄給您。對於被拒絕的代碼，您可以用病歷向保險公司上訴。" },
+        { "speaker": "旅客", "text": "In the meantime, can I negotiate the hospital charges? For example, the facility fee of $1,200 seems high for a 3-hour stay.", "translation": "同時，我可以協商醫院費用嗎？例如，1200美元的設施費對於3小時的停留似乎太高了。" },
+        { "speaker": "醫院帳單部門", "text": "We can offer a 20% discount if you pay in full within 30 days, regardless of insurance. After insurance adjustments, your balance might be lower.", "translation": "如果您在30天內全額支付，我們可以提供20%折扣，無論保險如何。保險調整後，您的餘額可能更低。" },
+        { "speaker": "旅客", "text": "I'll wait for the insurance appeal. But please note my account to not send it to collections for 60 days.", "translation": "我會等待保險上訴結果。但請在我的帳戶備註60天內不要交給催收。" }
+      ],
+      "key_sentences": ["itemize the charges", "CPT code", "prudent layperson standard", "appeal with your insurance", "collections"]
+    }
+  },
+  {
+    "id": 46,
+    "title": { "zh": "上網 / WiFi", "en": "WiFi Request" },
+    "category": "info",
+    "learning_objective": { "zh": "學習詢問WiFi密碼、連線問題及網路速度。", "en": "Learn to ask for WiFi password, connection issues and internet speed." },
+    "a2": {
+      "scene": "在咖啡廳詢問WiFi密碼",
+      "learning_focus": ["WiFi密碼", "連線步驟", "網路速度"],
+      "learning_note": "能簡單獲取網路連線資訊。",
+      "dialogue": [
+        { "speaker": "旅客", "text": "What's the WiFi password?", "translation": "WiFi密碼是多少？" },
+        { "speaker": "店員", "text": "It's 'coffee123'. The network name is 'Cafe_WiFi'.", "translation": "是'coffee123'。網路名稱是'Cafe_WiFi'。" },
+        { "speaker": "旅客", "text": "Is it free?", "translation": "免費嗎？" },
+        { "speaker": "店員", "text": "Yes, for customers. Just accept the terms on the login page.", "translation": "是的，給顧客使用。只需在登錄頁面接受條款。" },
+        { "speaker": "旅客", "text": "My phone can't find the network. Could you restart the router?", "translation": "我的手機找不到網路。你能重啟路由器嗎？" },
+        { "speaker": "店員", "text": "Sure, give me a minute. It should work now.", "translation": "好的，等一下。現在應該可以了。" }
+      ],
+      "key_sentences": ["WiFi password", "network name", "free for customers", "restart the router"]
+    },
+    "b2": {
+      "scene": "旅客在飯店使用付費高速網路，但速度不達標，要求退費",
+      "learning_focus": ["網路速度測試", "服務水準協議 (SLA)", "要求退費", "技術支援"],
+      "learning_note": "訓練針對網路服務品質提出正式投訴。",
+      "dialogue": [
+        { "speaker": "旅客", "text": "I paid $10 for the premium high-speed WiFi package in my room, but the speed is only 2 Mbps. I'm trying to join a video conference and it keeps freezing.", "translation": "我為房間的高級高速網路付了10美元，但速度只有2 Mbps。我試著參加視訊會議，但一直卡頓。" },
+        { "speaker": "櫃檯人員", "text": "I'm sorry. Let me check your connection. Are you using the correct network? The premium network is 'Hotel_Premium' not 'Hotel_Free'.", "translation": "很抱歉。讓我檢查您的連線。您用的是正確的網路嗎？高級網路是'Hotel_Premium'，不是'Hotel_Free'。" },
+        { "speaker": "旅客", "text": "Yes, I'm on the premium network. I ran a speed test on two devices. Could there be congestion? Can you move me to a different access point?", "translation": "是的，我連的是高級網路。我在兩個設備上測速。是不是網路壅塞？你能把我移到不同的存取點嗎？" },
+        { "speaker": "櫃檯人員", "text": "I'll send IT to your room. If they can't fix it, I will refund the premium fee and give you one night's free breakfast as compensation.", "translation": "我會派IT到您房間。如果他們修不好，我會退還高級費用並提供一晚免費早餐作為補償。" },
+        { "speaker": "IT人員", "text": "I've checked. There's a faulty router on your floor. I'm switching you to a different band. Now try again.", "translation": "我檢查過了。您樓層有一個路由器故障。我將您切換到不同頻段。現在再試試。" },
+        { "speaker": "旅客", "text": "Now it's 50 Mbps. Much better. However, I already missed my meeting. I still expect a partial refund.", "translation": "現在是50 Mbps。好多了。但我已經錯過了會議。我仍然希望部分退款。" },
+        { "speaker": "櫃檯人員", "text": "I understand. I'll refund $5 of the $10 fee. Please accept our apologies.", "translation": "我理解。我會從10美元中退款5美元。請接受我們的歉意。" }
+      ],
+      "key_sentences": ["premium high-speed WiFi", "speed test", "video conference freezing", "access point", "partial refund"]
+    }
+  },
+  {
+    "id": 47,
+    "title": { "zh": "資訊查詢", "en": "Information Inquiry" },
+    "category": "info",
+    "learning_objective": { "zh": "學習查詢各種實用資訊，如營業時間、電話號碼及地址。", "en": "Learn to inquire about various practical information, such as business hours, phone numbers and addresses." },
+    "a2": {
+      "scene": "旅客詢問博物館開放時間",
+      "learning_focus": ["開放時間", "休館日", "門票資訊"],
+      "learning_note": "能獲取基本服務時間。",
+      "dialogue": [
+        { "speaker": "旅客", "text": "What time does the museum open?", "translation": "博物館幾點開門？" },
+        { "speaker": "工作人員", "text": "It opens at 10 AM and closes at 6 PM. Last entry is at 5 PM.", "translation": "上午10點開，下午6點關。最後入場時間下午5點。" },
+        { "speaker": "旅客", "text": "Are you open on Monday?", "translation": "週一有開嗎？" },
+        { "speaker": "工作人員", "text": "No, we are closed on Mondays.", "translation": "沒有，週一休館。" },
+        { "speaker": "旅客", "text": "Do I need to book tickets in advance?", "translation": "我需要提前訂票嗎？" },
+        { "speaker": "工作人員", "text": "Recommended for weekends, but not required on weekdays.", "translation": "週末建議，平日不需要。" },
+        { "speaker": "旅客", "text": "Thank you. Where can I get a city map?", "translation": "謝謝。哪裡可以拿到城市地圖？" }
+      ],
+      "key_sentences": ["What time does it open", "closed on Mondays", "book tickets in advance", "city map"]
+    },
+    "b2": {
+      "scene": "旅客需要查詢當地政府的辦公時間、地址及特定文件辦理流程",
+      "learning_focus": ["政府機構查詢", "辦公時間與午休", "所需文件", "預約制度"],
+      "learning_note": "訓練查詢官方資訊並確認行政細節。",
+      "dialogue": [
+        { "speaker": "旅客", "text": "I need to extend my visa. What are the opening hours of the immigration office?", "translation": "我需要延長簽證。移民局的辦公時間是？" },
+        { "speaker": "服務人員", "text": "It's open Monday to Friday, 9 AM to 4 PM, but closed for lunch from 12:30 to 1:30 PM. Do you have an appointment?", "translation": "週一到週五上午9點到下午4點，但中午12:30到1:30休息。您有預約嗎？" },
+        { "speaker": "旅客", "text": "No, I don't. Can I walk in?", "translation": "沒有。我可以直接去嗎？" },
+        { "speaker": "服務人員", "text": "Walk-ins are accepted only before 11 AM. After that, appointments are required. What is the exact address?", "translation": "只接受上午11點前的現場辦理。之後需要預約。確切地址是什麼？" },
+        { "speaker": "旅客", "text": "The address online says 88 Civic Center Drive, but my GPS shows two locations. Can you confirm the zip code?", "translation": "網上地址是市民中心大道88號，但我的GPS顯示兩個地點。您能確認郵遞區號嗎？" },
+        { "speaker": "服務人員", "text": "The correct zip code is 10001. It's the building next to the central library. Do you have your passport, current visa, and proof of funds?", "translation": "正確的郵遞區號是10001。就在中央圖書館旁邊的建築。您有護照、當前簽證和財力證明嗎？" },
+        { "speaker": "旅客", "text": "I have everything except a bank statement. Is a digital copy on my phone acceptable?", "translation": "除了銀行對帳單外我都有。手機上的數位副本可以接受嗎？" },
+        { "speaker": "服務人員", "text": "Yes, as long as it's clear. Also, bring a passport photo. The fee is $50, cash only. Any other questions?", "translation": "可以，只要清晰即可。另外，帶一張護照照片。費用是50美元，只收現金。還有其他問題嗎？" },
+        { "speaker": "旅客", "text": "No, that's very helpful. Thank you for the detailed information.", "translation": "沒有了，非常有幫助。感謝您詳細的資訊。" }
+      ],
+      "key_sentences": ["extend my visa", "opening hours", "walk-ins accepted", "confirm the zip code", "proof of funds", "cash only"]
+    }
+  },
+  {
+    "id": 48,
+    "title": { "zh": "時間 / 日期", "en": "Time / Schedule" },
+    "category": "info",
+    "learning_objective": { "zh": "學習詢問時間、日期、行程安排及預約確認。", "en": "Learn to ask about time, dates, schedules and appointment confirmation." },
+    "a2": {
+      "scene": "旅客詢問火車時刻表",
+      "learning_focus": ["時間詢問", "日期表達", "班次確認"],
+      "learning_note": "能查詢交通工具的發車時間。",
+      "dialogue": [
+        { "speaker": "旅客", "text": "What time is the next train to London?", "translation": "下一班去倫敦的火車是幾點？" },
+        { "speaker": "站務員", "text": "At 10:15 AM from platform 3.", "translation": "上午10:15，第3月台。" },
+        { "speaker": "旅客", "text": "How long does the journey take?", "translation": "車程多久？" },
+        { "speaker": "站務員", "text": "About two hours.", "translation": "大約兩小時。" },
+        { "speaker": "旅客", "text": "What time is the last train back?", "translation": "最晚的回程火車是幾點？" },
+        { "speaker": "站務員", "text": "The last train is at 10:30 PM.", "translation": "末班車是晚上10:30。" },
+        { "speaker": "旅客", "text": "Thank you. Is the timetable different on Sunday?", "translation": "謝謝。週日的時刻表不同嗎？" }
+      ],
+      "key_sentences": ["next train to London", "journey takes", "last train", "timetable on Sunday"]
+    },
+    "b2": {
+      "scene": "旅客與客戶協調跨時區會議時間，考慮對方工作日及節假日",
+      "learning_focus": ["跨時區協調", "工作時間帶", "節假日確認", "會議邀請工具"],
+      "learning_note": "訓練在國際商務中安排合適會議時間。",
+      "dialogue": [
+        { "speaker": "客戶", "text": "I'd like to schedule a 1-hour call next week to discuss the proposal. I'm in New York (EST).", "translation": "我想安排下週一個1小時的電話會議討論提案。我在紐約（東部時間）。" },
+        { "speaker": "旅客", "text": "I'm in Taipei (GMT+8). That's a 12-hour difference. What are your working hours?", "translation": "我在台北（GMT+8）。相差12小時。您的工作時間是？" },
+        { "speaker": "客戶", "text": "I'm available from 9 AM to 5 PM EST. That would be 9 PM to 5 AM your time. Is that feasible?", "translation": "我東部時間上午9點到下午5點有空。那會是您時間晚上9點到早上5點。可行嗎？" },
+        { "speaker": "旅客", "text": "I can do early morning my time, say 7 AM to 9 AM. That would be 7 PM to 9 PM EST. Would that work for you?", "translation": "我可以安排我時間的清晨，比如早上7點到9點。那會是東部時間晚上7點到9點。您方便嗎？" },
+        { "speaker": "客戶", "text": "Yes, 7 PM Monday is fine. Let's aim for Monday, May 20th at 7 PM EST / Tuesday, May 21st at 7 AM Taipei time.", "translation": "可以，週一晚上7點沒問題。那就訂在5月20日週一東部時間晚上7點 / 台北時間5月21日週二早上7點。" },
+        { "speaker": "旅客", "text": "Please note that Monday, May 20th is a public holiday here (Victoria Day). Are you available on Tuesday instead?", "translation": "請注意5月20日週一是這裡的公眾假期（維多利亞日）。您週二有空嗎？" },
+        { "speaker": "客戶", "text": "Oh, I forgot. Tuesday 7 PM EST works. I'll send a calendar invite with the time zone conversion.", "translation": "哦，我忘了。週二東部時間晚上7點可以。我會發送含時區轉換的行事曆邀請。" },
+        { "speaker": "旅客", "text": "Please also include a Zoom link and agenda. I'll confirm within 24 hours.", "translation": "也請包含Zoom連結和議程。我會在24小時內確認。" }
+      ],
+      "key_sentences": ["schedule a call", "time difference", "working hours", "public holiday", "calendar invite", "time zone conversion"]
+    }
+  },
+  {
+    "id": 49,
+    "title": { "zh": "抱怨處理", "en": "Complaint Escalation" },
+    "category": "problem_solving",
+    "learning_objective": { "zh": "學習將投訴升級至管理層，並要求合理的解決方案。", "en": "Learn to escalate complaints to management and demand reasonable solutions." },
+    "a2": {
+      "scene": "旅客對餐點不滿，要求見經理",
+      "learning_focus": ["升級投訴", "要求見經理", "重複問題"],
+      "learning_note": "能在問題未解決時請求更高權限者協助。",
+      "dialogue": [
+        { "speaker": "旅客", "text": "I already told the waitress, but my soup is still cold. I want to speak to the manager.", "translation": "我已經告訴服務生了，但我的湯還是冷的。我要跟經理談。" },
+        { "speaker": "經理", "text": "I'm the manager. I apologize. Let me replace the soup immediately.", "translation": "我是經理。很抱歉。我立刻幫您換湯。" },
+        { "speaker": "旅客", "text": "This is the second time. I want a discount on my bill.", "translation": "這是第二次了。我要帳單打折。" },
+        { "speaker": "經理", "text": "I understand. I'll take 20% off your total bill. Is that acceptable?", "translation": "我理解。我給您總帳單打8折。可以接受嗎？" },
+        { "speaker": "旅客", "text": "Yes. Please make sure the new soup is hot.", "translation": "可以。請確保新湯是熱的。" }
+      ],
+      "key_sentences": ["speak to the manager", "replace immediately", "second time", "20% off"]
+    },
+    "b2": {
+      "scene": "旅客在航空公司客服無效後，要求轉接更高層（總經理）並威脅法律行動",
+      "learning_focus": ["投訴升級", "要求高層介入", "法律行動威脅", "書面跟進"],
+      "learning_note": "訓練在極度不滿時採取正式升級途徑。",
+      "dialogue": [
+        { "speaker": "旅客", "text": "I've been on the phone with three different agents, and no one can rebook my cancelled flight. I need to speak to your supervisor, or better, the general manager.", "translation": "我已經跟三個不同的客服講過電話，沒有人能幫我改簽被取消的航班。我需要跟你的主管談，或者更好是總經理。" },
+        { "speaker": "客服", "text": "I understand your frustration. I am the supervisor. Let me personally handle your case. Can you give me your record locator?", "translation": "我理解您的不滿。我是主管。我親自處理您的案件。能給我您的訂位代號嗎？" },
+        { "speaker": "旅客", "text": "It's ABC123. You promised a callback two hours ago. I've missed my connection and I'm stuck overnight. This is unacceptable.", "translation": "ABC123。你們兩小時前答應回電。我錯過了轉機，被困一整晚。這無法接受。" },
+        { "speaker": "客服", "text": "I see the notes. I apologize. I have found a seat on tomorrow's morning flight and will book you a hotel and meal voucher. Is that okay?", "translation": "我看到備註了。很抱歉。我找到了明天早班機的座位，並會為您預訂飯店和餐券。可以嗎？" },
+        { "speaker": "旅客", "text": "No. I need to be there today. I demand to be rebooked on another airline. If you cannot do that, I will file a complaint with the Department of Transportation and consider legal action for breach of contract.", "translation": "不行。我今天必須到那裡。我要求轉簽到其他航空公司。如果你們做不到，我會向交通部投訴並考慮因違約而採取法律行動。" },
+        { "speaker": "客服", "text": "Please hold. I will escalate to the duty manager. (After hold) The manager has approved a rebooking on Delta Airline departing in 3 hours. We will cover the fare difference. Your new confirmation number is DL789.", "translation": "請稍等。我會升級給值班經理。（等待後）經理已批准改簽到3小時後起飛的達美航空。我們會支付票價差額。您的新確認號碼是DL789。" },
+        { "speaker": "旅客", "text": "Finally. Please also send me written confirmation of all compensation (hotel, meals, fare difference) to my email. I will still consider filing a complaint for the poor initial handling.", "translation": "終於。也請將所有補償（飯店、餐食、票價差額）的書面確認寄到我的電子郵件。我仍然會考慮投訴你們最初的糟糕處理。" },
+        { "speaker": "客服", "text": "I will email you within the hour. Again, our sincere apologies.", "translation": "我會在一小時內用電子郵件寄給您。再次誠摯道歉。" }
+      ],
+      "key_sentences": ["speak to your supervisor", "general manager", "escalate to the duty manager", "legal action", "breach of contract", "written confirmation"]
+    }
+  },
+  {
+    "id": 50,
+    "title": { "zh": "協商", "en": "Negotiation" },
+    "category": "problem_solving",
+    "learning_objective": { "zh": "學習在不同情境下進行協商，包括價格、條件及讓步。", "en": "Learn to negotiate in various situations, including price, terms and concessions." },
+    "a2": {
+      "scene": "旅客在二手市場議價買一個花瓶",
+      "learning_focus": ["開價", "還價", "最終成交"],
+      "learning_note": "能進行簡單的價格協商。",
+      "dialogue": [
+        { "speaker": "賣家", "text": "This vase is $50.", "translation": "這個花瓶50美元。" },
+        { "speaker": "旅客", "text": "That's too expensive. Can you do $30?", "translation": "太貴了。30美元可以嗎？" },
+        { "speaker": "賣家", "text": "How about $40? It's handmade.", "translation": "40美元如何？它是手作的。" },
+        { "speaker": "旅客", "text": "$35 is my final offer.", "translation": "35美元是我的最終出價。" },
+        { "speaker": "賣家", "text": "OK, deal. Cash only.", "translation": "好，成交。只收現金。" }
+      ],
+      "key_sentences": ["too expensive", "final offer", "deal", "cash only"]
+    },
+    "b2": {
+      "scene": "B2B合約協商：供應商要求漲價，買方要求維持原價並增加付款天數",
+      "learning_focus": ["漲價談判", "付款條件", "長期合約誘因", "雙贏方案"],
+      "learning_note": "訓練專業商業談判技巧，創造雙贏。",
+      "dialogue": [
+        { "speaker": "供應商", "text": "Due to rising raw material costs, we need to increase our unit price by 15% for the next quarter.", "translation": "由於原材料成本上漲，下一季度我們需要將單價提高15%。" },
+        { "speaker": "旅客 (採購)", "text": "A 15% increase is too steep. Our budget is fixed for the year. Can you absorb some of the cost? We are your largest customer.", "translation": "上漲15%太高了。我們今年的預算是固定的。你們能吸收一部分成本嗎？我們是你們最大的客戶。" },
+        { "speaker": "供應商", "text": "I understand. What if we do 10% and you commit to a 12-month contract instead of 6 months?", "translation": "我理解。如果我們漲10%，而你們承諾12個月合約而不是6個月呢？" },
+        { "speaker": "旅客", "text": "We can agree to 12 months if you keep the price at 5% increase and extend payment terms from net 30 to net 60 days.", "translation": "如果你們只漲5%，並將付款條件從月結30天延長到60天，我們可以同意12個月。" },
+        { "speaker": "供應商", "text": "Net 60 is too long for us. How about net 45 and 7% increase? And we will throw in free shipping on orders over $10,000.", "translation": "月結60天對我們來說太長了。月結45天和漲7%如何？並且我們會提供訂單超過1萬美元免運費。" },
+        { "speaker": "旅客", "text": "Deal. But we need a clause that allows us to renegotiate if raw material prices drop by more than 10%.", "translation": "成交。但我們需要一個條款，如果原材料價格下跌超過10%，允許我們重新協商。" },
+        { "speaker": "供應商", "text": "I can agree to a quarterly review mechanism. Let's have legal draw up the revised contract.", "translation": "我可以同意季度審查機制。讓法務擬定修改後的合約。" },
+        { "speaker": "旅客", "text": "Great. I'll have our purchasing team send you the revised terms by end of week.", "translation": "太好了。我會讓我們的採購團隊在本週結束前將修改後的條款發送給你們。" }
+      ],
+      "key_sentences": ["unit price increase", "absorb some of the cost", "payment terms", "renegotiate", "quarterly review mechanism"]
+    }
+  }
+]

@@ -1,0 +1,70 @@
+{
+  "entities": {
+    "User": {
+      "title": "User",
+      "description": "User profile and global statistics",
+      "type": "object",
+      "properties": {
+        "userId": { "type": "string" },
+        "email": { "type": "string", "format": "email" },
+        "displayName": { "type": "string" },
+        "photoURL": { "type": "string" },
+        "totalCorrect": { "type": "number", "description": "Total correct word placements" },
+        "totalAttempted": { "type": "number", "description": "Total attempted word placements" },
+        "lastActive": { "type": "string", "format": "date-time" }
+      },
+      "required": ["userId", "email"]
+    },
+    "SentenceProgress": {
+      "title": "SentenceProgress",
+      "description": "Tracking progress of a specific sentence",
+      "type": "object",
+      "properties": {
+        "sentenceId": { "type": "number" },
+        "status": { "type": "string", "enum": ["unseen", "attempted", "mastered"] },
+        "correctCount": { "type": "number" },
+        "totalAttempts": { "type": "number" },
+        "lastUpdated": { "type": "string", "format": "date-time" }
+      },
+      "required": ["sentenceId", "status"]
+    },
+    "Favorite": {
+      "title": "Favorite",
+      "description": "User's favorite sentence marker",
+      "type": "object",
+      "properties": {
+        "sentenceId": { "type": "number" },
+        "addedAt": { "type": "string", "format": "date-time" }
+      },
+      "required": ["sentenceId"]
+    },
+    "WrongSentence": {
+      "title": "WrongSentence",
+      "description": "User's failed sentence marker",
+      "type": "object",
+      "properties": {
+        "sentenceId": { "type": "number" },
+        "recordedAt": { "type": "string", "format": "date-time" }
+      },
+      "required": ["sentenceId"]
+    }
+  },
+  "firestore": {
+    "/users/{userId}": {
+      "schema": "User",
+      "description": "Store individual user profiles and cumulative stats"
+    },
+    "/users/{userId}/sentences/{sentenceId}": {
+      "schema": "SentenceProgress",
+      "description": "Individual sentence progress per user"
+    },
+    "/users/{userId}/favorites/{sentenceId}": {
+      "schema": "Favorite",
+      "description": "Sentinel for a user's favorite sentence"
+    },
+    "/users/{userId}/wrong_sentences/{sentenceId}": {
+      "schema": "WrongSentence",
+      "description": "Sentinel for a user's failed/mistaken sentence"
+    }
+  }
+}

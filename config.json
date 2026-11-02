@@ -1,0 +1,111 @@
+{
+  "version": "v2.1.0",
+  "lastUpdated": "2026-11-02",
+  "system_info": {
+    "project_name": "小雪的修仙世界",
+    "base_width": 430,
+    "base_height": 932,
+    "auth_provider": "Google",
+    "firebase_connected": false
+  },
+  "user_profile": {
+    "displayName": "修仙道友",
+    "avatarUrl": "assets/images/avatar_user.jpg",
+    "realm": "煉氣初期",
+    "level": 1,
+    "exp": 120,
+    "expRequired": 300,
+    "spiritStone": 88
+  },
+  "hero_banner": {
+    "title": "小雪起居室",
+    "subtitle": "冥想初始化",
+    "bgImage": "assets/images/hero_meditation.jpg",
+    "character": "小雪",
+    "status_prefix": "當前修為"
+  },
+  "modules": [
+    {
+      "id": "beast_zone",
+      "title": "野外獸區",
+      "subtitle": "倖存者打怪入口",
+      "icon": "🔥",
+      "image": "assets/images/card_beast_zone.jpg",
+      "type": "game",
+      "target": "dlc_beast_zone"
+    },
+    {
+      "id": "fishing_river",
+      "title": "釣魚河邊",
+      "subtitle": "休閒垂釣入口",
+      "icon": "🌊",
+      "image": "assets/images/card_fishing_river.jpg",
+      "type": "relax",
+      "target": "dlc_fishing_river"
+    },
+    {
+      "id": "talisman_puzzle",
+      "title": "符咒解謎",
+      "subtitle": "2048 變體玩法",
+      "icon": "📜",
+      "image": "assets/images/card_talisman_puzzle.jpg",
+      "type": "puzzle",
+      "target": "dlc_talisman_puzzle"
+    },
+    {
+      "id": "gear_puzzle",
+      "title": "機關解密",
+      "subtitle": "俄羅斯方塊變體",
+      "icon": "⚙️",
+      "image": "assets/images/card_gear_puzzle.jpg",
+      "type": "puzzle",
+      "target": "dlc_gear_puzzle"
+    },
+    {
+      "id": "english_spells",
+      "title": "英文咒語習得",
+      "subtitle": "填空 App",
+      "icon": "💬",
+      "image": "assets/images/card_english_spells.jpg",
+      "type": "learning",
+      "target": "dlc_spellbook"
+    },
+    {
+      "id": "herb_alchemy",
+      "title": "靈田 煉丹房",
+      "subtitle": "草藥培養與丹道",
+      "icon": "🌿",
+      "image": "assets/images/card_herb_alchemy.jpg",
+      "type": "cultivation",
+      "target": "dlc_herb_alchemy"
+    },
+    {
+      "id": "stats_panel",
+      "title": "修為 / 狀態",
+      "subtitle": "完整修為狀態面板",
+      "icon": "📊",
+      "image": "assets/images/card_stats_panel.jpg",
+      "type": "modal",
+      "target": "modal_stats"
+    },
+    {
+      "id": "world_map_portal",
+      "title": "世界地圖換場傳送門",
+      "subtitle": "探索蠻荒大世界",
+      "icon": "🧭",
+      "image": "assets/images/card_portal.jpg",
+      "type": "scene_switch",
+      "target": "scene-world-map"
+    }
+  ],
+  "world_map": {
+    "mapImage": "assets/design/世界地圖.jfif",
+    "fallbackMapImage": "assets/images/world_map.jpg",
+    "cavePosition": {
+      "xPercent": 50,
+      "yPercent": 52,
+      "title": "小雪的修仙秘境",
+      "subtitle": "點擊返回洞府起居室"
+    }
+  }
+}
