@@ -1,5 +1,19 @@
 # 變更記錄
 
+## v2.1.1 — 2026-11-03 — 登入位置與本機啟動便利性
+
+- 將 Google 登入／登出按鈕移至頁面頂端右側圓形按鈕；登出時顯示 Google 圖示，登入後顯示 Google 帳號頭像，不在介面上顯示帳號名稱或電子郵件。
+- 移除「小雪起居室」卡片內原有的登入按鈕，修為狀態框維持在標題下方靠上排列。
+- Google 登入要求顯示帳號選擇器，方便選擇其他 Google 帳號；使用者已確認重新載入後登入流程正常，登出確認流程正常。
+- 新增 `啟動本地網站.bat`，雙擊後開啟 `http://localhost:8000/index.html` 並啟動本機 HTTP 伺服器；使用期間需保持命令視窗開啟。
+- 將 `config.json` 版本更新為 `v2.1.1`，更新日期為 `2026-11-03`。
+
+### 本次備份前檢查
+
+- `node --check main.js` 與 `node --check firebase-connection.js` 通過。
+- `config.json`、`firebase-config.json`、`.firebaserc`、`firebase.json` 均可解析為 JSON。
+- `git diff --check` 通過；未執行自動化瀏覽器測試。使用者已在瀏覽器確認登入、帳號選擇器與登出流程正常。
+
 ## 2026-11-03 — 母專案 Firebase Google 登入
 
 - 加入 Firebase Web 設定與共用連線程式，母專案使用 Firebase Authentication 和 `(default)` Firestore。

@@ -25,12 +25,14 @@
     const app = window.firebase.apps.length
       ? window.firebase.app()
       : window.firebase.initializeApp(config);
+    const googleProvider = new window.firebase.auth.GoogleAuthProvider();
+    googleProvider.setCustomParameters({ prompt: 'select_account' });
 
     return Object.freeze({
       app,
       auth: window.firebase.auth(app),
       db: window.firebase.firestore(app),
-      googleProvider: new window.firebase.auth.GoogleAuthProvider(),
+      googleProvider,
       config
     });
   })();

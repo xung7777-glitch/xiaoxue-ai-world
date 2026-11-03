@@ -268,35 +268,21 @@
     AppState.isLoggedIn = Boolean(user);
 
     if (user) {
-      const displayName = user.displayName || 'Google 使用者';
       if (DOM.btnGoogleLogin) {
-        DOM.btnGoogleLogin.classList.add('is-authenticated');
         DOM.btnGoogleLogin.disabled = false;
-        DOM.btnGoogleLogin.setAttribute('aria-label', `${displayName}，${user.email || ''}，點擊登出`);
+        DOM.btnGoogleLogin.setAttribute('aria-label', 'Google 帳號，點擊確認登出');
+        DOM.btnGoogleLogin.title = 'Google 帳號，點擊確認登出';
       }
-      if (DOM.googleAccountName) DOM.googleAccountName.textContent = displayName;
-      if (DOM.googleAccountEmail) DOM.googleAccountEmail.textContent = user.email || '';
-      if (DOM.googleAccountAvatar) DOM.googleAccountAvatar.src = user.photoURL || 'assets/images/google-g.svg';
-      if (DOM.userProfile) DOM.userProfile.title = user.email || displayName;
       if (DOM.userAvatarImg && user.photoURL) DOM.userAvatarImg.src = user.photoURL;
       return;
     }
 
     if (DOM.btnGoogleLogin) {
-      DOM.btnGoogleLogin.classList.remove('is-authenticated');
       DOM.btnGoogleLogin.disabled = false;
       DOM.btnGoogleLogin.setAttribute('aria-label', 'Google 帳號登入');
+      DOM.btnGoogleLogin.title = 'Google 帳號登入';
     }
-    if (DOM.loginBtnText) DOM.loginBtnText.textContent = 'Google 帳號登入';
-    if (DOM.googleAccountName) DOM.googleAccountName.textContent = '';
-    if (DOM.googleAccountEmail) DOM.googleAccountEmail.textContent = '';
-    if (DOM.googleAccountAvatar) DOM.googleAccountAvatar.src = 'assets/images/google-g.svg';
-    if (DOM.userProfile) DOM.userProfile.title = '修仙道友個人檔案';
-    if (DOM.userAvatarImg) {
-      DOM.userAvatarImg.src =
-        (AppState.configData && AppState.configData.user_profile && AppState.configData.user_profile.avatarUrl) ||
-        'assets/images/google-g.svg';
-    }
+    if (DOM.userAvatarImg) DOM.userAvatarImg.src = 'assets/images/google-g.svg';
   }
 
   async function saveGoogleUserProfile(user) {
