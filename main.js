@@ -53,6 +53,9 @@
     btnBackCave: document.getElementById('btn-back-cave'),
     mapPinSanctuary: document.getElementById('map-pin-sanctuary'),
     btnGoogleLogin: document.getElementById('btn-google-login'),
+    musicPlayerCard: document.getElementById('music-player-card'),
+    homepageAudioPlayer: document.getElementById('homepage-audio-player'),
+    homepageAudioSource: document.getElementById('homepage-audio-source'),
     loginBtnText: document.getElementById('login-btn-text'),
     googleAccountName: document.getElementById('google-account-name'),
     googleAccountEmail: document.getElementById('google-account-email'),
@@ -129,6 +132,11 @@
       if (heroSubtitle) heroSubtitle.textContent = data.hero_banner.subtitle || '冥想初始化';
     }
 
+    // 更新首頁音樂播放器設定
+    if (data.music_player) {
+      configureHomeMusicPlayer(data.music_player.audio_file);
+    }
+
     // 動態渲染雙欄功能模組卡片
     if (data.modules && DOM.modulesGrid) {
       DOM.modulesGrid.innerHTML = ''; // 清空原有佔位
@@ -137,6 +145,25 @@
         const card = createModuleCardElement(mod);
         DOM.modulesGrid.appendChild(card);
       });
+    }
+  }
+
+  async function configureHomeMusicPlayer(audioFile) {
+    if (!DOM.musicPlayerCard || !DOM.homepageAudioPlayer || !DOM.homepageAudioSource) return;
+    DOM.musicPlayerCard.hidden = true;
+    DOM.homepageAudioSource.removeAttribute('src');
+    DOM.homepageAudioPlayer.load();
+    if (!audioFile) return;
+
+    try {
+      const response = await fetch(audioFile, { method: 'HEAD', cache: 'no-store' });
+      if (!response.ok) return;
+
+      DOM.homepageAudioSource.src = audioFile;
+      DOM.homepageAudioPlayer.load();
+      DOM.musicPlayerCard.hidden = false;
+    } catch (error) {
+      console.info('首頁音檔不存在或目前無法讀取，已隱藏播放器。', error);
     }
   }
 
@@ -441,7 +468,6 @@
         if (e.target === DOM.modalStats) closeStatsModal();
       });
     }
-
     try {
       const firebaseServices = await window.XiaoxueFirebase.ready;
       AppState.firebaseAuth = firebaseServices.auth;

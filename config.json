@@ -1,5 +1,5 @@
 {
-  "version": "v2.1.1",
+  "version": "v2.2.0",
   "lastUpdated": "2026-11-03",
   "system_info": {
     "project_name": "小雪的修仙世界",
@@ -23,6 +23,9 @@
     "bgImage": "assets/images/hero_meditation.jpg",
     "character": "小雪",
     "status_prefix": "當前修為"
+  },
+  "music_player": {
+    "audio_file": "assets/audio/homepage-music.mp3"
   },
   "modules": [
     {

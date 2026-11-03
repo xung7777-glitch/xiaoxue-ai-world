@@ -60,6 +60,14 @@
             </div>
           </article>
 
+          <!-- 首頁音樂播放器 -->
+          <section class="music-player-card" id="music-player-card" aria-label="首頁音樂播放器" hidden>
+            <span class="music-player-icon" aria-hidden="true">♫</span>
+            <audio id="homepage-audio-player" controls controlslist="nodownload noplaybackrate" preload="metadata" aria-label="首頁音樂播放器">
+              <source id="homepage-audio-source" type="audio/mpeg">
+            </audio>
+          </section>
+
           <!-- 雙欄功能模組網格（由 main.js 動態渲染自 config.json） -->
           <section class="modules-grid" id="modules-grid" aria-label="功能模組選單">
             <!-- 動態插入模組卡片 -->

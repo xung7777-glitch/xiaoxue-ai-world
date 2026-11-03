@@ -1,5 +1,5 @@
 /* ==========================================================================
-   《小雪 AI 世界》全域樣式表 (v2.1.0)
+   《小雪 AI 世界》全域樣式表 (v2.2.0)
    設計哲學：東方仙俠暗黑美學、毛玻璃質感、手機直式單一基準、動態縮放填滿引擎
    ========================================================================== */
 
@@ -408,6 +408,47 @@ html, body {
   font-size: 9px;
   font-weight: 700;
   white-space: nowrap;
+}
+
+/* --------------------------------------------------------------------------
+   首頁音樂播放器
+   -------------------------------------------------------------------------- */
+.music-player-card {
+  width: 100%;
+  min-height: 70px;
+  padding: 8px 12px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  border-radius: 16px;
+  border: 1px solid var(--border-subtle);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.35);
+  background: linear-gradient(135deg, #101c2e 0%, #17283c 100%);
+}
+
+.music-player-card[hidden] {
+  display: none;
+}
+
+.music-player-icon {
+  width: 34px;
+  height: 34px;
+  flex: 0 0 34px;
+  display: grid;
+  place-items: center;
+  border: 1px solid rgba(77, 232, 224, 0.4);
+  border-radius: 50%;
+  color: var(--accent-cyan);
+  background: rgba(77, 232, 224, 0.1);
+  font-size: 18px;
+}
+
+.music-player-card audio {
+  flex: 1 1 auto;
+  min-width: 0;
+  width: 100%;
+  height: 42px;
+  color-scheme: dark;
 }
 
 /* --------------------------------------------------------------------------
