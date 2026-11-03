@@ -1,0 +1,17 @@
+{
+  "auth": {
+    "providers": {
+      "googleSignIn": {
+        "oAuthBrandDisplayName": "Xiaoxue AI World",
+        "supportEmail": "xung7777@gmail.com",
+        "authorizedRedirectUris": [
+          "http://localhost:8765",
+          "http://127.0.0.1:8765"
+        ]
+      }
+    }
+  },
+  "firestore": {
+    "rules": "firestore.rules"
+  }
+}

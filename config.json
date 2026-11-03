@@ -10,7 +10,7 @@
   },
   "user_profile": {
     "displayName": "修仙道友",
-    "avatarUrl": "assets/images/avatar_user.jpg",
+    "avatarUrl": "assets/images/google-g.svg",
     "realm": "煉氣初期",
     "level": 1,
     "exp": 120,
@@ -64,15 +64,11 @@
     {
       "id": "english_spells",
       "title": "英文咒語習得",
-      "subtitle": "小雪英咒寶典 (已連結)",
-      "icon": "📜",
+      "subtitle": "填空 App",
+      "icon": "💬",
       "image": "assets/images/card_english_spells.jpg",
-      "type": "dlc",
-      "target": "scene-dlc-spellbook",
-      "dlc_id": "dlc_spellbook",
-      "status": "active",
-      "dataPath": "dlcs/dlc_spellbook/src/data/sentences.json",
-      "totalSpells": 800
+      "type": "learning",
+      "target": "dlc_spellbook"
     },
     {
       "id": "herb_alchemy",
