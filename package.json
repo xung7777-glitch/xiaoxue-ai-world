@@ -1,0 +1,15 @@
+{
+  "name": "xiaoxue-ai-world",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "node scripts/prepare-netlify.mjs"
+  },
+  "dependencies": {
+    "@netlify/database": "^1.1.0",
+    "@netlify/identity": "^1.2.0"
+  },
+  "devDependencies": {
+    "esbuild": "^0.25.12"
+  }
+}

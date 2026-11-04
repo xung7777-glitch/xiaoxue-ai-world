@@ -1,5 +1,13 @@
 # 變更記錄
 
+## 2026-11-04 14:09 Asia/Taipei — Codex — 接入 Netlify Google 登入與帳號資料庫
+
+- AI 執行者：Codex。以 Netlify Identity 的 Google OAuth 取代網站執行階段的 Firebase 登入；載入時處理 OAuth 回呼，並依 Identity 回報的提供者設定確認 Google 登入是否可用。
+- 新增 `/api/profile` Netlify Function：伺服器端驗證 Identity 使用者，只以已驗證的使用者 ID 寫入自己的帳號資料；未登入請求回覆 401，寫入請求限定同源，SQL 使用參數化查詢。
+- 新增 `user_profiles` 資料表遷移；網站建置會打包 Identity 用戶端，不再把 Firebase 設定或 Firebase SDK 放進發布輸出。Firebase 設定檔與雲端資料仍保留，尚未清理或轉移。
+- 本機建置、前端與 Function 語法檢查成功；依賴鎖定檔離線安全稽核顯示 0 vulnerabilities。OAuth 與正式資料庫寫入仍待部署後在 HTTPS 網址驗收。
+- 工作分支：`codex/netlify-auth-implementation`。本紀錄建立時尚未部署；待部署後補記實際 Commit ID 與驗收結果。
+
 ## 2026-11-04 13:52 Asia/Taipei — Codex — Netlify 登入與資料庫服務啟用
 
 - AI 執行者：Codex。於 Netlify 專案 `xiaoxue-ai-world` 啟用 Identity，並加入預設 Google OAuth 提供者；註冊目前為 Open，Email confirmation 為 Required。

@@ -1,6 +1,7 @@
 import { cp, mkdir, rm } from "node:fs/promises";
 import { dirname, join } from "node:path";
 import { fileURLToPath } from "node:url";
+import { build } from "esbuild";
 
 const projectRoot = join(dirname(fileURLToPath(import.meta.url)), "..");
 const outputRoot = join(projectRoot, "dist");
@@ -10,8 +11,6 @@ const appFiles = [
   "style.css",
   "main.js",
   "config.json",
-  "firebase-config.json",
-  "firebase-connection.js",
 ];
 
 const appAssets = [
@@ -40,4 +39,12 @@ for (const relativePath of [...appFiles, ...appAssets]) {
   await cp(source, destination);
 }
 
-console.log(`Prepared ${appFiles.length + appAssets.length} files for Netlify in dist/.`);
+await build({
+  entryPoints: [join(projectRoot, "netlify/identity-client.js")],
+  bundle: true,
+  format: "iife",
+  target: ["es2020"],
+  outfile: join(outputRoot, "netlify-identity-client.js"),
+});
+
+console.log(`Prepared ${appFiles.length + appAssets.length + 1} files for Netlify in dist/.`);
