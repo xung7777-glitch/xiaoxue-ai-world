@@ -6,7 +6,7 @@
 - 新增 `/api/profile` Netlify Function：伺服器端驗證 Identity 使用者，只以已驗證的使用者 ID 寫入自己的帳號資料；未登入請求回覆 401，寫入請求限定同源，SQL 使用參數化查詢。
 - 新增 `user_profiles` 資料表遷移；網站建置會打包 Identity 用戶端，不再把 Firebase 設定或 Firebase SDK 放進發布輸出。Firebase 設定檔與雲端資料仍保留，尚未清理或轉移。
 - 本機建置、前端與 Function 語法檢查成功；依賴鎖定檔離線安全稽核顯示 0 vulnerabilities。OAuth 與正式資料庫寫入仍待部署後在 HTTPS 網址驗收。
-- 工作分支：`codex/netlify-auth-implementation`。本紀錄建立時尚未部署；待部署後補記實際 Commit ID 與驗收結果。
+- 工作分支：`codex/netlify-auth-implementation`。程式碼 Commit ID：`1376a56de26b98b4fac74ce9a3b22b3eac06920d`。本紀錄建立時尚未部署；部署後補記正式部署與登入驗收結果。
 
 ## 2026-11-04 13:52 Asia/Taipei — Codex — Netlify 登入與資料庫服務啟用
 
