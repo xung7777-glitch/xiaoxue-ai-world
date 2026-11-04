@@ -1,5 +1,13 @@
 # 變更記錄
 
+## 2026-11-04 13:52 Asia/Taipei — Codex — Netlify 登入與資料庫服務啟用
+
+- AI 執行者：Codex。於 Netlify 專案 `xiaoxue-ai-world` 啟用 Identity，並加入預設 Google OAuth 提供者；註冊目前為 Open，Email confirmation 為 Required。
+- 在同一個 Netlify 專案建立 Netlify Database；控制台顯示 `Your database is ready!`，Production 分支已建立，目前 0 bytes、尚未建立應用資料表。
+- 資料庫控制台目前顯示 1 compute unit、閒置 5 分鐘後休眠；資料庫運作會依 Netlify 的計費方案消耗 credits。
+- 此次只完成 Netlify 服務層設定。正式網站程式仍使用 Firebase Auth 與 Firestore，Netlify Identity 登入流程及 Netlify Database API 尚未接入，故尚未完成網站端登入驗證。
+- Firebase 專案及資料未刪除、未修改；網站程式碼與正式部署未變動。
+
 ## AI 協作與備份節點記錄方式
 
 - 每次 AI 完成修改時，新增一筆紀錄：日期時間與時區、AI 名稱、分支、修改摘要、驗證結果及未完成事項。
