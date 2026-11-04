@@ -332,7 +332,7 @@
     if (/provider|external.*disabled|not configured/i.test(message)) {
       return 'Netlify Google 登入尚未啟用，請檢查專案的 Identity > Registration 設定。';
     }
-    return `Netlify 登入失敗：${message || '請稍後再試。'}`;
+    return 'Netlify 登入連線失敗，請重新載入網站後再試。';
   }
 
   async function handleGoogleLogin() {
