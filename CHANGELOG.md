@@ -15,7 +15,7 @@
 - 備份標籤：`checkpoint/codex-2026-11-04`。
 - 本檢查點包含使用者刻意刪除的 `dlcs/dlc_spellbook/` 檔案，以及本紀錄；根目錄 `啟動本地網站.bat` 的刪除目前未納入備份，待確認後再處理。
 - Netlify 網站 `https://xiaoxue-ai-world.netlify.app/` 已成功載入；此檢查點不改動已部署的 `main`。
-- 未執行自動化測試；檢查點 Commit ID 將於建立後補記。
+- 未執行自動化測試；檢查點 Commit ID：`145d8599330acc5e820ed6b382e97ca619af0c7b`。標籤指向此檢查點提交。
 
 ## v2.2.0 — 2026-11-03 — 首頁 MP3 播放器
 
