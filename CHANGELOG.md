@@ -1,5 +1,18 @@
 # 變更記錄
 
+## 2026-11-04 14:56 Asia/Taipei — Codex — 恢復 Firebase Google 登入流程
+
+- AI 執行者：Codex。依照使用者需求，恢復原本 Firebase Authentication Google 登入、登出與 Firestore 帳號資料流程；保留 `prompt=select_account`，讓網站再次登入時要求使用者選擇 Google 帳號。
+- Netlify 繼續負責網站部署；移除網站端未使用的 Netlify Identity／Netlify Database profile API 程式、資料表 migration 及其套件依賴。Netlify 雲端 Identity、Database 與其中現有資料未刪除或修改。
+- 新增 `docs/TESTING_AND_DEPLOYMENT.md`，明定登入和雲端功能在部署後由使用者透過外部 Chrome 或手機測試；一般排版與文字修改可先本機檢查。
+- 程式建置、正式部署與使用者外部登入驗收：待完成。
+
+## 2026-11-04 14:52 Asia/Taipei — Codex — 明確登入測試與部署流程
+
+- AI 執行者：Codex。新增 `docs/TESTING_AND_DEPLOYMENT.md`，區分需部署到外部網站驗收的登入／雲端功能，以及可先在本機檢查的一般介面修改。
+- 明定 Codex 內建瀏覽器的登入結果不作為外部網站驗收依據；部署結果、外部測試及使用者驗收須分開記錄。
+- 本次僅修改流程文件，未修改登入程式、雲端服務設定或正式網站部署。
+
 ## 2026-11-04 14:14 Asia/Taipei — Codex — 登入 API 錯誤處理加固
 
 - AI 執行者：Codex。將登入錯誤提示改為不輸出底層錯誤內容；資料庫函式遇到格式錯誤 Origin 會拒絕請求，資料庫暫時不可用時回覆一般化 503。

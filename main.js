@@ -28,9 +28,10 @@
     configData: null,
     currentScene: 'scene-cave', // 'scene-cave' 或 'scene-world-map'
     isLoggedIn: false,
-    identityReady: false,
-    googleLoginEnabled: false,
-    authUser: null,
+    firebaseAuth: null,
+    firestore: null,
+    googleProvider: null,
+    firebaseUser: null,
     currentUser: {
       displayName: '修仙道友',
       realm: '煉氣初期',
@@ -290,7 +291,7 @@
   }
 
   function renderGoogleAccount(user) {
-    AppState.authUser = user || null;
+    AppState.firebaseUser = user || null;
     AppState.isLoggedIn = Boolean(user);
 
     if (user) {
@@ -299,9 +300,7 @@
         DOM.btnGoogleLogin.setAttribute('aria-label', 'Google 帳號，點擊確認登出');
         DOM.btnGoogleLogin.title = 'Google 帳號，點擊確認登出';
       }
-      const userMetadata = user.userMetadata || user.user_metadata || {};
-      const photoURL = user.pictureUrl || userMetadata.avatar_url || userMetadata.picture || '';
-      if (DOM.userAvatarImg && photoURL) DOM.userAvatarImg.src = photoURL;
+      if (DOM.userAvatarImg && user.photoURL) DOM.userAvatarImg.src = user.photoURL;
       return;
     }
 
@@ -313,62 +312,82 @@
     if (DOM.userAvatarImg) DOM.userAvatarImg.src = 'assets/images/google-g.svg';
   }
 
-  async function saveNetlifyUserProfile() {
-    const response = await fetch('/api/profile', {
-      method: 'POST',
-      credentials: 'same-origin',
-      headers: { 'Content-Type': 'application/json' },
-      body: '{}'
-    });
-    if (!response.ok) throw new Error(`profile request failed (${response.status})`);
-    return response.json();
+  async function saveGoogleUserProfile(user) {
+    const userRef = AppState.firestore.collection('users').doc(user.uid);
+    const existingProfile = await userRef.get();
+    const timestamp = firebase.firestore.FieldValue.serverTimestamp();
+    const profile = {
+      uid: user.uid,
+      displayName: user.displayName || 'Google 使用者',
+      email: user.email || '',
+      photoURL: user.photoURL || '',
+      providerId: 'google.com',
+      lastLoginAt: timestamp
+    };
+
+    if (!existingProfile.exists) profile.createdAt = timestamp;
+    await userRef.set(profile, { merge: true });
   }
 
-  function describeIdentityError(error) {
-    const message = String(error?.message || error || '');
-    if (window.location.protocol === 'file:') {
-      return '本機 file:// 無法使用 Netlify 登入，請改用部署後的 HTTPS 網址。';
-    }
-    if (/provider|external.*disabled|not configured/i.test(message)) {
-      return 'Netlify Google 登入尚未啟用，請檢查專案的 Identity > Registration 設定。';
-    }
-    return 'Netlify 登入連線失敗，請重新載入網站後再試。';
+  function getFirebaseLoginErrorMessage(error) {
+    const messages = {
+      'auth/operation-not-allowed': 'Firebase 尚未啟用 Google 登入方式。',
+      'auth/unauthorized-domain': '目前網站網址尚未加入 Firebase 授權網域。',
+      'auth/popup-blocked': '瀏覽器封鎖了登入視窗，請允許此網站開啟彈出視窗。',
+      'auth/popup-closed-by-user': '登入視窗已關閉，尚未完成登入。',
+      'auth/network-request-failed': '網路連線失敗，請檢查網路後再試。'
+    };
+    return messages[error.code] || `登入失敗：${error.code || error.message}`;
   }
 
   async function handleGoogleLogin() {
-    const identity = window.XiaoxueNetlifyIdentity;
-    if (window.location.protocol === 'file:') {
-      showToast(describeIdentityError());
-      return;
-    }
-    if (!AppState.identityReady || !AppState.googleLoginEnabled || !identity) {
-      showToast('Netlify 登入服務尚未準備好，請重新載入網站後再試。');
+    if (!AppState.firebaseAuth || !AppState.googleProvider || !AppState.firestore) {
+      showToast(window.location.protocol === 'file:'
+        ? '請用 localhost 或網站網址開啟，file:// 無法讀取 Firebase 設定。'
+        : 'Firebase 連線尚未完成，請稍後再試。');
       return;
     }
 
-    if (DOM.btnGoogleLogin) DOM.btnGoogleLogin.disabled = true;
+    if (DOM.btnGoogleLogin) {
+      DOM.btnGoogleLogin.disabled = true;
+      if (DOM.loginBtnText) DOM.loginBtnText.textContent = '正在連線 Google…';
+    }
+
+    let user;
     try {
-      identity.oauthLogin('google');
+      await AppState.firebaseAuth.setPersistence(firebase.auth.Auth.Persistence.LOCAL);
+      const result = await AppState.firebaseAuth.signInWithPopup(AppState.googleProvider);
+      user = result.user;
     } catch (error) {
+      console.error('Firebase Google 登入失敗：', error);
       if (DOM.btnGoogleLogin) DOM.btnGoogleLogin.disabled = false;
-      console.error('Netlify Google 登入啟動失敗：', error);
-      showToast(describeIdentityError(error));
+      if (DOM.loginBtnText) DOM.loginBtnText.textContent = 'Google 帳號登入';
+      showToast(getFirebaseLoginErrorMessage(error));
+      return;
+    }
+
+    renderGoogleAccount(user);
+    try {
+      await saveGoogleUserProfile(user);
+      showToast('Google 登入成功，帳號資料已儲存至母專案資料庫。');
+    } catch (error) {
+      console.error('Google 帳號資料寫入 Firestore 失敗：', error);
+      showToast('已登入 Google，但帳號資料尚未寫入資料庫。');
     }
   }
 
   async function handleGoogleLogout() {
-    const identity = window.XiaoxueNetlifyIdentity;
-    if (!identity) return;
+    if (!AppState.firebaseAuth) return;
     if (!window.confirm('確定要登出 Google 帳號嗎？')) return;
 
     try {
       if (DOM.btnGoogleLogin) DOM.btnGoogleLogin.disabled = true;
-      await identity.logout();
+      await AppState.firebaseAuth.signOut();
       renderGoogleAccount(null);
       showToast('已登出 Google 帳號。');
     } catch (error) {
       if (DOM.btnGoogleLogin) DOM.btnGoogleLogin.disabled = false;
-      console.error('Netlify 登出失敗：', error);
+      console.error('Firebase 登出失敗：', error);
       showToast(`登出失敗：${error.code || error.message}`);
     }
   }
@@ -433,7 +452,7 @@
     if (DOM.btnGoogleLogin) {
       DOM.btnGoogleLogin.disabled = true;
       DOM.btnGoogleLogin.addEventListener('click', () => {
-        if (AppState.authUser) {
+        if (AppState.firebaseUser) {
           handleGoogleLogout();
         } else {
           handleGoogleLogin();
@@ -449,47 +468,21 @@
         if (e.target === DOM.modalStats) closeStatsModal();
       });
     }
-    const identity = window.XiaoxueNetlifyIdentity;
-    if (window.location.protocol === 'file:') {
-      if (DOM.btnGoogleLogin) DOM.btnGoogleLogin.disabled = false;
-      renderGoogleAccount(null);
-      return;
-    }
-
-    let resolvedUser = null;
     try {
-      if (!identity) throw new Error('Netlify Identity 用戶端尚未載入。');
-      const callbackResult = await identity.handleAuthCallback();
-      resolvedUser = await identity.getUser();
-      const settings = await identity.getSettings();
-      const providers = settings?.providers;
-      AppState.googleLoginEnabled = Array.isArray(providers)
-        ? providers.includes('google')
-        : Boolean(providers?.google);
-      AppState.identityReady = true;
-      renderGoogleAccount(resolvedUser);
+      const firebaseServices = await window.XiaoxueFirebase.ready;
+      AppState.firebaseAuth = firebaseServices.auth;
+      AppState.firestore = firebaseServices.db;
+      AppState.googleProvider = firebaseServices.googleProvider;
 
-      if (resolvedUser && (callbackResult?.type === 'oauth' || callbackResult?.type === 'confirmation')) {
-        try {
-          await saveNetlifyUserProfile();
-          showToast('Google 登入成功，帳號資料已安全儲存至 Netlify。');
-        } catch (error) {
-          console.error('Netlify 帳號資料儲存失敗：', error);
-          showToast('已登入 Google，但 Netlify 帳號資料尚未儲存。');
-        }
-      }
+      AppState.firebaseAuth.onAuthStateChanged((user) => {
+        renderGoogleAccount(user);
+      });
     } catch (error) {
-      console.error('Netlify Identity 初始化失敗：', error);
-      if (!resolvedUser && identity) {
-        try {
-          resolvedUser = await identity.getUser();
-        } catch {
-          // 保留未登入狀態；錯誤訊息會在下方顯示。
-        }
-      }
+      console.error('Firebase 初始化失敗：', error);
       if (DOM.btnGoogleLogin) DOM.btnGoogleLogin.disabled = false;
-      renderGoogleAccount(resolvedUser);
-      showToast(describeIdentityError(error));
+      showToast(window.location.protocol === 'file:'
+        ? '請透過 localhost 或網站網址開啟，才能連接 Firebase。'
+        : 'Firebase 設定載入失敗，請確認 firebase-config.json。');
     }
   }
 
