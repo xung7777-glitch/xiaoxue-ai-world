@@ -1,5 +1,10 @@
 # 變更記錄
 
+## 2026-11-04 14:14 Asia/Taipei — Codex — 登入 API 錯誤處理加固
+
+- AI 執行者：Codex。將登入錯誤提示改為不輸出底層錯誤內容；資料庫函式遇到格式錯誤 Origin 會拒絕請求，資料庫暫時不可用時回覆一般化 503。
+- Commit ID：`6d93c4205f0c81014cb912ecbb2bbd843e6f6525`。部署待驗收。
+
 ## 2026-11-04 14:09 Asia/Taipei — Codex — 接入 Netlify Google 登入與帳號資料庫
 
 - AI 執行者：Codex。以 Netlify Identity 的 Google OAuth 取代網站執行階段的 Firebase 登入；載入時處理 OAuth 回呼，並依 Identity 回報的提供者設定確認 Google 登入是否可用。
