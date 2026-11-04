@@ -1,5 +1,22 @@
 # 變更記錄
 
+## AI 協作與備份節點記錄方式
+
+- 每次 AI 完成修改時，新增一筆紀錄：日期時間與時區、AI 名稱、分支、修改摘要、驗證結果及未完成事項。
+- AI 名稱照實記錄，例如 `Codex`、`DeepSeek`、`Claude`；使用者本人所做的修改標記為 `User`，不推測歷史項目的執行者。
+- 重要交接點推送到獨立 GitHub 分支，並建立具名 checkpoint tag。回溯時從記錄的 Commit ID 或 tag 建立新分支，不重寫 `main` 歷史。
+- 此紀錄涵蓋程式碼與文件；Firebase、Netlify 等雲端資料須另行備份，不會因 GitHub 備份而自動保存。
+
+## 2026-11-04 13:41 Asia/Taipei — Codex — Netlify 部署後交接檢查點
+
+- AI 記錄者：Codex。`dlcs/dlc_spellbook/` 的刪除由使用者明確執行，本檢查點只保存該狀態，不將刪除歸因於 AI。
+- 基礎版本：`main`，Commit `098ca36`（Netlify 靜態部署設定）。
+- 備份分支：`codex/checkpoint-2026-11-04`。
+- 備份標籤：`checkpoint/codex-2026-11-04`。
+- 本檢查點包含使用者刻意刪除的 `dlcs/dlc_spellbook/` 檔案，以及本紀錄；根目錄 `啟動本地網站.bat` 的刪除目前未納入備份，待確認後再處理。
+- Netlify 網站 `https://xiaoxue-ai-world.netlify.app/` 已成功載入；此檢查點不改動已部署的 `main`。
+- 未執行自動化測試；檢查點 Commit ID 將於建立後補記。
+
 ## v2.2.0 — 2026-11-03 — 首頁 MP3 播放器
 
 - 在「小雪起居室」橫幅與八個功能格子之間新增小型音樂播放橫板，沿用首頁深色卡片樣式並使用瀏覽器原生播放控制。
