@@ -8,6 +8,7 @@ dist/
 build/
 .vite/
 *.local
+.netlify/
 
 # 系統與編輯器暫存
 .DS_Store
