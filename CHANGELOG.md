@@ -3,7 +3,14 @@
 ## 2026-11-04 14:14 Asia/Taipei — Codex — 登入 API 錯誤處理加固
 
 - AI 執行者：Codex。將登入錯誤提示改為不輸出底層錯誤內容；資料庫函式遇到格式錯誤 Origin 會拒絕請求，資料庫暫時不可用時回覆一般化 503。
-- Commit ID：`6d93c4205f0c81014cb912ecbb2bbd843e6f6525`。部署待驗收。
+- Commit ID：`6d93c4205f0c81014cb912ecbb2bbd843e6f6525`。程式已隨正式版本發布；登入驗收仍待使用者完成 Google OAuth。
+
+## 2026-11-04 14:15 Asia/Taipei — Codex — Netlify 正式部署
+
+- AI 執行者：Codex。正式部署 Commit `71db9781c7c75bafcdb417b6ee7661bfd27d8931` 已成功發布，Netlify Deploy ID `6aeacd98e500ed20ddd3ad72`，建置及部署耗時 15 秒。
+- 正式網站 `https://xiaoxue-ai-world.netlify.app/` 已載入新版；按 Google 登入已到達 Google 帳戶選擇頁，確認不再呼叫 Firebase OAuth 彈窗。
+- 使用者尚未完成 Google 帳戶選擇與授權，因此 Identity 回呼及資料庫實際寫入仍待使用者完成登入後確認。Firebase 專案和舊資料未刪除。
+- 本紀錄只更新文件，提交訊息使用 `[skip netlify]`，避免再次觸發部署。
 
 ## 2026-11-04 14:09 Asia/Taipei — Codex — 接入 Netlify Google 登入與帳號資料庫
 
@@ -11,7 +18,7 @@
 - 新增 `/api/profile` Netlify Function：伺服器端驗證 Identity 使用者，只以已驗證的使用者 ID 寫入自己的帳號資料；未登入請求回覆 401，寫入請求限定同源，SQL 使用參數化查詢。
 - 新增 `user_profiles` 資料表遷移；網站建置會打包 Identity 用戶端，不再把 Firebase 設定或 Firebase SDK 放進發布輸出。Firebase 設定檔與雲端資料仍保留，尚未清理或轉移。
 - 本機建置、前端與 Function 語法檢查成功；依賴鎖定檔離線安全稽核顯示 0 vulnerabilities。OAuth 與正式資料庫寫入仍待部署後在 HTTPS 網址驗收。
-- 工作分支：`codex/netlify-auth-implementation`。程式碼 Commit ID：`1376a56de26b98b4fac74ce9a3b22b3eac06920d`。本紀錄建立時尚未部署；部署後補記正式部署與登入驗收結果。
+- 工作分支：`codex/netlify-auth-implementation`。程式碼 Commit ID：`1376a56de26b98b4fac74ce9a3b22b3eac06920d`。正式部署與登入待驗收狀態見本紀錄後續項目。
 
 ## 2026-11-04 13:52 Asia/Taipei — Codex — Netlify 登入與資料庫服務啟用
 
