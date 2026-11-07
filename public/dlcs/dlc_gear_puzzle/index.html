@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <title>機關解密 · Gear Puzzle DLC</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style> body { background-color: #0c101a; color: #f8fafc; user-select: none; } </style>
+</head>
+<body class="h-screen w-screen flex flex-col justify-between p-4">
+  <header class="flex items-center justify-between pb-3 border-b border-purple-900/40">
+    <div class="flex items-center gap-2">
+      <span class="text-xl">⚙️</span>
+      <div>
+        <h1 class="text-base font-bold text-purple-200">機關解密 · 璇璣陣破</h1>
+        <p class="text-[11px] text-purple-400">獨立子專案 /dlcs/dlc_gear_puzzle/index.html</p>
+      </div>
+    </div>
+    <button id="closeBtn" class="px-3 py-1 rounded-full bg-slate-800 hover:bg-slate-700 text-xs text-slate-300 border border-slate-700">
+      ✕ 返回洞府
+    </button>
+  </header>
+
+  <main class="my-auto py-2 flex flex-col items-center">
+    <div class="w-full max-w-xs bg-slate-900/80 p-3 rounded-2xl border border-purple-500/30 flex justify-between text-xs mb-3">
+      <span>機關層數: <b id="layerCount" class="text-purple-300">0</b></span>
+      <span class="text-emerald-400">五行靈石機關</span>
+    </div>
+
+    <div id="tetrisBoard" class="relative w-52 h-72 bg-slate-950 p-2 rounded-2xl border-2 border-purple-900 flex flex-col items-center justify-center text-center p-4">
+      <div class="text-4xl animate-bounce mb-3">⚙️</div>
+      <p class="text-xs text-slate-300 mb-4 leading-relaxed">
+        古仙洞府璇璣鎖，轉動齒輪與靈石方塊，破解洞天封印。
+      </p>
+      <button id="solveBtn" class="w-full py-2.5 rounded-xl bg-purple-600 hover:bg-purple-500 text-white font-bold text-xs shadow-lg">
+        ⚡ 運轉靈力解開一層機關
+      </button>
+    </div>
+  </main>
+
+  <footer class="text-center text-xs text-slate-500 border-t border-slate-900 pt-2">
+    解開機關獲得靈石，回傳母系統
+  </footer>
+
+  <script>
+    let layers = 0;
+    document.getElementById('solveBtn').onclick = () => {
+      layers++;
+      document.getElementById('layerCount').innerText = layers;
+      window.parent.postMessage({
+        type: "XIAOXUE_DLC_EVENT",
+        action: "REWARD",
+        payload: {
+          exp: 20,
+          spiritStones: 15,
+          message: `破解第 ${layers} 重仙家機關鎖`
+        }
+      }, "*");
+    };
+
+    document.getElementById('closeBtn').onclick = () => {
+      window.parent.postMessage({ type: "XIAOXUE_DLC_EVENT", action: "CLOSE" }, "*");
+    };
+  </script>
+</body>
+</html>

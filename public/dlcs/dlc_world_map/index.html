@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <title>世界地圖 · 太虛神州圖</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    body { background-color: #060a12; color: #f8fafc; overflow: hidden; user-select: none; margin: 0; padding: 0; height: 100vh; }
+    .ping-slow { animation: ping 2s cubic-bezier(0, 0, 0.2, 1) infinite; }
+  </style>
+</head>
+<body class="h-full w-full flex flex-col justify-between relative bg-black">
+  <!-- Top Navigation Header -->
+  <header class="absolute top-0 inset-x-0 z-30 px-3.5 py-3 bg-gradient-to-b from-[#09111c]/95 via-[#09111c]/80 to-transparent flex items-center justify-between pointer-events-auto backdrop-blur-sm">
+    <button id="closeBtn" class="flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-slate-900/80 hover:bg-slate-800 border border-cyan-500/40 text-cyan-200 text-xs font-bold shadow-lg transition-transform active:scale-95">
+      ← 返回洞府
+    </button>
+    <div class="text-center">
+      <h1 class="text-sm font-bold text-slate-100 font-serif tracking-wider">太虛神州 · 世界地圖</h1>
+      <p class="text-[10px] text-cyan-300">點選中央小雪頭像即可返回修仙世界</p>
+    </div>
+    <div class="w-8"></div>
+  </header>
+
+  <!-- Map Canvas -->
+  <main class="relative flex-1 w-full h-full overflow-hidden select-none bg-[#070e1b]">
+    <img
+      src="/assets/images/world_map_master.png"
+      alt="小雪修仙大世界地圖"
+      class="w-full h-full object-cover object-center pointer-events-none"
+      onerror="this.src='/assets/aistudio/image_75ad3f9e.png'"
+    />
+
+    <!-- Xiaoxue Cave Pin -->
+    <div
+      id="xiaoxueCaveBtn"
+      class="absolute z-20 -translate-x-1/2 -translate-y-1/2 cursor-pointer group select-none text-center"
+      style="top: 45.8%; left: 50%;"
+    >
+      <div class="absolute -inset-3.5 rounded-full bg-cyan-400/30 ping-slow pointer-events-none"></div>
+      <div class="absolute -inset-2 rounded-full border-2 border-cyan-300/80 animate-pulse pointer-events-none"></div>
+
+      <div class="relative w-14 h-14 rounded-full overflow-hidden border-2 border-cyan-300 bg-cyan-950/90 shadow-[0_0_25px_rgba(6,182,212,0.85)] active:scale-95 transition-all flex items-center justify-center mx-auto">
+        <img
+          src="/assets/character/xiaoxue_avatar.jpg"
+          alt="小雪"
+          class="w-full h-full object-cover object-top scale-110"
+          onerror="this.src='/assets/character/xiaoxue_reference.png'"
+        />
+      </div>
+
+      <div class="mt-1.5 whitespace-nowrap">
+        <div class="px-2.5 py-1 rounded-full bg-gradient-to-r from-cyan-950 via-slate-900 to-cyan-950 border border-cyan-400/80 shadow-[0_0_15px_rgba(6,182,212,0.6)] inline-flex items-center gap-1">
+          <span class="text-[11px] font-bold text-cyan-100 tracking-wider font-serif">
+            小雪洞府 · 點擊歸返
+          </span>
+          <span class="w-1.5 h-1.5 rounded-full bg-emerald-400 ml-0.5"></span>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <script>
+    const sendClose = () => {
+      window.parent.postMessage({ type: "XIAOXUE_DLC_EVENT", action: "CLOSE" }, "*");
+    };
+
+    document.getElementById('closeBtn').onclick = sendClose;
+    document.getElementById('xiaoxueCaveBtn').onclick = () => {
+      window.parent.postMessage({
+        type: "XIAOXUE_DLC_EVENT",
+        action: "REWARD",
+        payload: {
+          exp: 30,
+          spiritStones: 10,
+          message: "自九州大世界神遊歸返洞府"
+        }
+      }, "*");
+      setTimeout(sendClose, 100);
+    };
+  </script>
+</body>
+</html>

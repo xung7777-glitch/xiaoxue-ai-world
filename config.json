@@ -1,0 +1,130 @@
+{
+  "version": "v2.1.0",
+  "lastUpdated": "2026-11-07",
+  "system_info": {
+    "project_name": "小雪的修仙世界",
+    "portal_name": "xiaoxue-ai-world",
+    "auth_provider": "Google",
+    "firebase_connected": true,
+    "theme": "xianxia_dark_celestial",
+    "orientation": "portrait_mobile_only",
+    "aspectRatio": "9:16",
+    "theme_song": "/assets/audio/xiaoxue_theme_song.mp3"
+  },
+  "modules": [
+    {
+      "id": "beast_zone",
+      "title": "野外獸區",
+      "subtitle": "倖存者打怪入口",
+      "icon": "🔥",
+      "type": "game",
+      "badge": "歷練",
+      "spriteId": "beast",
+      "targetUrl": "/dlcs/dlc_beast_hunter/index.html",
+      "frequencyNote": 329.63
+    },
+    {
+      "id": "fishing_river",
+      "title": "釣魚河邊",
+      "subtitle": "休閒垂釣入口",
+      "icon": "🌊",
+      "type": "relax",
+      "badge": "悠閒",
+      "spriteId": "fish",
+      "targetUrl": "/dlcs/dlc_fishing_river/index.html",
+      "frequencyNote": 392.0
+    },
+    {
+      "id": "talisman_puzzle",
+      "title": "符咒解謎",
+      "subtitle": "2048 變體玩法",
+      "icon": "📜",
+      "type": "puzzle",
+      "badge": "益智",
+      "spriteId": "talisman",
+      "targetUrl": "/dlcs/dlc_talisman_2048/index.html",
+      "frequencyNote": 440.0
+    },
+    {
+      "id": "gear_puzzle",
+      "title": "機關解密",
+      "subtitle": "俄羅斯方塊變體",
+      "icon": "⚙️",
+      "type": "puzzle",
+      "badge": "機關",
+      "spriteId": "mechanism",
+      "targetUrl": "/dlcs/dlc_gear_puzzle/index.html",
+      "frequencyNote": 493.88
+    },
+    {
+      "id": "english_spells",
+      "title": "英文咒語習得",
+      "subtitle": "填空 App",
+      "icon": "💬",
+      "type": "learning",
+      "badge": "真言",
+      "spriteId": "english",
+      "targetUrl": "/dlcs/dlc_spellbook/index.html",
+      "frequencyNote": 523.25
+    },
+    {
+      "id": "herb_alchemy",
+      "title": "靈田 煉丹房",
+      "subtitle": "草藥培養與丹道",
+      "icon": "🌿",
+      "type": "cultivation",
+      "badge": "生生不息",
+      "spriteId": "alchemy",
+      "targetUrl": "/dlcs/dlc_herb_alchemy/index.html",
+      "frequencyNote": 587.33
+    },
+    {
+      "id": "spirit_spring",
+      "title": "靈泉庭院",
+      "subtitle": "錦鯉靈蛙生態",
+      "icon": "🪷",
+      "type": "ecosystem",
+      "badge": "生態",
+      "spriteId": "fish",
+      "targetUrl": "/dlcs/dlc_spirit_spring/index.html",
+      "frequencyNote": 523.25
+    },
+    {
+      "id": "stats_panel",
+      "title": "修為 / 狀態",
+      "subtitle": "完整修為狀態面板",
+      "icon": "📊",
+      "type": "stats",
+      "badge": "洞府",
+      "spriteId": "status",
+      "targetUrl": "/dlcs/dlc_stats_panel/index.html",
+      "frequencyNote": 659.25
+    },
+    {
+      "id": "world_map_portal",
+      "title": "世界地圖換場傳送門",
+      "subtitle": "探索蠻荒大世界",
+      "icon": "🧭",
+      "type": "portal",
+      "badge": "跨域",
+      "spriteId": "map",
+      "targetUrl": "/dlcs/dlc_world_map/index.html",
+      "frequencyNote": 783.99
+    }
+  ],
+  "sanctuary_spirit_spring": {
+    "environment_sound": {
+      "cricket_active": true,
+      "cricket_volume": 0.4
+    },
+    "koi_config": {
+      "total_count": 3,
+      "swim_speed": 1.2
+    },
+    "frog_config": {
+      "active": true,
+      "jump_min_interval_sec": 30,
+      "jump_max_interval_sec": 60
+    }
+  }
+}

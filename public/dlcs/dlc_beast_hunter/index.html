@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <title>野外獸區 · Beast Hunter DLC</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    body { background-color: #070c14; color: #f8fafc; overflow: hidden; user-select: none; }
+    .sword { position: absolute; transition: transform 0.05s linear; pointer-events: none; }
+    .beast { position: absolute; transition: all 0.08s linear; }
+  </style>
+</head>
+<body class="h-screen w-screen flex flex-col justify-between p-4 font-sans">
+  <!-- Header -->
+  <header class="flex items-center justify-between pb-3 border-b border-orange-900/40 z-20">
+    <div class="flex items-center gap-2">
+      <span class="text-xl">🔥</span>
+      <div>
+        <h1 class="text-base font-bold text-orange-200">野外獸區 · 飛劍降妖</h1>
+        <p class="text-[11px] text-orange-400">獨立子專案 /dlcs/dlc_beast_hunter/index.html</p>
+      </div>
+    </div>
+    <button id="closeBtn" class="px-3 py-1 rounded-full bg-slate-800 hover:bg-slate-700 text-xs text-slate-300 border border-slate-700">
+      ✕ 返回洞府
+    </button>
+  </header>
+
+  <!-- Game Canvas Arena -->
+  <main id="arena" class="relative flex-1 my-3 rounded-3xl bg-gradient-to-b from-[#111a26] via-[#09111b] to-[#040910] border border-orange-500/30 overflow-hidden cursor-crosshair">
+    <!-- Center Player -->
+    <div id="player" class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-10 h-10 rounded-full bg-cyan-500 text-white flex items-center justify-center font-bold text-xs shadow-[0_0_15px_#22d3ee] z-20">
+      仙
+    </div>
+
+    <!-- Stats HUD -->
+    <div class="absolute top-3 left-3 bg-black/50 backdrop-blur-md px-3 py-1.5 rounded-xl border border-slate-800 text-xs text-slate-300 flex items-center gap-3 z-30">
+      <span>擊殺妖獸: <b id="killCount" class="text-orange-400">0</b></span>
+      <span>收穫靈石: <b id="stoneCount" class="text-amber-300">0</b></span>
+    </div>
+
+    <!-- Sword Container -->
+    <div id="swordLayer"></div>
+    <!-- Beasts Container -->
+    <div id="beastLayer"></div>
+  </main>
+
+  <!-- Bottom Action -->
+  <footer class="flex items-center justify-between pt-2 border-t border-slate-900 z-20 text-xs">
+    <span class="text-slate-400">提示：點擊任意處激發劍氣爆發擊殺妖獸</span>
+    <button id="settleBtn" class="px-4 py-2 rounded-xl bg-orange-500 hover:bg-orange-400 text-slate-950 font-bold text-xs shadow-md">
+      📦 結算收穫回母世界
+    </button>
+  </footer>
+
+  <script>
+    let kills = 0;
+    let stones = 0;
+    let beasts = [];
+    let swordAngle = 0;
+    const arena = document.getElementById('arena');
+    const beastLayer = document.getElementById('beastLayer');
+    const swordLayer = document.getElementById('swordLayer');
+
+    // Create 3 orbiting swords
+    for (let i = 0; i < 3; i++) {
+      const s = document.createElement('div');
+      s.className = 'sword w-2 h-7 bg-gradient-to-t from-cyan-400 to-white rounded-full shadow-[0_0_10px_#22d3ee]';
+      s.id = `sword-${i}`;
+      swordLayer.appendChild(s);
+    }
+
+    // Game loop
+    setInterval(() => {
+      swordAngle += 0.08;
+      const rect = arena.getBoundingClientRect();
+      const cx = rect.width / 2;
+      const cy = rect.height / 2;
+
+      // Position swords
+      for (let i = 0; i < 3; i++) {
+        const a = swordAngle + (i * Math.PI * 2 / 3);
+        const sx = cx + Math.cos(a) * 55;
+        const sy = cy + Math.sin(a) * 55;
+        const el = document.getElementById(`sword-${i}`);
+        el.style.left = `${sx - 4}px`;
+        el.style.top = `${sy - 14}px`;
+        el.style.transform = `rotate(${a + Math.PI / 2}rad)`;
+      }
+
+      // Spawn beasts
+      if (beasts.length < 8 && Math.random() < 0.3) {
+        const angle = Math.random() * Math.PI * 2;
+        const dist = Math.min(cx, cy) - 20;
+        const b = {
+          id: Date.now() + Math.random(),
+          x: cx + Math.cos(angle) * dist,
+          y: cy + Math.sin(angle) * dist,
+          hp: 20,
+          el: document.createElement('div')
+        };
+        b.el.className = 'beast w-6 h-6 rounded-full bg-orange-500 text-[10px] text-white flex items-center justify-center font-bold shadow-md';
+        b.el.innerText = '妖';
+        beastLayer.appendChild(b.el);
+        beasts.push(b);
+      }
+
+      // Move beasts to center
+      beasts.forEach((b, idx) => {
+        const dx = cx - b.x;
+        const dy = cy - b.y;
+        const dist = Math.hypot(dx, dy);
+        b.x += (dx / dist) * 1.2;
+        b.y += (dy / dist) * 1.2;
+        b.el.style.left = `${b.x - 12}px`;
+        b.el.style.top = `${b.y - 12}px`;
+
+        // Check sword collision
+        for (let i = 0; i < 3; i++) {
+          const a = swordAngle + (i * Math.PI * 2 / 3);
+          const sx = cx + Math.cos(a) * 55;
+          const sy = cy + Math.sin(a) * 55;
+          if (Math.hypot(b.x - sx, b.y - sy) < 25) {
+            b.hp -= 15;
+          }
+        }
+
+        if (b.hp <= 0) {
+          b.el.remove();
+          beasts.splice(idx, 1);
+          kills++;
+          stones += 5;
+          document.getElementById('killCount').innerText = kills;
+          document.getElementById('stoneCount').innerText = stones;
+        }
+      });
+    }, 50);
+
+    // Click burst
+    arena.onclick = () => {
+      beasts.forEach(b => b.hp -= 10);
+    };
+
+    // Settle to Mother System
+    document.getElementById('settleBtn').onclick = () => {
+      window.parent.postMessage({
+        type: "XIAOXUE_DLC_EVENT",
+        action: "REWARD",
+        payload: {
+          exp: kills * 8,
+          spiritStones: stones,
+          message: `野外斬妖 ${kills} 隻，收穫靈石 +${stones}`
+        }
+      }, "*");
+      window.parent.postMessage({ type: "XIAOXUE_DLC_EVENT", action: "CLOSE" }, "*");
+    };
+
+    document.getElementById('closeBtn').onclick = () => {
+      window.parent.postMessage({ type: "XIAOXUE_DLC_EVENT", action: "CLOSE" }, "*");
+    };
+  </script>
+</body>
+</html>

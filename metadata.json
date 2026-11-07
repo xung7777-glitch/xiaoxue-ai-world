@@ -1,0 +1,6 @@
+{
+  "name": "xiaoxue-ai-world",
+  "description": "小雪修仙世界的門戶入口 - 探索起居室、野外獸區、靈田煉丹、符咒解謎與大千修仙世界",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

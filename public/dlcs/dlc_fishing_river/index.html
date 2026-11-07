@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <title>釣魚河邊 · Fishing River DLC</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    body { background-color: #050d18; color: #f1f5f9; user-select: none; }
+    @keyframes bobberFloat { 0%, 100% { transform: translateY(0); } 50% { transform: translateY(-8px); } }
+    .floating-bobber { animation: bobberFloat 2s ease-in-out infinite; }
+  </style>
+</head>
+<body class="h-screen w-screen flex flex-col justify-between p-4">
+  <header class="flex items-center justify-between pb-3 border-b border-cyan-900/40">
+    <div class="flex items-center gap-2">
+      <span class="text-xl">🌊</span>
+      <div>
+        <h1 class="text-base font-bold text-cyan-200">釣魚河邊 · 休閒垂釣</h1>
+        <p class="text-[11px] text-cyan-400">獨立子專案 /dlcs/dlc_fishing_river/index.html</p>
+      </div>
+    </div>
+    <button id="closeBtn" class="px-3 py-1 rounded-full bg-slate-800 hover:bg-slate-700 text-xs text-slate-300 border border-slate-700">
+      ✕ 返回洞府
+    </button>
+  </header>
+
+  <main class="my-auto py-4 flex flex-col items-center">
+    <div class="relative w-full max-w-sm h-72 rounded-3xl bg-gradient-to-b from-[#091f38] to-[#040d1a] border border-cyan-500/30 overflow-hidden flex flex-col items-center justify-center p-6 text-center space-y-4 shadow-inner">
+      <div id="bobber" class="w-10 h-16 rounded-full bg-gradient-to-t from-red-500 to-white flex items-center justify-center text-xs font-bold text-white shadow-lg floating-bobber">
+        漂
+      </div>
+
+      <div id="statusText" class="text-sm font-medium text-cyan-200">
+        靈溪微波，請點擊拋出靈竿
+      </div>
+
+      <div id="catchResult" class="hidden p-3 bg-cyan-950/80 border border-teal-500/60 rounded-xl text-xs text-teal-300 font-bold animate-bounce">
+        🎣 恭喜釣獲【金鱗太靈魚】！靈石 +35，靈氣 +25！
+      </div>
+
+      <button id="actionBtn" class="w-full py-3 rounded-xl bg-cyan-500 hover:bg-cyan-400 text-slate-950 font-bold text-sm shadow-md transition-all active:scale-98">
+        🎣 拋竿入水
+      </button>
+    </div>
+  </main>
+
+  <footer class="text-center text-xs text-slate-400 border-t border-slate-900 pt-2">
+    已釣獲魚數：<b id="fishCount" class="text-teal-300">0</b> 尾 · 數據實時連動母世界
+  </footer>
+
+  <script>
+    let state = 'idle';
+    let count = 0;
+    const btn = document.getElementById('actionBtn');
+    const statusText = document.getElementById('statusText');
+    const bobber = document.getElementById('bobber');
+    const catchResult = document.getElementById('catchResult');
+
+    btn.onclick = () => {
+      if (state === 'idle') {
+        state = 'waiting';
+        statusText.innerText = '靜候靈魚接近... 屏息凝神...';
+        btn.innerText = '等候咬鉤中...';
+        btn.disabled = true;
+        catchResult.classList.add('hidden');
+
+        setTimeout(() => {
+          state = 'hooked';
+          bobber.className = 'w-10 h-16 rounded-full bg-rose-500 flex items-center justify-center text-xs font-bold text-white shadow-lg animate-ping';
+          statusText.innerText = '⚡ 浮漂猛沉！大魚咬鉤！速速提竿！';
+          btn.innerText = '⚡ 立即提竿！';
+          btn.disabled = false;
+        }, 2200);
+      } else if (state === 'hooked') {
+        state = 'idle';
+        bobber.className = 'w-10 h-16 rounded-full bg-gradient-to-t from-red-500 to-white flex items-center justify-center text-xs font-bold text-white shadow-lg floating-bobber';
+        count++;
+        document.getElementById('fishCount').innerText = count;
+        catchResult.classList.remove('hidden');
+        statusText.innerText = '靈魚入囊！心境空靈！';
+        btn.innerText = '再拋一竿';
+
+        // Notify Mother System
+        window.parent.postMessage({
+          type: "XIAOXUE_DLC_EVENT",
+          action: "REWARD",
+          payload: {
+            exp: 25,
+            spiritStones: 35,
+            message: "釣獲【金鱗太靈魚】"
+          }
+        }, "*");
+      }
+    };
+
+    document.getElementById('closeBtn').onclick = () => {
+      window.parent.postMessage({ type: "XIAOXUE_DLC_EVENT", action: "CLOSE" }, "*");
+    };
+  </script>
+</body>
+</html>
