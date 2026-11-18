@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <title>靈田煉丹房 · Herb Alchemy DLC</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style> body { background-color: #08121a; color: #f8fafc; user-select: none; } </style>
+</head>
+<body class="h-screen w-screen flex flex-col justify-between p-4">
+  <header class="flex items-center justify-between pb-3 border-b border-emerald-900/40">
+    <div class="flex items-center gap-2">
+      <span class="text-xl">🌿</span>
+      <div>
+        <h1 class="text-base font-bold text-emerald-200">靈田 · 煉丹房</h1>
+        <p class="text-[11px] text-emerald-400">獨立子專案 /dlcs/dlc_herb_alchemy/index.html</p>
+      </div>
+    </div>
+    <button id="closeBtn" class="px-3 py-1 rounded-full bg-slate-800 hover:bg-slate-700 text-xs text-slate-300 border border-slate-700">
+      ✕ 返回洞府
+    </button>
+  </header>
+
+  <main class="my-auto py-2 flex flex-col items-center space-y-4">
+    <div class="w-full max-w-xs bg-slate-900/80 p-5 rounded-3xl border border-emerald-500/40 text-center space-y-3">
+      <div class="text-4xl animate-bounce">🏺</div>
+      <h2 class="text-base font-bold text-amber-200">八卦乾坤丹爐</h2>
+      <p class="text-xs text-slate-300 leading-relaxed">
+        投入玄冰靈草與赤陽朱果，引動文武三昧真火開鼎成丹。
+      </p>
+
+      <div id="pillAlert" class="hidden p-2.5 bg-emerald-950 border border-emerald-500 rounded-xl text-xs text-emerald-300 font-bold">
+        ✨ 丹成出爐！【九陽築基天丹】已入儲物袋！
+      </div>
+
+      <button id="brewBtn" class="w-full py-3 rounded-xl bg-gradient-to-r from-amber-500 to-yellow-500 hover:from-amber-400 hover:to-yellow-400 text-slate-950 font-bold text-xs shadow-md">
+        🔥 運轉三昧真火煉丹
+      </button>
+    </div>
+  </main>
+
+  <footer class="text-center text-xs text-slate-500 border-t border-slate-900 pt-2">
+    藥道精湛，靈丹直接轉化為修為存檔
+  </footer>
+
+  <script>
+    document.getElementById('brewBtn').onclick = () => {
+      document.getElementById('pillAlert').classList.remove('hidden');
+      window.parent.postMessage({
+        type: "XIAOXUE_DLC_EVENT",
+        action: "REWARD",
+        payload: {
+          exp: 60,
+          spiritStones: 25,
+          message: "起鼎煉成【九陽築基天丹】"
+        }
+      }, "*");
+    };
+
+    document.getElementById('closeBtn').onclick = () => {
+      window.parent.postMessage({ type: "XIAOXUE_DLC_EVENT", action: "CLOSE" }, "*");
+    };
+  </script>
+</body>
+</html>
