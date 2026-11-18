@@ -224,8 +224,8 @@ export default function App() {
           </div>
         </main>
 
-        {/* Mobile Bottom Tab Bar (洞府 | 首頁 | 我的) - Absolute positioned inside phone frame wrapper to respect rounded bottom corners */}
-        <nav className="absolute bottom-0 left-0 right-0 z-40 bg-gradient-to-t from-[#04070e] via-[#070d18]/95 to-[#070d18]/60 backdrop-blur-md border-t border-cyan-500/25 px-6 py-2.5 flex items-center justify-around shadow-[0_-10px_30px_rgba(2,4,8,0.9)]">
+        {/* Mobile Bottom Tab Bar (洞府 | 首頁 | 我的) - Persistent fixed bottom bar with seamless background blending (无痛衔接) */}
+        <nav className="fixed bottom-0 left-0 right-0 z-40 max-w-md mx-auto bg-gradient-to-t from-[#04070e] via-[#070d18]/95 to-transparent backdrop-blur-md border-t border-cyan-500/25 px-6 py-3 pb-4 flex items-center justify-around shadow-[0_-15px_35px_rgba(3,6,12,0.95)]">
           <button
             onClick={() => {
               sounds.playChime(440, 0.2);
