@@ -148,9 +148,9 @@ export default function App() {
           <div className="absolute top-1/2 right-4 w-60 h-60 bg-teal-500/5 blur-3xl rounded-full" />
         </div>
 
-        {/* Top Header / 30% Frame anchored to top */}
+        {/* Top Header / 20% Frame anchored to top */}
         <div 
-          className="relative w-full h-[230px] sm:h-[250px] bg-cover bg-top border-b border-cyan-500/30 shadow-lg flex-shrink-0"
+          className="relative w-full h-[150px] sm:h-[180px] bg-cover bg-top border-b border-cyan-500/30 shadow-lg flex-shrink-0"
           style={{ backgroundImage: `url('/assets/images/xiaoxue_header.png')` }}
         >
           <div className="absolute inset-0 bg-gradient-to-b from-black/20 via-transparent to-[#070b14]/90 pointer-events-none" />
@@ -160,11 +160,11 @@ export default function App() {
           </div>
 
           {/* Theme Song Audio Toggle Button placed in the bottom-left blank space underneath title */}
-          <div className="absolute bottom-3 left-3 sm:left-4 z-20">
+          <div className="absolute bottom-2.5 left-3 sm:left-4 z-20">
             <button
               onClick={handleToggleAudio}
               title={audioEnabled ? '點擊暫停小雪主題曲' : '點擊播放小雪主題曲'}
-              className={`px-3 h-8 sm:h-9 rounded-xl border flex items-center gap-1.5 transition-all duration-200 active:scale-95 cursor-pointer backdrop-blur-md shadow-lg ${
+              className={`px-2.5 h-7 sm:h-8 rounded-xl border flex items-center gap-1 transition-all duration-200 active:scale-95 cursor-pointer backdrop-blur-md shadow-lg ${
                 audioEnabled
                   ? 'bg-gradient-to-r from-cyan-950/90 to-teal-950/90 border-cyan-400 text-cyan-200 shadow-[0_0_15px_rgba(6,182,212,0.45)]'
                   : 'bg-[#141d2e]/85 border-cyan-900/60 text-slate-300 hover:text-white hover:border-cyan-600'
@@ -172,31 +172,31 @@ export default function App() {
             >
               {audioEnabled ? (
                 <>
-                  <span className="flex items-end gap-0.5 h-3.5 pb-0.5">
-                    <span className="w-1 h-3 bg-cyan-400 rounded-full animate-bounce" style={{ animationDuration: '0.6s' }} />
+                  <span className="flex items-end gap-0.5 h-3 pb-0.5">
+                    <span className="w-1 h-2.5 bg-cyan-400 rounded-full animate-bounce" style={{ animationDuration: '0.6s' }} />
                     <span className="w-1 h-2 bg-teal-300 rounded-full animate-bounce" style={{ animationDuration: '0.8s', animationDelay: '0.15s' }} />
-                    <span className="w-1 h-3.5 bg-cyan-200 rounded-full animate-bounce" style={{ animationDuration: '0.5s', animationDelay: '0.3s' }} />
+                    <span className="w-1 h-3 bg-cyan-200 rounded-full animate-bounce" style={{ animationDuration: '0.5s', animationDelay: '0.3s' }} />
                   </span>
-                  <span className="text-[11px] font-bold tracking-tight text-cyan-200">播放中 🎵</span>
+                  <span className="text-[10px] font-bold tracking-tight text-cyan-200">播放中 🎵</span>
                 </>
               ) : (
                 <>
-                  <svg className="w-3.5 h-3.5 text-cyan-300" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <svg className="w-3 h-3 text-cyan-300" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 19V6l12-3v13M9 19c0 1.105-1.343 2-3 2s-3-.895-3-2 1.343-2 3-2 3 .895 3 2zm12-3c0 1.105-1.343 2-3 2s-3-.895-3-2 1.343-2 3-2 3 .895 3 2zM9 10l12-3" />
                   </svg>
-                  <span className="text-[11px] font-semibold text-slate-200">播放主題曲</span>
+                  <span className="text-[10px] font-semibold text-slate-200">播放主題曲</span>
                 </>
               )}
             </button>
           </div>
         </div>
 
-      {/* Bottom 70% Frame with Cosmic Nebula Background */}
+      {/* Bottom 80% Frame with Cosmic Nebula Background */}
       <div 
         className="relative flex-1 w-full bg-cover bg-repeat-y flex flex-col"
         style={{ backgroundImage: `url('/assets/images/cosmic_nebula_bg.png')`, backgroundColor: '#070b14' }}
       >
-        <div className="absolute inset-0 bg-[#070b14]/75 backdrop-blur-[1px] pointer-events-none" />
+        <div className="absolute inset-0 bg-[#070b14]/70 backdrop-blur-[1px] pointer-events-none" />
 
         {/* Main Screen Layout */}
         <main className="relative z-10 flex-1 max-w-md w-full mx-auto px-3.5 sm:px-4 py-4 space-y-3.5 pb-24">
@@ -224,8 +224,8 @@ export default function App() {
           </div>
         </main>
 
-        {/* Mobile Bottom Tab Bar (洞府 | 首頁 | 我的) */}
-        <nav className="fixed bottom-0 left-0 right-0 z-40 max-w-md mx-auto bg-[#070d18]/95 backdrop-blur-md border-t border-cyan-500/30 px-6 py-2.5 flex items-center justify-around shadow-[0_-4px_20px_rgba(0,0,0,0.6)]">
+        {/* Mobile Bottom Tab Bar (洞府 | 首頁 | 我的) - Seamlessly blended with gradient & nebula glow */}
+        <nav className="fixed bottom-0 left-0 right-0 z-40 max-w-md mx-auto bg-gradient-to-t from-[#04070e] via-[#070d18]/90 to-[#070d18]/40 backdrop-blur-md border-t border-cyan-500/25 px-6 py-2.5 flex items-center justify-around shadow-[0_-10px_30px_rgba(2,4,8,0.9)]">
           <button
             onClick={() => {
               sounds.playChime(440, 0.2);
