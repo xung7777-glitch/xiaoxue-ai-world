@@ -123,6 +123,10 @@ export default function App() {
       return;
     }
     if (card.targetUrl) {
+      if (card.targetUrl.startsWith('/dlc-portal.html')) {
+        window.location.href = card.targetUrl;
+        return;
+      }
       setActiveDlc({ id: card.id, title: `${card.title} · DLC`, url: card.targetUrl });
     } else {
       // Internal modal fallback

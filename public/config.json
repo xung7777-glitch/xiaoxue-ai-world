@@ -141,7 +141,7 @@
       "type": "luck",
       "badge": "運勢",
       "spriteId": "status",
-      "targetUrl": "/dlc/dlc_luck.html",
+      "targetUrl": "/dlc-portal.html?dlc=dlc_luck",
       "frequencyNote": 329.63
     },
     {
@@ -152,7 +152,7 @@
       "type": "learning",
       "badge": "真言",
       "spriteId": "english",
-      "targetUrl": "/dlc/dlc_spellbook.html",
+      "targetUrl": "/dlc-portal.html?dlc=dlc_spellbook",
       "frequencyNote": 392.0
     },
     {
@@ -163,7 +163,7 @@
       "type": "ecosystem",
       "badge": "禪意",
       "spriteId": "fish",
-      "targetUrl": "/dlc/dlc_pond.html",
+      "targetUrl": "/dlc-portal.html?dlc=dlc_pond",
       "frequencyNote": 440.0
     },
     {
@@ -174,7 +174,7 @@
       "type": "cultivation",
       "badge": "田園",
       "spriteId": "alchemy",
-      "targetUrl": "/dlc/dlc_forest.html",
+      "targetUrl": "/dlc-portal.html?dlc=dlc_forest",
       "frequencyNote": 493.88
     },
     {
@@ -185,7 +185,7 @@
       "type": "meditation",
       "badge": "吐納",
       "spriteId": "chamber",
-      "targetUrl": "/dlc/dlc_meditate.html",
+      "targetUrl": "/dlc-portal.html?dlc=dlc_meditate",
       "frequencyNote": 523.25
     },
     {
@@ -196,7 +196,7 @@
       "type": "relax",
       "badge": "博弈",
       "spriteId": "fish",
-      "targetUrl": "/dlc/dlc_fish.html",
+      "targetUrl": "/dlc-portal.html?dlc=dlc_fish",
       "frequencyNote": 587.33
     },
     {
@@ -207,7 +207,7 @@
       "type": "puzzle",
       "badge": "飛升",
       "spriteId": "talisman",
-      "targetUrl": "/dlc/dlc_merge.html",
+      "targetUrl": "/dlc-portal.html?dlc=dlc_merge",
       "frequencyNote": 659.25
     },
     {
@@ -218,7 +218,7 @@
       "type": "game",
       "badge": "御敵",
       "spriteId": "mechanism",
-      "targetUrl": "/dlc/dlc_tank.html",
+      "targetUrl": "/dlc-portal.html?dlc=dlc_tank",
       "frequencyNote": 698.46
     },
     {
@@ -229,7 +229,7 @@
       "type": "puzzle",
       "badge": "消除",
       "spriteId": "talisman",
-      "targetUrl": "/dlc/dlc_drop.html",
+      "targetUrl": "/dlc-portal.html?dlc=dlc_drop",
       "frequencyNote": 783.99
     },
     {
@@ -240,7 +240,7 @@
       "type": "puzzle",
       "badge": "數獨",
       "spriteId": "mechanism",
-      "targetUrl": "/dlc/dlc_sudoku.html",
+      "targetUrl": "/dlc-portal.html?dlc=dlc_sudoku",
       "frequencyNote": 880.0
     },
     {
@@ -251,7 +251,7 @@
       "type": "adventure",
       "badge": "迷宮",
       "spriteId": "beast",
-      "targetUrl": "/dlc/dlc_ruins.html",
+      "targetUrl": "/dlc-portal.html?dlc=dlc_ruins",
       "frequencyNote": 987.77
     },
     {
@@ -262,7 +262,7 @@
       "type": "survival",
       "badge": "生存",
       "spriteId": "beast",
-      "targetUrl": "/dlc/dlc_survival.html",
+      "targetUrl": "/dlc-portal.html?dlc=dlc_survival",
       "frequencyNote": 1046.5
     },
     {
