@@ -1,0 +1,295 @@
+{
+  "version": "v2.1.0",
+  "lastUpdated": "2026-11-08",
+  "system_info": {
+    "project_name": "小雪的修仙世界",
+    "portal_name": "xiaoxue-ai-world",
+    "auth_provider": "Google",
+    "firebase_connected": true,
+    "theme": "xianxia_dark_celestial",
+    "orientation": "portrait_mobile_only",
+    "aspectRatio": "9:16",
+    "theme_song": "/assets/audio/xiaoxue_theme_song.mp3"
+  },
+  "cultivation_system": {
+    "max_spiritual_power": 45000,
+    "system_rules": [
+      "所有練習成果統一轉換成靈力值",
+      "靈力值採永久累積制",
+      "突破境界不重置靈力值",
+      "達到指定門檻，自動更新修行境界",
+      "每個大境界分為初期、中期、後期、圓滿",
+      "最高階段暫定為渡劫圓滿，靈力值 45,000"
+    ],
+    "realms": [
+      {
+        "id": "realm_1",
+        "name": "練氣期",
+        "overall_min": 0,
+        "overall_max": 1000,
+        "stages": [
+          { "stage": "初期", "min": 0, "max": 250 },
+          { "stage": "中期", "min": 251, "max": 500 },
+          { "stage": "後期", "min": 501, "max": 750 },
+          { "stage": "圓滿", "min": 751, "max": 1000 }
+        ]
+      },
+      {
+        "id": "realm_2",
+        "name": "築基期",
+        "overall_min": 1001,
+        "overall_max": 3000,
+        "stages": [
+          { "stage": "初期", "min": 1001, "max": 1500 },
+          { "stage": "中期", "min": 1501, "max": 2000 },
+          { "stage": "後期", "min": 2001, "max": 2500 },
+          { "stage": "圓滿", "min": 2501, "max": 3000 }
+        ]
+      },
+      {
+        "id": "realm_3",
+        "name": "金丹期",
+        "overall_min": 3001,
+        "overall_max": 6000,
+        "stages": [
+          { "stage": "初期", "min": 3001, "max": 3750 },
+          { "stage": "中期", "min": 3751, "max": 4500 },
+          { "stage": "後期", "min": 4501, "max": 5250 },
+          { "stage": "圓滿", "min": 5251, "max": 6000 }
+        ]
+      },
+      {
+        "id": "realm_4",
+        "name": "元嬰期",
+        "overall_min": 6001,
+        "overall_max": 10000,
+        "stages": [
+          { "stage": "初期", "min": 6001, "max": 7000 },
+          { "stage": "中期", "min": 7001, "max": 8000 },
+          { "stage": "後期", "min": 8001, "max": 9000 },
+          { "stage": "圓滿", "min": 9001, "max": 10000 }
+        ]
+      },
+      {
+        "id": "realm_5",
+        "name": "化神期",
+        "overall_min": 10001,
+        "overall_max": 15000,
+        "stages": [
+          { "stage": "初期", "min": 10001, "max": 11250 },
+          { "stage": "中期", "min": 11251, "max": 12500 },
+          { "stage": "後期", "min": 12501, "max": 13750 },
+          { "stage": "圓滿", "min": 13751, "max": 15000 }
+        ]
+      },
+      {
+        "id": "realm_6",
+        "name": "煉虛期",
+        "overall_min": 15001,
+        "overall_max": 21000,
+        "stages": [
+          { "stage": "初期", "min": 15001, "max": 16500 },
+          { "stage": "中期", "min": 16501, "max": 18000 },
+          { "stage": "後期", "min": 18001, "max": 19500 },
+          { "stage": "圓滿", "min": 19501, "max": 21000 }
+        ]
+      },
+      {
+        "id": "realm_7",
+        "name": "合體期",
+        "overall_min": 21001,
+        "overall_max": 28000,
+        "stages": [
+          { "stage": "初期", "min": 21001, "max": 22750 },
+          { "stage": "中期", "min": 22751, "max": 24500 },
+          { "stage": "後期", "min": 24501, "max": 26250 },
+          { "stage": "圓滿", "min": 26251, "max": 28000 }
+        ]
+      },
+      {
+        "id": "realm_8",
+        "name": "大乘期",
+        "overall_min": 28001,
+        "overall_max": 36000,
+        "stages": [
+          { "stage": "初期", "min": 28001, "max": 30000 },
+          { "stage": "中期", "min": 30001, "max": 32000 },
+          { "stage": "後期", "min": 32001, "max": 34000 },
+          { "stage": "圓滿", "min": 34001, "max": 36000 }
+        ]
+      },
+      {
+        "id": "realm_9",
+        "name": "渡劫期",
+        "overall_min": 36001,
+        "overall_max": 45000,
+        "stages": [
+          { "stage": "初期", "min": 36001, "max": 38250 },
+          { "stage": "中期", "min": 38251, "max": 40500 },
+          { "stage": "後期", "min": 40501, "max": 42750 },
+          { "stage": "圓滿", "min": 42751, "max": 45000 }
+        ]
+      }
+    ]
+  },
+  "modules": [
+    {
+      "id": "luck_nav",
+      "title": "開運導航",
+      "subtitle": "農民曆與氣場指南",
+      "icon": "✨",
+      "type": "luck",
+      "badge": "運勢",
+      "spriteId": "status",
+      "targetUrl": "/dlc/dlc_luck/index.html",
+      "frequencyNote": 329.63
+    },
+    {
+      "id": "english_spellbook",
+      "title": "英咒寶典",
+      "subtitle": "短影片實用英語學習",
+      "icon": "📖",
+      "type": "learning",
+      "badge": "真言",
+      "spriteId": "english",
+      "targetUrl": "/dlc/dlc_spellbook/index.html",
+      "frequencyNote": 392.0
+    },
+    {
+      "id": "spirit_pond",
+      "title": "靜心靈泉",
+      "subtitle": "和風禪意錦鯉觀賞",
+      "icon": "🪷",
+      "type": "ecosystem",
+      "badge": "禪意",
+      "spriteId": "fish",
+      "targetUrl": "/dlc/dlc_pond/index.html",
+      "frequencyNote": 440.0
+    },
+    {
+      "id": "herb_forest",
+      "title": "神農藥谷",
+      "subtitle": "林田照料與採摘野果",
+      "icon": "🌿",
+      "type": "cultivation",
+      "badge": "田園",
+      "spriteId": "alchemy",
+      "targetUrl": "/dlc/dlc_forest/index.html",
+      "frequencyNote": 493.88
+    },
+    {
+      "id": "meditate_qi",
+      "title": "先天一炁",
+      "subtitle": "打坐冥想與吐納靈氣",
+      "icon": "🧘",
+      "type": "meditation",
+      "badge": "吐納",
+      "spriteId": "chamber",
+      "targetUrl": "/dlc/dlc_meditate/index.html",
+      "frequencyNote": 523.25
+    },
+    {
+      "id": "fish_dragon",
+      "title": "逆水擒龍",
+      "subtitle": "靈泉水畔音律釣魚",
+      "icon": "🌊",
+      "type": "relax",
+      "badge": "博弈",
+      "spriteId": "fish",
+      "targetUrl": "/dlc/dlc_fish/index.html",
+      "frequencyNote": 587.33
+    },
+    {
+      "id": "merge_ascend",
+      "title": "大道飛升",
+      "subtitle": "2048 修為碰撞融合",
+      "icon": "⚛️",
+      "type": "puzzle",
+      "badge": "飛升",
+      "spriteId": "talisman",
+      "targetUrl": "/dlc/dlc_merge/index.html",
+      "frequencyNote": 659.25
+    },
+    {
+      "id": "tank_defend",
+      "title": "飛劍御敵",
+      "subtitle": "經典戰車射擊防守",
+      "icon": "🛡️",
+      "type": "game",
+      "badge": "御敵",
+      "spriteId": "mechanism",
+      "targetUrl": "/dlc/dlc_tank/index.html",
+      "frequencyNote": 698.46
+    },
+    {
+      "id": "drop_puzzle",
+      "title": "破陣方塊",
+      "subtitle": "東方修仙方塊消除",
+      "icon": "🧱",
+      "type": "puzzle",
+      "badge": "消除",
+      "spriteId": "talisman",
+      "targetUrl": "/dlc/dlc_drop/index.html",
+      "frequencyNote": 783.99
+    },
+    {
+      "id": "sudoku_tribulation",
+      "title": "九宮雷劫",
+      "subtitle": "九大靈根修仙數獨",
+      "icon": "🔢",
+      "type": "puzzle",
+      "badge": "數獨",
+      "spriteId": "mechanism",
+      "targetUrl": "/dlc/dlc_sudoku/index.html",
+      "frequencyNote": 880.0
+    },
+    {
+      "id": "ruins_explore",
+      "title": "幻變遺蹟",
+      "subtitle": "隨機變幻修仙迷宮",
+      "icon": "🗺️",
+      "type": "adventure",
+      "badge": "迷宮",
+      "spriteId": "beast",
+      "targetUrl": "/dlc/dlc_ruins/index.html",
+      "frequencyNote": 987.77
+    },
+    {
+      "id": "survival_beast",
+      "title": "邊疆修仙",
+      "subtitle": "荒涼邊疆獸潮割草",
+      "icon": "⚔️",
+      "type": "survival",
+      "badge": "生存",
+      "spriteId": "beast",
+      "targetUrl": "/dlc/dlc_survival/index.html",
+      "frequencyNote": 1046.5
+    },
+    {
+      "id": "world_map_portal",
+      "title": "世界地圖換場傳送門",
+      "subtitle": "探索蠻荒大世界",
+      "icon": "🧭",
+      "type": "portal",
+      "badge": "跨域",
+      "spriteId": "map",
+      "targetUrl": "/dlcs/dlc_world_map/index.html",
+      "frequencyNote": 783.99
+    }
+  ],
+  "sanctuary_spirit_spring": {
+    "environment_sound": {
+      "cricket_active": true,
+      "cricket_volume": 0.4
+    },
+    "koi_config": {
+      "total_count": 3,
+      "swim_speed": 1.2
+    },
+    "frog_config": {
+      "active": true,
+      "jump_min_interval_sec": 30,
+      "jump_max_interval_sec": 60
+    }
+  }
+}

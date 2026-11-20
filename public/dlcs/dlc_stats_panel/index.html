@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <title>修為狀態 · Stats Panel DLC</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style> body { background-color: #070e1a; color: #f8fafc; user-select: none; } </style>
+</head>
+<body class="h-screen w-screen flex flex-col justify-between p-4">
+  <header class="flex items-center justify-between pb-3 border-b border-cyan-900/40">
+    <div class="flex items-center gap-2">
+      <span class="text-xl">📊</span>
+      <div>
+        <h1 class="text-base font-bold text-cyan-200">修為狀態 · 全息玉牒</h1>
+        <p class="text-[11px] text-cyan-400">獨立子專案 /dlcs/dlc_stats_panel/index.html</p>
+      </div>
+    </div>
+    <button id="closeBtn" class="px-3 py-1 rounded-full bg-slate-800 hover:bg-slate-700 text-xs text-slate-300 border border-slate-700">
+      ✕ 返回洞府
+    </button>
+  </header>
+
+  <main class="my-auto py-2 flex flex-col items-center">
+    <div class="w-full max-w-xs bg-slate-900/80 p-5 rounded-3xl border border-cyan-500/40 text-center space-y-3">
+      <div class="text-4xl animate-pulse">📜</div>
+      <h2 class="text-base font-bold text-cyan-200">太素道人 · 經脈天盤</h2>
+      <p class="text-xs text-slate-300 leading-relaxed">
+        十二正經暢通無阻，丹田靈液如潮，五行靈根純度達 90% 以上。
+      </p>
+
+      <button id="cultivateBtn" class="w-full py-2.5 rounded-xl bg-cyan-600 hover:bg-cyan-500 text-white font-bold text-xs shadow-md">
+        ✨ 運轉一個大周天經脈 (+30 靈氣)
+      </button>
+    </div>
+  </main>
+
+  <footer class="text-center text-xs text-slate-500 border-t border-slate-900 pt-2">
+    隨時檢視周天修為，經脈與天道共鳴
+  </footer>
+
+  <script>
+    document.getElementById('cultivateBtn').onclick = () => {
+      window.parent.postMessage({
+        type: "XIAOXUE_DLC_EVENT",
+        action: "REWARD",
+        payload: {
+          exp: 30,
+          spiritStones: 10,
+          message: "運轉周天，經脈洗滌圓滿"
+        }
+      }, "*");
+    };
+
+    document.getElementById('closeBtn').onclick = () => {
+      window.parent.postMessage({ type: "XIAOXUE_DLC_EVENT", action: "CLOSE" }, "*");
+    };
+  </script>
+</body>
+</html>

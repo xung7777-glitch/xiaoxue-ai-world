@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <title>符咒解謎 · Talisman 2048 DLC</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style> body { background-color: #0c121e; color: #f8fafc; user-select: none; } </style>
+</head>
+<body class="h-screen w-screen flex flex-col justify-between p-4">
+  <header class="flex items-center justify-between pb-3 border-b border-amber-900/40">
+    <div class="flex items-center gap-2">
+      <span class="text-xl">📜</span>
+      <div>
+        <h1 class="text-base font-bold text-amber-200">符咒解謎 · 符籙融道</h1>
+        <p class="text-[11px] text-amber-400">獨立子專案 /dlcs/dlc_talisman_2048/index.html</p>
+      </div>
+    </div>
+    <button id="closeBtn" class="px-3 py-1 rounded-full bg-slate-800 hover:bg-slate-700 text-xs text-slate-300 border border-slate-700">
+      ✕ 返回洞府
+    </button>
+  </header>
+
+  <main class="my-auto py-2 flex flex-col items-center">
+    <div class="w-full max-w-xs bg-slate-900/80 p-3 rounded-2xl border border-amber-500/30 flex justify-between text-xs mb-3">
+      <span>道悟分數: <b id="scoreVal" class="text-amber-300">0</b></span>
+      <button id="resetBtn" class="text-slate-400 hover:text-white underline">重置</button>
+    </div>
+
+    <!-- 4x4 Grid -->
+    <div id="grid" class="grid grid-cols-4 gap-2 w-72 h-72 bg-slate-950 p-2.5 rounded-2xl border border-slate-800"></div>
+
+    <!-- Dpad -->
+    <div class="mt-4 flex flex-col items-center gap-1.5">
+      <button onclick="move('UP')" class="w-12 h-9 rounded-lg bg-slate-800 hover:bg-cyan-700 text-cyan-200 font-bold">↑</button>
+      <div class="flex gap-2">
+        <button onclick="move('LEFT')" class="w-12 h-9 rounded-lg bg-slate-800 hover:bg-cyan-700 text-cyan-200 font-bold">←</button>
+        <button onclick="move('DOWN')" class="w-12 h-9 rounded-lg bg-slate-800 hover:bg-cyan-700 text-cyan-200 font-bold">↓</button>
+        <button onclick="move('RIGHT')" class="w-12 h-9 rounded-lg bg-slate-800 hover:bg-cyan-700 text-cyan-200 font-bold">→</button>
+      </div>
+    </div>
+  </main>
+
+  <footer class="text-center text-xs text-slate-500 border-t border-slate-900 pt-2">
+    合成九品神符，修為靈氣直接傳輸至母系統
+  </footer>
+
+  <script>
+    let board = [[0,0,0,0],[0,0,0,0],[0,0,0,0],[0,0,0,0]];
+    let score = 0;
+    const NAMES = {
+      2: "黃紙符", 4: "聚靈符", 8: "辟邪符", 16: "玄冰符", 32: "神火符", 64: "天雷符", 128: "太乙符"
+    };
+
+    function spawn() {
+      let empty = [];
+      for(let r=0;r<4;r++) for(let c=0;c<4;c++) if(!board[r][c]) empty.push({r,c});
+      if(empty.length) {
+        let p = empty[Math.floor(Math.random()*empty.length)];
+        board[p.r][p.c] = Math.random()<0.8?2:4;
+      }
+    }
+
+    function render() {
+      const g = document.getElementById('grid');
+      g.innerHTML = '';
+      for(let r=0;r<4;r++) {
+        for(let c=0;c<4;c++) {
+          const v = board[r][c];
+          const d = document.createElement('div');
+          d.className = `rounded-xl flex flex-col items-center justify-center text-xs font-bold border transition-all ${
+            v ? 'bg-amber-950/80 border-amber-600 text-amber-200 shadow' : 'bg-slate-900/40 border-slate-800 text-transparent'
+          }`;
+          d.innerHTML = v ? `<span>${NAMES[v]||v}</span><span class='text-[9px] opacity-70'>${v}</span>` : '';
+          g.appendChild(d);
+        }
+      }
+      document.getElementById('scoreVal').innerText = score;
+    }
+
+    function move(dir) {
+      let pts = 10;
+      score += pts;
+      spawn();
+      render();
+      window.parent.postMessage({
+        type: "XIAOXUE_DLC_EVENT",
+        action: "REWARD",
+        payload: { exp: 5, spiritStones: 2, message: "符籙合道" }
+      }, "*");
+    }
+
+    document.getElementById('resetBtn').onclick = () => { board = [[0,0,0,0],[0,0,0,0],[0,0,0,0],[0,0,0,0]]; score=0; spawn(); spawn(); render(); };
+    document.getElementById('closeBtn').onclick = () => { window.parent.postMessage({ type: "XIAOXUE_DLC_EVENT", action: "CLOSE" }, "*"); };
+
+    spawn(); spawn(); render();
+  </script>
+</body>
+</html>

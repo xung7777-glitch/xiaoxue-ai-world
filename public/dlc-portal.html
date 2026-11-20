@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>小雪的修仙世界 - 十二生肖 DLC 入口</title>
+  <style>
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      padding: 0;
+      background-color: #03060c;
+      color: #f8fafc;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      overflow-x: hidden;
+    }
+
+    /* Full-screen Responsive Container */
+    .portal-container {
+      width: 100%;
+      max-width: 440px;
+      min-height: 100vh;
+      background: #070b14;
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      overflow: hidden;
+      box-shadow: 0 0 80px rgba(0, 0, 0, 0.9);
+    }
+    @media (min-width: 640px) {
+      .portal-container {
+        min-height: 920px;
+        border-radius: 32px;
+        border: 10px solid #1e293b;
+      }
+    }
+
+    /* Background Image Container */
+    .bg-container {
+      position: absolute;
+      inset: 0;
+      background-size: cover;
+      background-position: center top;
+      transition: background-image 0.5s ease-in-out;
+      z-index: 0;
+    }
+    .bg-overlay {
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(to bottom, rgba(3,6,12,0.1) 0%, rgba(7,11,20,0.35) 45%, rgba(3,6,12,0.95) 100%);
+      z-index: 1;
+    }
+
+    /* Top Navigation bar */
+    .top-bar {
+      position: relative;
+      z-index: 10;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 18px 20px;
+    }
+    .back-btn {
+      background: rgba(15, 23, 42, 0.85);
+      border: 1px solid rgba(6, 182, 212, 0.5);
+      color: #38bdf8;
+      padding: 7px 16px;
+      border-radius: 14px;
+      font-size: 13px;
+      font-weight: 600;
+      cursor: pointer;
+      text-decoration: none;
+      backdrop-filter: blur(8px);
+      transition: all 0.2s;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.4);
+    }
+    .back-btn:hover {
+      background: rgba(6, 182, 212, 0.25);
+      border-color: #22d3ee;
+      color: #fff;
+    }
+    .zodiac-tag {
+      background: rgba(245, 158, 11, 0.25);
+      border: 1px solid rgba(245, 158, 11, 0.6);
+      color: #fef08a;
+      padding: 5px 14px;
+      border-radius: 20px;
+      font-size: 12px;
+      font-weight: bold;
+      letter-spacing: 1px;
+      box-shadow: 0 0 15px rgba(245, 158, 11, 0.3);
+    }
+
+    /* Main Content Area starting at 52% down so Xiaoxue portrait is completely unobstructed */
+    .content-area {
+      position: absolute;
+      top: 52%;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      z-index: 10;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      padding: 10px 24px 30px 24px;
+      text-align: center;
+    }
+
+    /* Transparent info card with NO borders, NO box-shadow */
+    .info-card {
+      background: transparent;
+      border: none;
+      box-shadow: none;
+      padding: 0;
+      animation: fadeInUp 0.4s ease-out;
+    }
+
+    .module-num {
+      font-size: 11px;
+      color: #22d3ee;
+      letter-spacing: 2px;
+      font-weight: bold;
+      text-transform: uppercase;
+      margin-bottom: 3px;
+      text-shadow: 0 1px 4px rgba(0,0,0,0.9);
+    }
+
+    .module-title {
+      font-family: serif;
+      font-size: 28px;
+      font-weight: 900;
+      color: #fef08a;
+      margin: 0 0 4px 0;
+      text-shadow: 0 2px 12px rgba(234, 179, 8, 0.7), 0 0 20px rgba(0,0,0,0.95);
+    }
+
+    .module-subtitle {
+      font-size: 12px;
+      color: #e2e8f0;
+      margin-bottom: 10px;
+      letter-spacing: 1px;
+      font-weight: 500;
+      text-shadow: 0 1px 6px rgba(0,0,0,0.9);
+    }
+
+    .module-desc {
+      font-size: 11px;
+      color: #cbd5e1;
+      line-height: 1.5;
+      margin-bottom: 18px;
+      text-shadow: 0 1px 6px rgba(0,0,0,0.95);
+      padding: 0 10px;
+    }
+
+    /* Enter Game Button positioned cleanly starting from 50%-60% downwards */
+    .enter-btn {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      width: 100%;
+      padding: 14px;
+      background: linear-gradient(135deg, #0284c7 0%, #0d9488 100%);
+      color: #fff;
+      border: none;
+      border-radius: 16px;
+      font-size: 16px;
+      font-weight: bold;
+      text-decoration: none;
+      box-shadow: 0 6px 25px rgba(6, 182, 212, 0.6);
+      cursor: pointer;
+      transition: all 0.2s;
+    }
+    .enter-btn:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 8px 32px rgba(6, 182, 212, 0.85);
+      background: linear-gradient(135deg, #0369a1, #0f766e);
+    }
+    .enter-btn:active {
+      transform: scale(0.98);
+    }
+
+    @keyframes fadeInUp {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="portal-container">
+    <!-- Background Image & Overlay -->
+    <div id="bgContainer" class="bg-container" style="background-image: url('/assets/images/dlc/dlc_luck.png');"></div>
+    <div class="bg-overlay"></div>
+
+    <!-- Top Navigation -->
+    <div class="top-bar">
+      <a href="/index.html" class="back-btn">🏠 返回主殿</a>
+      <div id="zodiacTag" class="zodiac-tag">子鼠生肖</div>
+    </div>
+
+    <!-- Content Area starting at 52% down -->
+    <div class="content-area">
+      <div id="infoCard" class="info-card">
+        <div id="moduleNum" class="module-num">DLC 01</div>
+        <h1 id="moduleTitle" class="module-title">子鼠推天</h1>
+        <div id="moduleSubtitle" class="module-subtitle">開運導航 · 運勢指引</div>
+        <p id="moduleDesc" class="module-desc">正在載入生肖修仙世界資料...</p>
+        
+        <a id="enterBtn" href="#" class="enter-btn">
+          <span>進入遊戲世界</span>
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    // Parse URL query parameter ?dlc=dlc_luck
+    const urlParams = new URLSearchParams(window.location.search);
+    const dlcId = urlParams.get('dlc') || 'dlc_luck';
+
+    fetch('/dlc-config.json')
+      .then(res => res.json())
+      .then(config => {
+        const module = config.modules.find(m => m.id === dlcId) || config.modules[0];
+        
+        // Update DOM elements
+        document.getElementById('bgContainer').style.backgroundImage = `url('${module.bgImage}')`;
+        document.getElementById('zodiacTag').innerText = `${module.zodiac}生肖`;
+        document.getElementById('moduleNum').innerText = `DLC ${module.number} · ${module.tag}`;
+        document.getElementById('moduleTitle').innerText = module.title;
+        document.getElementById('moduleSubtitle').innerText = `${module.subtitle} · 修仙世界`;
+        document.getElementById('moduleDesc').innerText = module.description;
+        document.getElementById('enterBtn').href = module.targetUrl;
+
+        // Document Title
+        document.title = `${module.title} - 小雪的修仙世界`;
+      })
+      .catch(err => {
+        console.error('Failed to load dlc-config.json:', err);
+        document.getElementById('moduleDesc').innerText = '載入設定檔失敗，請確認 dlc-config.json 是否存在。';
+      });
+  </script>
+</body>
+</html>

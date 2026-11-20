@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <title>靈泉庭院 · Spirit Spring DLC</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    body { background-color: #050d18; color: #f1f5f9; overflow: hidden; user-select: none; }
+    .koi { transition: all 1.8s ease-out; position: absolute; }
+    .ripple { position: absolute; border: 1px solid rgba(34, 211, 238, 0.4); border-radius: 50%; pointer-events: none; animation: rip 2.5s ease-out infinite; }
+    @keyframes rip { 0% { width: 10px; height: 10px; opacity: 1; transform: translate(-50%, -50%); } 100% { width: 180px; height: 180px; opacity: 0; transform: translate(-50%, -50%); } }
+  </style>
+</head>
+<body class="h-screen w-screen flex flex-col justify-between p-4">
+
+  <!-- Top bar -->
+  <header class="flex items-center justify-between pb-3 border-b border-teal-900/40 z-20">
+    <div class="flex items-center gap-2">
+      <span class="text-xl">🌿</span>
+      <div>
+        <h1 class="text-base font-bold text-teal-200">靈泉清境 · 自然生態</h1>
+        <p id="envStatus" class="text-[11px] text-teal-400">水波清淺 · 錦鯉悠游 · 蟲鳴入耳</p>
+      </div>
+    </div>
+    <button id="closeBtn" class="px-3 py-1 rounded-full bg-slate-800 hover:bg-slate-700 text-xs text-slate-300 border border-slate-700">
+      ✕ 返回洞府
+    </button>
+  </header>
+
+  <!-- Interactive Spring Pond Canvas / Arena -->
+  <main id="pond" class="relative flex-1 my-3 rounded-3xl bg-gradient-to-b from-[#081a2e] via-[#041220] to-[#020b14] border border-teal-500/30 overflow-hidden cursor-pointer shadow-inner">
+    
+    <!-- Ambient Ripples -->
+    <div class="ripple" style="top: 35%; left: 40%; animation-delay: 0s;"></div>
+    <div class="ripple" style="top: 65%; left: 60%; animation-delay: 1.2s;"></div>
+
+    <!-- Lily Pads -->
+    <div class="absolute top-1/4 left-8 text-4xl opacity-80 pointer-events-none">🪷</div>
+    <div class="absolute bottom-1/3 right-10 text-3xl opacity-80 pointer-events-none">🍃</div>
+    <div class="absolute top-2/3 left-16 text-3xl opacity-75 pointer-events-none">🪷</div>
+
+    <!-- Frog on lily pad -->
+    <div id="frog" class="absolute top-1/4 left-10 text-2xl transition-all duration-700 cursor-pointer" title="點擊靈蛙">
+      🐸
+    </div>
+
+    <!-- Koi fish container (spawned dynamically from config) -->
+    <div id="koiContainer"></div>
+
+    <!-- Zen Guidance Overlay -->
+    <div class="absolute bottom-4 left-1/2 -translate-x-1/2 bg-black/40 backdrop-blur-md px-4 py-1.5 rounded-full border border-teal-800/40 text-xs text-teal-300 flex items-center gap-2 pointer-events-none">
+      <span>🫧 點擊水面投下靈米，滋養錦鯉與靈泉</span>
+    </div>
+  </main>
+
+  <!-- Bottom Meditation Action -->
+  <footer class="flex items-center justify-between pt-2 border-t border-teal-950 z-20">
+    <div class="text-xs text-slate-400">
+      靜坐感悟靈泉：<span id="qiCount" class="text-teal-300 font-bold">+0 靈氣</span>
+    </div>
+    <button id="meditateBtn" class="px-4 py-2 rounded-xl bg-teal-600 hover:bg-teal-500 active:bg-teal-400 text-slate-950 font-bold text-xs flex items-center gap-1.5 shadow-md">
+      <span>🧘 駐足靜聽 (感悟泉聲)</span>
+    </button>
+  </footer>
+
+  <script>
+    // -------------------------------------------------------------
+    // 資料驅動：自動讀取根目錄 /config.json 的生態參數
+    // -------------------------------------------------------------
+    let gainedExp = 0;
+
+    async function initEcosystem() {
+      let koiCount = 3;
+      let swimSpeed = 1.2;
+      let cricketActive = true;
+
+      try {
+        const res = await fetch('/config.json');
+        const cfg = await res.json();
+        if (cfg.sanctuary_spirit_spring) {
+          koiCount = cfg.sanctuary_spirit_spring.koi_config?.total_count || 3;
+          swimSpeed = cfg.sanctuary_spirit_spring.koi_config?.swim_speed || 1.2;
+        }
+      } catch (e) {
+        console.warn('Using default sanctuary parameters');
+      }
+
+      // Spawn Kois
+      const container = document.getElementById('koiContainer');
+      const kois = [];
+      for (let i = 0; i < koiCount; i++) {
+        const el = document.createElement('div');
+        el.className = 'koi text-2xl cursor-pointer';
+        el.innerText = i % 2 === 0 ? '🐟' : '🐠';
+        el.style.left = `${20 + Math.random() * 60}%`;
+        el.style.top = `${20 + Math.random() * 60}%`;
+        container.appendChild(el);
+        kois.push(el);
+      }
+
+      // Animate Kois wandering naturally
+      setInterval(() => {
+        kois.forEach(k => {
+          const nx = 15 + Math.random() * 70;
+          const ny = 15 + Math.random() * 70;
+          const angle = Math.atan2(ny - parseFloat(k.style.top), nx - parseFloat(k.style.left)) * (180 / Math.PI);
+          k.style.left = `${nx}%`;
+          k.style.top = `${ny}%`;
+          k.style.transform = `rotate(${angle}deg)`;
+        });
+      }, 2500 / swimSpeed);
+    }
+
+    // Frog Jump interaction
+    const frog = document.getElementById('frog');
+    frog.onclick = (e) => {
+      e.stopPropagation();
+      frog.style.transform = 'translate(40px, -30px) scale(1.2)';
+      setTimeout(() => {
+        frog.style.transform = 'translate(0px, 0px) scale(1)';
+      }, 700);
+      notifyMother(10, '靈蛙點水，心神安寧');
+    };
+
+    // Click on pond surface to drop rice
+    const pond = document.getElementById('pond');
+    pond.onclick = (e) => {
+      const rect = pond.getBoundingClientRect();
+      const x = e.clientX - rect.left;
+      const y = e.clientY - rect.top;
+
+      const ripple = document.createElement('div');
+      ripple.className = 'ripple';
+      ripple.style.left = `${x}px`;
+      ripple.style.top = `${y}px`;
+      pond.appendChild(ripple);
+      setTimeout(() => ripple.remove(), 2500);
+
+      notifyMother(5, '投米餵養靈泉錦鯉');
+    };
+
+    // Meditate button
+    document.getElementById('meditateBtn').onclick = () => {
+      notifyMother(25, '靈泉幽幽，心入太虛境界');
+    };
+
+    function notifyMother(exp, msg) {
+      gainedExp += exp;
+      document.getElementById('qiCount').innerText = `+${gainedExp} 靈氣`;
+      // Send PostMessage to Mother system
+      window.parent.postMessage({
+        type: "XIAOXUE_DLC_EVENT",
+        action: "REWARD",
+        payload: {
+          exp: exp,
+          spiritStones: 5,
+          message: msg
+        }
+      }, "*");
+    }
+
+    document.getElementById('closeBtn').onclick = () => {
+      window.parent.postMessage({
+        type: "XIAOXUE_DLC_EVENT",
+        action: "CLOSE"
+      }, "*");
+    };
+
+    initEcosystem();
+  </script>
+</body>
+</html>
