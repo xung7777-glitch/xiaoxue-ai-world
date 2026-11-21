@@ -177,9 +177,9 @@ export const PortalCardGrid: React.FC<PortalCardGridProps> = ({
   });
 
   return (
-    <div className="flex flex-col gap-2.5 w-full">
+    <div className="grid grid-cols-2 gap-3 w-full">
       {sortedCards.map((card, idx) => {
-        const isWorldMap = card.id === 'world_map_portal';
+        const isLastAndOdd = idx === sortedCards.length - 1 && sortedCards.length % 2 !== 0;
 
         return (
           <div
@@ -188,44 +188,40 @@ export const PortalCardGrid: React.FC<PortalCardGridProps> = ({
               sounds.playChime(card.frequencyNote || 440, 0.4);
               onSelectCard(card);
             }}
-            className={`group relative cursor-pointer overflow-hidden rounded-xl bg-gradient-to-r from-[#0d1627] via-[#08101d] to-[#0a1424] border border-cyan-500/40 hover:border-amber-400/90 px-3.5 py-2.5 sm:px-4 sm:py-3 transition-all duration-300 shadow-[0_4px_20px_rgba(0,0,0,0.7)] hover:shadow-[0_0_25px_rgba(245,158,11,0.35)] active:scale-[0.98] flex items-center justify-between ${
-              isWorldMap ? 'mt-2 bg-gradient-to-r from-[#141d2e] via-[#0d1624] to-[#152033] border-cyan-400/60 shadow-[0_0_25px_rgba(6,182,212,0.25)]' : ''
+            className={`group relative cursor-pointer overflow-hidden rounded-2xl bg-gradient-to-b from-[#0d1627] via-[#091220] to-[#0b1525] border border-cyan-500/40 hover:border-amber-400/90 p-3 transition-all duration-300 shadow-[0_4px_20px_rgba(0,0,0,0.8)] hover:shadow-[0_0_25px_rgba(245,158,11,0.4)] active:scale-[0.98] flex flex-col justify-between min-h-[118px] ${
+              isLastAndOdd ? 'col-span-2 bg-gradient-to-r from-[#111a2a] via-[#0d1624] to-[#121f33] border-cyan-400/60 shadow-[0_0_25px_rgba(6,182,212,0.25)] flex-row items-center' : ''
             }`}
           >
             {/* Ambient gold/cyan celestial glow */}
-            <div className="absolute inset-0 bg-gradient-to-r from-cyan-500/0 via-cyan-500/5 to-amber-500/10 group-hover:from-amber-500/15 group-hover:to-cyan-500/15 transition-all duration-300 pointer-events-none" />
+            <div className="absolute inset-0 bg-gradient-to-br from-cyan-500/0 via-cyan-500/5 to-amber-500/10 group-hover:from-amber-500/15 group-hover:to-cyan-500/15 transition-all duration-300 pointer-events-none" />
 
-            {/* Left content info: Number + Title + Subtitle */}
-            <div className="relative z-10 flex items-center gap-3.5 flex-1 pr-2 select-none">
-              {card.numberStr && (
-                <span className="text-xs font-black w-7 h-7 flex-shrink-0 flex items-center justify-center rounded-full bg-gradient-to-br from-amber-400 to-amber-600 text-slate-950 shadow-[0_0_10px_rgba(245,158,11,0.6)] font-mono">
-                  {card.numberStr}
-                </span>
-              )}
-
-              <div className="flex flex-col justify-center">
-                <h3 className="text-sm sm:text-base font-bold text-amber-300 tracking-wider font-serif group-hover:text-amber-200 transition-colors leading-tight drop-shadow-[0_2px_4px_rgba(0,0,0,0.9)]">
-                  {card.title}
-                </h3>
-                <p className="text-[11px] sm:text-xs text-slate-300 font-medium tracking-tight mt-0.5">
-                  {card.subtitle}
-                </p>
+            {/* Top row: Number Badge & Arrow Button */}
+            <div className="relative z-10 flex items-center justify-between mb-2">
+              <span className="text-[10px] font-black px-2 py-0.5 rounded-full bg-gradient-to-r from-amber-400 to-amber-600 text-slate-950 shadow-[0_0_10px_rgba(245,158,11,0.6)] font-mono">
+                {card.numberStr}
+              </span>
+              <div className="w-6 h-6 rounded-full bg-gradient-to-br from-cyan-400 to-teal-600 border border-cyan-200/80 flex items-center justify-center text-white text-[11px] font-black shadow-[0_0_10px_rgba(6,182,212,0.8)] group-hover:scale-110 group-hover:bg-gradient-to-br group-hover:from-amber-400 group-hover:to-amber-600 group-hover:border-amber-200 transition-all">
+                ›
               </div>
             </div>
 
-            {/* Right Character / Creature artwork & Glowing Arrow Button */}
-            <div className="relative flex items-center gap-2.5 flex-shrink-0">
-              <div className="relative w-12 sm:w-14 h-12 sm:h-14 flex-shrink-0 overflow-hidden rounded-lg border border-cyan-400/30 shadow-inner">
-                <CharacterSprite
-                  id={card.spriteId}
-                  className="w-full h-full object-cover rounded-lg group-hover:scale-110 transition-transform duration-500"
-                  glow={true}
-                />
+            {/* Bottom / Main info row: Title & Subtitle + Thumbnail */}
+            <div className="relative z-10 flex items-end justify-between">
+              <div className="flex flex-col pr-1 flex-1">
+                <h3 className="text-sm font-bold text-amber-300 tracking-wider font-serif group-hover:text-amber-200 transition-colors leading-tight drop-shadow-[0_2px_4px_rgba(0,0,0,0.9)]">
+                  {card.title}
+                </h3>
+                <p className="text-[11px] text-slate-300 font-medium tracking-tight mt-1">
+                  {card.subtitle}
+                </p>
               </div>
 
-              {/* Glowing Arrow Button */}
-              <div className="w-7 h-7 rounded-full bg-gradient-to-br from-cyan-400 to-teal-600 border border-cyan-200/80 flex items-center justify-center text-white text-xs font-black shadow-[0_0_12px_rgba(6,182,212,0.8)] group-hover:scale-110 group-hover:bg-gradient-to-br group-hover:from-amber-400 group-hover:to-amber-600 group-hover:border-amber-200 transition-all">
-                ›
+              <div className="relative w-12 h-12 flex-shrink-0 overflow-hidden rounded-xl border border-cyan-400/30 shadow-inner">
+                <CharacterSprite
+                  id={card.spriteId}
+                  className="w-full h-full object-cover rounded-xl group-hover:scale-110 transition-transform duration-500"
+                  glow={true}
+                />
               </div>
             </div>
           </div>
