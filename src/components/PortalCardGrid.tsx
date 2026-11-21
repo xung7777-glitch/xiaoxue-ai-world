@@ -177,7 +177,7 @@ export const PortalCardGrid: React.FC<PortalCardGridProps> = ({
   });
 
   return (
-    <div className="grid grid-cols-2 gap-3 w-full">
+    <div className="grid grid-cols-2 gap-3.5 w-full">
       {sortedCards.map((card, idx) => {
         const isLastAndOdd = idx === sortedCards.length - 1 && sortedCards.length % 2 !== 0;
 
@@ -188,25 +188,25 @@ export const PortalCardGrid: React.FC<PortalCardGridProps> = ({
               sounds.playChime(card.frequencyNote || 440, 0.4);
               onSelectCard(card);
             }}
-            className={`group relative cursor-pointer overflow-hidden rounded-2xl bg-gradient-to-r from-[#0e1728] via-[#0a1220] to-[#0c1626] border border-cyan-500/30 hover:border-amber-400/80 p-2.5 sm:p-3 transition-all duration-300 shadow-[0_4px_20px_rgba(0,0,0,0.6)] hover:shadow-[0_0_25px_rgba(245,158,11,0.35)] active:scale-[0.98] flex items-center justify-between min-h-[96px] ${
-              isLastAndOdd ? 'col-span-2 bg-gradient-to-r from-[#111a2a] via-[#0d1624] to-[#121f33] border-cyan-400/50 shadow-[0_0_20px_rgba(6,182,212,0.2)]' : ''
+            className={`group relative cursor-pointer overflow-hidden rounded-2xl bg-gradient-to-r from-[#0d1627] via-[#08101d] to-[#0a1424] border border-cyan-500/40 hover:border-amber-400/90 p-3 sm:p-3.5 transition-all duration-300 shadow-[0_4px_25px_rgba(0,0,0,0.8)] hover:shadow-[0_0_30px_rgba(245,158,11,0.4)] active:scale-[0.98] flex items-center justify-between min-h-[108px] ${
+              isLastAndOdd ? 'col-span-2 bg-gradient-to-r from-[#111a2a] via-[#0d1624] to-[#121f33] border-cyan-400/60 shadow-[0_0_25px_rgba(6,182,212,0.25)]' : ''
             }`}
           >
-            {/* Subtle inner ambient celestial glow */}
-            <div className="absolute inset-0 bg-gradient-to-r from-cyan-500/0 via-cyan-500/5 to-amber-500/5 group-hover:from-amber-500/10 group-hover:to-cyan-500/10 transition-all duration-300 pointer-events-none" />
+            {/* Ambient gold/cyan celestial glow */}
+            <div className="absolute inset-0 bg-gradient-to-r from-cyan-500/0 via-cyan-500/5 to-amber-500/10 group-hover:from-amber-500/15 group-hover:to-cyan-500/15 transition-all duration-300 pointer-events-none" />
 
             {/* Left content info */}
             <div className="relative z-10 flex flex-col justify-between h-full flex-1 pr-2 select-none">
-              {/* Number Badge & Title */}
+              {/* Number Badge & Badge */}
               <div>
-                <div className="flex items-center gap-1.5 mb-1">
+                <div className="flex items-center gap-1.5 mb-1.5">
                   {card.numberStr && (
-                    <span className="text-[10px] font-black px-2 py-0.5 rounded-full bg-gradient-to-r from-amber-400 to-amber-600 text-slate-950 shadow-[0_0_10px_rgba(245,158,11,0.5)] font-mono">
+                    <span className="text-[11px] font-black px-2 py-0.5 rounded-full bg-gradient-to-r from-amber-400 to-amber-600 text-slate-950 shadow-[0_0_12px_rgba(245,158,11,0.6)] font-mono">
                       {card.numberStr}
                     </span>
                   )}
                   {card.badge && (
-                    <span className="text-[9px] px-1.5 py-0.2 rounded-full bg-cyan-950/90 border border-cyan-700/60 text-cyan-200">
+                    <span className="text-[9px] px-2 py-0.2 rounded-full bg-cyan-950/90 border border-cyan-600/70 text-cyan-200">
                       {card.badge}
                     </span>
                   )}
@@ -222,9 +222,9 @@ export const PortalCardGrid: React.FC<PortalCardGridProps> = ({
               </p>
             </div>
 
-            {/* Right Character / Creature artwork & Arrow Button */}
-            <div className="relative flex items-center gap-2 flex-shrink-0">
-              <div className="relative w-16 sm:w-20 h-16 sm:h-20 flex-shrink-0 overflow-hidden rounded-xl border border-cyan-500/20 shadow-inner">
+            {/* Right Character / Creature artwork & Glowing Arrow Button */}
+            <div className="relative flex items-center gap-2.5 flex-shrink-0">
+              <div className="relative w-18 sm:w-22 h-18 sm:h-22 flex-shrink-0 overflow-hidden rounded-xl border border-cyan-400/30 shadow-[0_0_15px_rgba(6,182,212,0.2)]">
                 <CharacterSprite
                   id={card.spriteId}
                   className="w-full h-full object-cover rounded-xl group-hover:scale-110 transition-transform duration-500"
@@ -232,8 +232,8 @@ export const PortalCardGrid: React.FC<PortalCardGridProps> = ({
                 />
               </div>
 
-              {/* Chevron Arrow Button matching reference image */}
-              <div className="w-6 h-6 rounded-full bg-gradient-to-br from-cyan-500 to-teal-600 border border-cyan-300/60 flex items-center justify-center text-white text-xs font-bold shadow-[0_0_10px_rgba(6,182,212,0.6)] group-hover:scale-110 group-hover:bg-gradient-to-br group-hover:from-amber-400 group-hover:to-amber-600 group-hover:border-amber-200 transition-all">
+              {/* Glowing Arrow Button matching reference image */}
+              <div className="w-7 h-7 rounded-full bg-gradient-to-br from-cyan-400 to-teal-600 border border-cyan-200/80 flex items-center justify-center text-white text-xs font-black shadow-[0_0_12px_rgba(6,182,212,0.8)] group-hover:scale-110 group-hover:bg-gradient-to-br group-hover:from-amber-400 group-hover:to-amber-600 group-hover:border-amber-200 transition-all">
                 ›
               </div>
             </div>
