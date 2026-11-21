@@ -21,7 +21,7 @@ export const DEFAULT_PORTAL_CARDS: CardDef[] = [
     icon: '✨',
     numberStr: '01',
     title: '子鼠推天',
-    subtitle: '趣吉避凶 · 運勢指引',
+    subtitle: '開運導航 · 運勢指引',
     badge: '運勢',
     targetUrl: '/dlc-portal.html?dlc=dlc_luck',
     frequencyNote: 329.63,
@@ -32,7 +32,7 @@ export const DEFAULT_PORTAL_CARDS: CardDef[] = [
     icon: '📖',
     numberStr: '02',
     title: '丑牛耕卷',
-    subtitle: '邊看影片 · 輕鬆學英語',
+    subtitle: '英兇寶典 · 輕鬆學英語',
     badge: '真言',
     targetUrl: '/dlc-portal.html?dlc=dlc_spellbook',
     frequencyNote: 392.0,
@@ -43,7 +43,7 @@ export const DEFAULT_PORTAL_CARDS: CardDef[] = [
     icon: '🪷',
     numberStr: '03',
     title: '寅虎藏禪',
-    subtitle: '觀魚賞蓮 · 放鬆療癒',
+    subtitle: '靜心靈泉 · 放鬆療癒',
     badge: '禪意',
     targetUrl: '/dlc-portal.html?dlc=dlc_pond',
     frequencyNote: 440.0,
@@ -54,7 +54,7 @@ export const DEFAULT_PORTAL_CARDS: CardDef[] = [
     icon: '🌿',
     numberStr: '04',
     title: '卯兔采芝',
-    subtitle: '採藥種植 · 田園慢活',
+    subtitle: '神農藥谷 · 田園慢活',
     badge: '田園',
     targetUrl: '/dlc-portal.html?dlc=dlc_forest',
     frequencyNote: 493.88,
@@ -65,7 +65,7 @@ export const DEFAULT_PORTAL_CARDS: CardDef[] = [
     icon: '🧘',
     numberStr: '05',
     title: '辰龍吐納',
-    subtitle: '打坐冥想 · 修煉心境',
+    subtitle: '先天一炁 · 修煉心境',
     badge: '吐納',
     targetUrl: '/dlc-portal.html?dlc=dlc_meditate',
     frequencyNote: 523.25,
@@ -76,7 +76,7 @@ export const DEFAULT_PORTAL_CARDS: CardDef[] = [
     icon: '🌊',
     numberStr: '06',
     title: '巳蛇戲淵',
-    subtitle: '極限拔河 · 釣魚博弈',
+    subtitle: '逆水擒龍 · 釣魚博弈',
     badge: '博弈',
     targetUrl: '/dlc-portal.html?dlc=dlc_fish',
     frequencyNote: 587.33,
@@ -87,7 +87,7 @@ export const DEFAULT_PORTAL_CARDS: CardDef[] = [
     icon: '⚛️',
     numberStr: '07',
     title: '午馬躍遷',
-    subtitle: '合成突破 · 參悟大道',
+    subtitle: '大道飛升 · 參悟大道',
     badge: '飛升',
     targetUrl: '/dlc-portal.html?dlc=dlc_merge',
     frequencyNote: 659.25,
@@ -98,7 +98,7 @@ export const DEFAULT_PORTAL_CARDS: CardDef[] = [
     icon: '🛡️',
     numberStr: '08',
     title: '未羊御陣',
-    subtitle: '懷舊戰車 · 守護基地',
+    subtitle: '飛劍御敵 · 守護基地',
     badge: '御敵',
     targetUrl: '/dlc-portal.html?dlc=dlc_tank',
     frequencyNote: 698.46,
@@ -109,7 +109,7 @@ export const DEFAULT_PORTAL_CARDS: CardDef[] = [
     icon: '🧱',
     numberStr: '09',
     title: '申猴破陣',
-    subtitle: '連消破陣 · 暢快解謎',
+    subtitle: '破陣方塊 · 暢快解謎',
     badge: '消除',
     targetUrl: '/dlc-portal.html?dlc=dlc_drop',
     frequencyNote: 783.99,
@@ -120,7 +120,7 @@ export const DEFAULT_PORTAL_CARDS: CardDef[] = [
     icon: '🔢',
     numberStr: '10',
     title: '酉雞推演',
-    subtitle: '數獨挑戰 · 破陣智慧',
+    subtitle: '九宮雷劫 · 破陣智慧',
     badge: '數獨',
     targetUrl: '/dlc-portal.html?dlc=dlc_sudoku',
     frequencyNote: 880.0,
@@ -131,7 +131,7 @@ export const DEFAULT_PORTAL_CARDS: CardDef[] = [
     icon: '🗺️',
     numberStr: '11',
     title: '戌狗尋秘',
-    subtitle: '隨機迷宮 · 尋寶探險',
+    subtitle: '幻變遺蹟 · 尋寶探險',
     badge: '迷宮',
     targetUrl: '/dlc-portal.html?dlc=dlc_ruins',
     frequencyNote: 987.77,
@@ -142,7 +142,7 @@ export const DEFAULT_PORTAL_CARDS: CardDef[] = [
     icon: '⚔️',
     numberStr: '12',
     title: '亥豬鎮疆',
-    subtitle: '生存挑戰 · 斬妖割草',
+    subtitle: '邊疆修仙 · 生存挑戰',
     badge: '生存',
     targetUrl: '/dlc-portal.html?dlc=dlc_survival',
     frequencyNote: 1046.5,
@@ -177,7 +177,7 @@ export const PortalCardGrid: React.FC<PortalCardGridProps> = ({
   });
 
   return (
-    <div className="grid grid-cols-2 gap-3.5 w-full">
+    <div className="grid grid-cols-2 gap-3 w-full">
       {sortedCards.map((card, idx) => {
         const isLastAndOdd = idx === sortedCards.length - 1 && sortedCards.length % 2 !== 0;
 
@@ -188,47 +188,54 @@ export const PortalCardGrid: React.FC<PortalCardGridProps> = ({
               sounds.playChime(card.frequencyNote || 440, 0.4);
               onSelectCard(card);
             }}
-            className={`group relative cursor-pointer overflow-hidden rounded-2xl bg-gradient-to-b from-[#111927] to-[#0e1522] border border-cyan-900/40 hover:border-cyan-400/60 p-3 sm:p-3.5 transition-all duration-300 shadow-md shadow-black/40 hover:shadow-[0_4px_20px_rgba(6,182,212,0.22)] active:scale-[0.97] flex items-center justify-between min-h-[104px] ${
-              isLastAndOdd ? 'col-span-2 bg-gradient-to-r from-[#111a2a] via-[#0d1624] to-[#121f33] border-cyan-500/50 shadow-[0_0_20px_rgba(6,182,212,0.15)]' : ''
+            className={`group relative cursor-pointer overflow-hidden rounded-2xl bg-gradient-to-r from-[#0e1728] via-[#0a1220] to-[#0c1626] border border-cyan-500/30 hover:border-amber-400/80 p-2.5 sm:p-3 transition-all duration-300 shadow-[0_4px_20px_rgba(0,0,0,0.6)] hover:shadow-[0_0_25px_rgba(245,158,11,0.35)] active:scale-[0.98] flex items-center justify-between min-h-[96px] ${
+              isLastAndOdd ? 'col-span-2 bg-gradient-to-r from-[#111a2a] via-[#0d1624] to-[#121f33] border-cyan-400/50 shadow-[0_0_20px_rgba(6,182,212,0.2)]' : ''
             }`}
           >
-            {/* Subtle inner ambient glow */}
-            <div className="absolute inset-0 bg-cyan-500/0 group-hover:bg-cyan-500/5 transition-colors duration-300 pointer-events-none" />
+            {/* Subtle inner ambient celestial glow */}
+            <div className="absolute inset-0 bg-gradient-to-r from-cyan-500/0 via-cyan-500/5 to-amber-500/5 group-hover:from-amber-500/10 group-hover:to-cyan-500/10 transition-all duration-300 pointer-events-none" />
 
             {/* Left content info */}
-            <div className="relative z-10 flex flex-col justify-between h-full flex-1 pr-1.5 select-none">
-              {/* Icon & Title */}
+            <div className="relative z-10 flex flex-col justify-between h-full flex-1 pr-2 select-none">
+              {/* Number Badge & Title */}
               <div>
-                <div className="flex items-center gap-1.5 mb-1.5">
+                <div className="flex items-center gap-1.5 mb-1">
                   {card.numberStr && (
-                    <span className="text-[10px] font-bold px-1.5 py-0.5 rounded bg-amber-500/20 border border-amber-500/40 text-amber-300 font-mono">
+                    <span className="text-[10px] font-black px-2 py-0.5 rounded-full bg-gradient-to-r from-amber-400 to-amber-600 text-slate-950 shadow-[0_0_10px_rgba(245,158,11,0.5)] font-mono">
                       {card.numberStr}
                     </span>
                   )}
                   {card.badge && (
-                    <span className="text-[9px] px-1.5 py-0.2 rounded-full bg-cyan-950/80 border border-cyan-800 text-cyan-300 scale-90 origin-left">
+                    <span className="text-[9px] px-1.5 py-0.2 rounded-full bg-cyan-950/90 border border-cyan-700/60 text-cyan-200">
                       {card.badge}
                     </span>
                   )}
                 </div>
-                <h3 className="text-sm sm:text-base font-bold text-slate-100 tracking-wide font-serif group-hover:text-cyan-200 transition-colors leading-tight">
+                <h3 className="text-sm sm:text-base font-bold text-amber-300 tracking-wide font-serif group-hover:text-amber-200 transition-colors leading-tight drop-shadow-[0_2px_4px_rgba(0,0,0,0.9)]">
                   {card.title}
                 </h3>
               </div>
 
               {/* Subtitle */}
-              <p className="text-[11px] sm:text-xs text-slate-400/90 group-hover:text-slate-300 font-normal tracking-tight mt-2 line-clamp-1">
+              <p className="text-[10px] sm:text-[11px] text-slate-300/90 group-hover:text-slate-200 font-medium tracking-tight mt-1 line-clamp-1">
                 {card.subtitle}
               </p>
             </div>
 
-            {/* Right Character artwork snippet */}
-            <div className="relative w-20 sm:w-24 h-22 sm:h-24 flex-shrink-0 flex items-center justify-end overflow-hidden rounded-xl">
-              <CharacterSprite
-                id={card.spriteId}
-                className="w-full h-full object-cover rounded-xl group-hover:scale-108 transition-transform duration-500 shadow-sm"
-                glow={true}
-              />
+            {/* Right Character / Creature artwork & Arrow Button */}
+            <div className="relative flex items-center gap-2 flex-shrink-0">
+              <div className="relative w-16 sm:w-20 h-16 sm:h-20 flex-shrink-0 overflow-hidden rounded-xl border border-cyan-500/20 shadow-inner">
+                <CharacterSprite
+                  id={card.spriteId}
+                  className="w-full h-full object-cover rounded-xl group-hover:scale-110 transition-transform duration-500"
+                  glow={true}
+                />
+              </div>
+
+              {/* Chevron Arrow Button matching reference image */}
+              <div className="w-6 h-6 rounded-full bg-gradient-to-br from-cyan-500 to-teal-600 border border-cyan-300/60 flex items-center justify-center text-white text-xs font-bold shadow-[0_0_10px_rgba(6,182,212,0.6)] group-hover:scale-110 group-hover:bg-gradient-to-br group-hover:from-amber-400 group-hover:to-amber-600 group-hover:border-amber-200 transition-all">
+                ›
+              </div>
             </div>
           </div>
         );
