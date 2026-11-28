@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>小雪的修仙世界 - DLC 傳送門</title>
+  <style>
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      padding: 0;
+      background-color: #03060c;
+      color: #f8fafc;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      overflow-x: hidden;
+    }
+    .portal-container {
+      width: 100%;
+      max-width: 440px;
+      min-height: 100vh;
+      background: #070b14;
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      overflow: hidden;
+      box-shadow: 0 0 80px rgba(0, 0, 0, 0.9);
+    }
+    @media (min-width: 640px) {
+      .portal-container {
+        min-height: 920px;
+        border-radius: 32px;
+        border: 10px solid #1e293b;
+      }
+    }
+    .bg-container {
+      position: absolute;
+      inset: 0;
+      background-size: cover;
+      background-position: center top;
+      z-index: 0;
+    }
+    .top-bar {
+      position: relative;
+      z-index: 10;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 18px 20px;
+    }
+    .back-btn {
+      background: rgba(15, 23, 42, 0.85);
+      border: 1px solid rgba(6, 182, 212, 0.5);
+      color: #38bdf8;
+      padding: 7px 16px;
+      border-radius: 14px;
+      font-size: 13px;
+      font-weight: 600;
+      cursor: pointer;
+      text-decoration: none;
+      backdrop-filter: blur(8px);
+      transition: all 0.2s;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.4);
+    }
+    .back-btn:hover {
+      background: rgba(6, 182, 212, 0.25);
+      border-color: #22d3ee;
+      color: #fff;
+    }
+    .zodiac-tag {
+      background: rgba(245, 158, 11, 0.25);
+      border: 1px solid rgba(245, 158, 11, 0.6);
+      color: #fef08a;
+      padding: 5px 14px;
+      border-radius: 20px;
+      font-size: 12px;
+      font-weight: bold;
+      letter-spacing: 1px;
+      box-shadow: 0 0 15px rgba(245, 158, 11, 0.3);
+    }
+    /* Button positioned at 60% from top as requested */
+    .button-container {
+      position: absolute;
+      top: 60%;
+      left: 0;
+      right: 0;
+      transform: translateY(-50%);
+      z-index: 20;
+      display: flex;
+      justify-content: center;
+      padding: 0 32px;
+    }
+    .enter-btn {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 12px;
+      width: 100%;
+      max-width: 300px;
+      padding: 16px 24px;
+      background: linear-gradient(135deg, #0284c7 0%, #0d9488 50%, #059669 100%);
+      color: #fff;
+      border: 1px solid rgba(56, 189, 248, 0.6);
+      border-radius: 20px;
+      font-size: 18px;
+      font-weight: 900;
+      letter-spacing: 2px;
+      text-decoration: none;
+      box-shadow: 0 10px 30px rgba(6, 182, 212, 0.6), inset 0 2px 6px rgba(255,255,255,0.3);
+      cursor: pointer;
+      transition: all 0.25s ease;
+      animation: pulseGlow 2s infinite ease-in-out;
+    }
+    .enter-btn:hover {
+      transform: translateY(-3px) scale(1.02);
+      box-shadow: 0 14px 40px rgba(6, 182, 212, 0.85), inset 0 2px 8px rgba(255,255,255,0.4);
+      background: linear-gradient(135deg, #0369a1 0%, #0f766e 50%, #047857 100%);
+    }
+    .enter-btn:active {
+      transform: scale(0.97);
+    }
+    @keyframes pulseGlow {
+      0%, 100% { box-shadow: 0 10px 30px rgba(6, 182, 212, 0.6), inset 0 2px 6px rgba(255,255,255,0.3); }
+      50% { box-shadow: 0 10px 40px rgba(6, 182, 212, 0.9), inset 0 2px 8px rgba(255,255,255,0.5); }
+    }
+  </style>
+</head>
+<body>
+  <div class="portal-container">
+    <div id="bgContainer" class="bg-container" style="background-image: url('/assets/images/dlc/dlc_luck.png');"></div>
+
+    <div class="top-bar">
+      <a href="/index.html" class="back-btn">🏠 返回首頁</a>
+      <div id="zodiacTag" class="zodiac-tag">子鼠生肖</div>
+    </div>
+
+    <div class="button-container">
+      <a id="enterBtn" href="#" class="enter-btn">
+        <span>進入遊戲</span>
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+      </a>
+    </div>
+  </div>
+
+  <script>
+    const urlParams = new URLSearchParams(window.location.search);
+    const dlcId = urlParams.get('dlc') || 'dlc_luck';
+
+    fetch('/dlc-config.json')
+      .then(res => res.json())
+      .then(config => {
+        const module = config.modules.find(m => m.id === dlcId) || config.modules[0];
+        document.getElementById('bgContainer').style.backgroundImage = `url('${module.bgImage}')`;
+        document.getElementById('zodiacTag').innerText = `${module.zodiac}生肖`;
+        document.getElementById('enterBtn').href = module.targetUrl;
+        document.title = `${module.title} - 小雪的修仙世界`;
+      })
+      .catch(err => console.error('Failed to load dlc-config.json:', err));
+  </script>
+</body>
+</html>

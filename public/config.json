@@ -1,0 +1,172 @@
+{
+  "version": "v2.1.0",
+  "lastUpdated": "2026-11-22",
+  "system_info": {
+    "project_name": "小雪的修仙世界",
+    "portal_name": "xiaoxue-ai-world",
+    "auth_provider": "Google",
+    "firebase_connected": true,
+    "theme": "xianxia_dark_celestial",
+    "orientation": "portrait_mobile_only",
+    "aspectRatio": "9:16",
+    "theme_song": "/assets/audio/xiaoxue_theme_song.mp3"
+  },
+  "modules": [
+    {
+      "id": "dlc_luck",
+      "title": "子鼠推天",
+      "subtitle": "開運導航 · 運勢指引",
+      "icon": "✨",
+      "type": "luck",
+      "badge": "運勢",
+      "spriteId": "status",
+      "targetUrl": "/dlc-portal.html?dlc=dlc_luck",
+      "bgImage": "/assets/images/dlc_btn/dlc_luck.png",
+      "frequencyNote": 329.63
+    },
+    {
+      "id": "dlc_spellbook",
+      "title": "丑牛耕卷",
+      "subtitle": "英咒寶典 · 輕鬆學英語",
+      "icon": "📖",
+      "type": "learning",
+      "badge": "真言",
+      "spriteId": "english",
+      "targetUrl": "/dlc-portal.html?dlc=dlc_spellbook",
+      "bgImage": "/assets/images/dlc_btn/dlc_spellbook.png",
+      "frequencyNote": 392.0
+    },
+    {
+      "id": "dlc_pond",
+      "title": "寅虎藏禪",
+      "subtitle": "靜心靈泉 · 放鬆療癒",
+      "icon": "🪷",
+      "type": "ecosystem",
+      "badge": "禪意",
+      "spriteId": "fish",
+      "targetUrl": "/dlc-portal.html?dlc=dlc_pond",
+      "bgImage": "/assets/images/dlc_btn/dlc_pond.png",
+      "frequencyNote": 440.0
+    },
+    {
+      "id": "dlc_forest",
+      "title": "卯兔采芝",
+      "subtitle": "神農藥谷 · 田園慢活",
+      "icon": "🌿",
+      "type": "cultivation",
+      "badge": "田園",
+      "spriteId": "alchemy",
+      "targetUrl": "/dlc-portal.html?dlc=dlc_forest",
+      "bgImage": "/assets/images/dlc_btn/dlc_forest.png",
+      "frequencyNote": 493.88
+    },
+    {
+      "id": "dlc_meditate",
+      "title": "辰龍吐納",
+      "subtitle": "先天一炁 · 修煉心境",
+      "icon": "🧘",
+      "type": "meditation",
+      "badge": "吐納",
+      "spriteId": "chamber",
+      "targetUrl": "/dlc-portal.html?dlc=dlc_meditate",
+      "bgImage": "/assets/images/dlc_btn/dlc_meditate.png",
+      "frequencyNote": 523.25
+    },
+    {
+      "id": "dlc_fish",
+      "title": "巳蛇戲淵",
+      "subtitle": "逆水擒龍 · 釣魚博弈",
+      "icon": "🌊",
+      "type": "relax",
+      "badge": "博弈",
+      "spriteId": "fish",
+      "targetUrl": "/dlc-portal.html?dlc=dlc_fish",
+      "bgImage": "/assets/images/dlc_btn/dlc_fish.png",
+      "frequencyNote": 587.33
+    },
+    {
+      "id": "dlc_merge",
+      "title": "午馬躍遷",
+      "subtitle": "大道飛升 · 參悟大道",
+      "icon": "⚛️",
+      "type": "puzzle",
+      "badge": "飛升",
+      "spriteId": "talisman",
+      "targetUrl": "/dlc-portal.html?dlc=dlc_merge",
+      "bgImage": "/assets/images/dlc_btn/dlc_merge.png",
+      "frequencyNote": 659.25
+    },
+    {
+      "id": "dlc_tank",
+      "title": "未羊御陣",
+      "subtitle": "飛劍御敵 · 守護基地",
+      "icon": "🛡️",
+      "type": "game",
+      "badge": "御敵",
+      "spriteId": "mechanism",
+      "targetUrl": "/dlc-portal.html?dlc=dlc_tank",
+      "bgImage": "/assets/images/dlc_btn/dlc_tank.png",
+      "frequencyNote": 698.46
+    },
+    {
+      "id": "dlc_drop",
+      "title": "申猴破陣",
+      "subtitle": "破陣方塊 · 暢快解謎",
+      "icon": "🧱",
+      "type": "puzzle",
+      "badge": "消除",
+      "spriteId": "talisman",
+      "targetUrl": "/dlc-portal.html?dlc=dlc_drop",
+      "bgImage": "/assets/images/dlc_btn/dlc_drop.png",
+      "frequencyNote": 783.99
+    },
+    {
+      "id": "dlc_sudoku",
+      "title": "酉雞推演",
+      "subtitle": "九宮雷劫 · 破陣智慧",
+      "icon": "🔢",
+      "type": "puzzle",
+      "badge": "數獨",
+      "spriteId": "mechanism",
+      "targetUrl": "/dlc-portal.html?dlc=dlc_sudoku",
+      "bgImage": "/assets/images/dlc_btn/dlc_sudoku.png",
+      "frequencyNote": 880.0
+    },
+    {
+      "id": "dlc_ruins",
+      "title": "戌狗尋秘",
+      "subtitle": "幻變遺蹟 · 尋寶探險",
+      "icon": "🗺️",
+      "type": "adventure",
+      "badge": "迷宮",
+      "spriteId": "beast",
+      "targetUrl": "/dlc-portal.html?dlc=dlc_ruins",
+      "bgImage": "/assets/images/dlc_btn/dlc_ruins.png",
+      "frequencyNote": 987.77
+    },
+    {
+      "id": "survival_beast",
+      "title": "亥豬鎮疆",
+      "subtitle": "邊疆修仙 · 生存挑戰",
+      "icon": "⚔️",
+      "type": "survival",
+      "badge": "生存",
+      "spriteId": "beast",
+      "targetUrl": "/dlc-portal.html?dlc=dlc_survival",
+      "bgImage": "/assets/images/dlc_btn/dlc_survival.png",
+      "frequencyNote": 1046.5
+    },
+    {
+      "id": "world_map_portal",
+      "title": "世界地圖換場傳送門",
+      "subtitle": "探索蠻荒大世界",
+      "icon": "🧭",
+      "type": "portal",
+      "badge": "跨域",
+      "spriteId": "map",
+      "targetUrl": "/world_map/index.html",
+      "bgImage": "/assets/images/home_btn/world_map.png",
+      "frequencyNote": 783.99
+    }
+  ]
+}

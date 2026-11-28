@@ -1,0 +1,27 @@
+rules_version = '2';
+service cloud.firestore {
+  match /databases/{database}/documents {
+    // Default deny catch-all
+    match /{document=**} {
+      allow read, write: if false;
+    }
+
+    function isSignedIn() {
+      return request.auth != null;
+    }
+
+    function isOwner(userId) {
+      return isSignedIn() && request.auth.uid == userId;
+    }
+
+    // Central players collection keyed by Google Auth UID
+    match /players/{userId} {
+      allow read, write: if isOwner(userId);
+    }
+
+    // Connection test document
+    match /test/{docId} {
+      allow read: if true;
+    }
+  }
+}

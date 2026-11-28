@@ -1,0 +1,49 @@
+{
+  "entities": {
+    "Player": {
+      "title": "Player",
+      "description": "Represents a player in Xiaoxue AI World with cultivation progress and DLC states",
+      "type": "object",
+      "properties": {
+        "profile": {
+          "type": "object",
+          "description": "Basic player profile authenticated via Google",
+          "properties": {
+            "uid": { "type": "string", "maxLength": 128 },
+            "displayName": { "type": "string", "maxLength": 100 },
+            "email": { "type": "string", "maxLength": 150 },
+            "photoURL": { "type": "string", "maxLength": 500 },
+            "createdAt": { "type": "string" },
+            "lastLoginAt": { "type": "string" }
+          },
+          "required": ["uid"]
+        },
+        "cultivation": {
+          "type": "object",
+          "description": "Mother world global cultivation progress",
+          "properties": {
+            "totalSpiritualPower": { "type": "number", "minimum": 0, "maximum": 45000 },
+            "currentRealm": { "type": "string", "maxLength": 50 },
+            "currentStage": { "type": "string", "maxLength": 20 },
+            "five_elements": {
+              "type": "object",
+              "description": "Five elements spiritual root numeric values"
+            }
+          },
+          "required": ["totalSpiritualPower"]
+        },
+        "dlc_data": {
+          "type": "object",
+          "description": "Modular namespaces for DLC achievements and history"
+        }
+      },
+      "required": ["profile", "cultivation"]
+    }
+  },
+  "firestore": {
+    "/players/{userId}": {
+      "schema": "Player",
+      "description": "Central ledger collection storing each player's profile and cultivation progress keyed by Google UID"
+    }
+  }
+}

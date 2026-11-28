@@ -1,0 +1,138 @@
+{
+  "version": "2.1.0",
+  "theme": "zodiac",
+  "modules": [
+    {
+      "id": "dlc_luck",
+      "number": "01",
+      "zodiac": "子鼠",
+      "title": "子鼠推天",
+      "subtitle": "開運導航 · 運勢指引",
+      "description": "結合傳統農民曆與今日氣場指南，助你趨吉避凶，還能點擊聆聽小雪的專屬語音運勢解析。",
+      "bgImage": "/assets/images/dlc_portal/dlc_luck.png",
+      "targetUrl": "/dlc/dlc_luck/index.html",
+      "tag": "運勢"
+    },
+    {
+      "id": "dlc_spellbook",
+      "number": "02",
+      "zodiac": "丑牛",
+      "title": "丑牛耕卷",
+      "subtitle": "英咒寶典 · 輕鬆學英語",
+      "description": "精選熱門短影片實用英語句子，邊看影片邊輕鬆記憶，讓英文學習變得像唸咒語般有趣。",
+      "bgImage": "/assets/images/dlc_portal/dlc_spellbook.png",
+      "targetUrl": "/dlc/dlc_spellbook/index.html",
+      "tag": "真言"
+    },
+    {
+      "id": "dlc_pond",
+      "number": "03",
+      "zodiac": "寅虎",
+      "title": "寅虎藏禪",
+      "subtitle": "靜心靈泉 · 放鬆療癒",
+      "description": "充滿和風禪意的錦鯉觀賞池，看荷葉隨波輕晃、蛙鳴與游魚相伴，隨時享受片刻療癒放鬆。",
+      "bgImage": "/assets/images/dlc_portal/dlc_pond.png",
+      "targetUrl": "/dlc/dlc_pond/index.html",
+      "tag": "禪意"
+    },
+    {
+      "id": "dlc_forest",
+      "number": "04",
+      "zodiac": "卯兔",
+      "title": "卯兔采芝",
+      "subtitle": "神農藥谷 · 田園慢活",
+      "description": "漫步在清新療癒的林田之間，親手悉心照料並採摘香甜野果，享受遠離喧囂的田園慢活。",
+      "bgImage": "/assets/images/dlc_portal/dlc_forest.png",
+      "targetUrl": "/dlc/dlc_forest/index.html",
+      "tag": "田園"
+    },
+    {
+      "id": "dlc_meditate",
+      "number": "05",
+      "zodiac": "辰龍",
+      "title": "辰龍吐納",
+      "subtitle": "先天一炁 · 修煉心境",
+      "description": "沉浸於打坐冥想與心境修煉，透過呼吸法吐納天地靈氣；結合放置掛機與舒緩冥想音樂，讓心靈重歸寧靜。",
+      "bgImage": "/assets/images/dlc_portal/dlc_meditate.png",
+      "targetUrl": "/dlc/dlc_meditate/index.html",
+      "tag": "冥想"
+    },
+    {
+      "id": "dlc_fish",
+      "number": "06",
+      "zodiac": "巳蛇",
+      "title": "巳蛇戲淵",
+      "subtitle": "逆水擒龍 · 釣魚博弈",
+      "description": "在波光粼粼的靈泉水畔體驗極限拔河與音律 QTE，與水下巨獸鬥智鬥勇，享受驚險刺激的釣魚博弈。",
+      "bgImage": "/assets/images/dlc_portal/dlc_fish.png",
+      "targetUrl": "/dlc/dlc_fish/index.html",
+      "tag": "釣魚"
+    },
+    {
+      "id": "dlc_merge",
+      "number": "07",
+      "zodiac": "午馬",
+      "title": "午馬躍遷",
+      "subtitle": "大道飛升 · 參悟大道",
+      "description": "修仙版 2048 升級特供！驅動修為境界在棋盤中左右滑動、精準碰撞，將同階修為層層疊加、實現極速躍遷，一路從練氣突破至混元大圓滿。",
+      "bgImage": "/assets/images/dlc_portal/dlc_merge.png",
+      "targetUrl": "/dlc/dlc_merge/index.html",
+      "tag": "合成"
+    },
+    {
+      "id": "dlc_tank",
+      "number": "08",
+      "zodiac": "未羊",
+      "title": "未羊御陣",
+      "subtitle": "飛劍御敵 · 守護基地",
+      "description": "致敬童年經典的懷舊戰車射擊遊戲，駕馭鋼鐵坦克穿梭磚牆鋼壁，全力守護基地贏得勝利。",
+      "bgImage": "/assets/images/dlc_portal/dlc_tank.png",
+      "targetUrl": "/dlc/dlc_tank/index.html",
+      "tag": "守衛"
+    },
+    {
+      "id": "dlc_drop",
+      "number": "09",
+      "zodiac": "申猴",
+      "title": "申猴破陣",
+      "subtitle": "破陣方塊 · 暢快解謎",
+      "description": "2D 融合東方修仙元素的經典方塊消除遊戲，巧妙堆疊靈石與符文，體驗連消破陣的暢快！",
+      "bgImage": "/assets/images/dlc_portal/dlc_drop.png",
+      "targetUrl": "/dlc/dlc_drop/index.html",
+      "tag": "消除"
+    },
+    {
+      "id": "dlc_sudoku",
+      "number": "10",
+      "zodiac": "酉雞",
+      "title": "酉雞推演",
+      "subtitle": "九宮雷劫 · 破陣智慧",
+      "description": "修仙版九宮數獨！將數字化作金木水火土風雷冰毒九大靈根，考驗嚴密邏輯推演與破陣智慧，解開千變萬化的靈陣迷局。",
+      "bgImage": "/assets/images/dlc_portal/dlc_sudoku.png",
+      "targetUrl": "/dlc/dlc_sudoku/index.html",
+      "tag": "數獨"
+    },
+    {
+      "id": "dlc_ruins",
+      "number": "11",
+      "zodiac": "戌狗",
+      "title": "戌狗尋秘",
+      "subtitle": "幻變遺蹟 · 尋寶探險",
+      "description": "每次踏入皆會隨機變幻的神秘修仙迷宮，善用丹藥與法寶步步為營，深入古遺蹟尋寶探險。",
+      "bgImage": "/assets/images/dlc_portal/dlc_ruins.png",
+      "targetUrl": "/dlc/dlc_ruins/index.html",
+      "tag": "迷宮"
+    },
+    {
+      "id": "dlc_survival",
+      "number": "12",
+      "zodiac": "亥豬",
+      "title": "亥豬鎮疆",
+      "subtitle": "邊疆修仙 · 生存挑戰",
+      "description": "化身修仙者在荒涼邊疆迎戰無盡獸潮，施展法術爽快割草，體驗極限生存的快感。",
+      "bgImage": "/assets/images/dlc_portal/dlc_survival.png",
+      "targetUrl": "/dlc/dlc_survival/index.html",
+      "tag": "生存"
+    }
+  ]
+}
