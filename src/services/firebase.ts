@@ -186,7 +186,7 @@ export async function ensurePlayerRecord(user: FirebaseUser): Promise<PlayerDoc>
       }
 
       const zodiacMap: Record<string, { exp: number; title: string }> = {
-        dlc_luck: { exp: 1, title: '子鼠推天' },
+        dlc_luck: { exp: 0, title: '子鼠推天' },
         dlc_spellbook: { exp: 2, title: '丑牛耕卷' },
         dlc_pond: { exp: 3, title: '寅虎藏禪' },
         dlc_forest: { exp: 4, title: '卯兔采芝' },
@@ -206,10 +206,10 @@ export async function ensurePlayerRecord(user: FirebaseUser): Promise<PlayerDoc>
 
       for (const [k, info] of Object.entries(zodiacMap)) {
         const item = updatedDlcData[k] as any;
-        if (!item || (item.total_exp === undefined && item.totalEXP === undefined) || item.total_exp === 0) {
+        if (!item || (item.total_exp === undefined && item.totalEXP === undefined) || (k === 'dlc_luck' && item.total_exp === 1)) {
           needsDlcUpdate = true;
           updatedDlcData[k] = {
-            total_exp: item?.total_exp ?? item?.totalEXP ?? info.exp,
+            total_exp: k === 'dlc_luck' ? 0 : (item?.total_exp ?? item?.totalEXP ?? info.exp),
             dlc_name: item?.dlc_name ?? item?.highestAchievement ?? info.title,
             history: item?.history || [],
           };
@@ -247,7 +247,7 @@ export async function ensurePlayerRecord(user: FirebaseUser): Promise<PlayerDoc>
           },
         },
         dlc_data: {
-          dlc_luck: { total_exp: 1, dlc_name: '子鼠推天', history: [] },
+          dlc_luck: { total_exp: 0, dlc_name: '子鼠推天', history: [] },
           dlc_spellbook: { total_exp: 2, dlc_name: '丑牛耕卷', history: [] },
           dlc_pond: { total_exp: 3, dlc_name: '寅虎藏禪', history: [] },
           dlc_forest: { total_exp: 4, dlc_name: '卯兔采芝', history: [] },
